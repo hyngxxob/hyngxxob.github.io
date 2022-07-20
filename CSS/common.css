@@ -27,7 +27,7 @@ nav {
     background-color: #7B68EE;
     box-shadow: 0 0px 8px #333333;
     /* height: 64%; */
-    height : 720px;
+    height: 720px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,7 +50,8 @@ nav {
 }
 
 .intro-container,
-.project-container {
+.project-container,
+.performance-container {
     color: #ffffffe8;
     background-color: #7B68EE;
     border-radius: 8px;
@@ -60,7 +61,8 @@ nav {
     margin: 32px auto;
 }
 
-.project-items {
+.project-items,
+.performance-items {
     background-color: white;
     color: black;
     border-radius: 8px;
@@ -74,7 +76,8 @@ nav {
     box-shadow: 0 0px 2px #333333;
 }
 
-.project-items-container {
+.project-items-container,
+.performance-items-container {
     padding: 16px 0;
 }
 
@@ -82,13 +85,19 @@ nav {
     display: flex;
 }
 
-.project-description-container > * {
+.project-description-container>* {
     padding: 0 32px;
+}
+
+.performance-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #main-bottom {
     max-width: 50%;
-    margin : 0 auto;
+    margin: 0 auto;
 }
 
 #tech {

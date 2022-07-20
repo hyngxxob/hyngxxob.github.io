@@ -3,7 +3,8 @@
         width : 256px!important;
     }
     .intro-container,
-    .project-container {
+    .project-container,
+    .performance-container {
         max-width: 50%!important;
     }
 }
