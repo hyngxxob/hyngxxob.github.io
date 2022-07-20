@@ -8,14 +8,14 @@
     }
 }
 
-@media (max-width:412px) {
+@media (max-width:1250px) {
     #main-bottom {
         max-width: 88%!important;
         margin: 0 auto!important;
         font-size: 0.8rem!important;
     }
     .project-description-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column!important;
+        align-items: center!important;
     }
 }
