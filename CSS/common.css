@@ -71,10 +71,19 @@ nav {
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 0px 2px #333333;
 }
 
 .project-items-container {
     padding: 16px 0;
+}
+
+.project-description-container {
+    display: flex;
+}
+
+.project-description-container > * {
+    padding: 0 32px;
 }
 
 #main-bottom {
