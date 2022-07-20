@@ -25,6 +25,7 @@ html {
 
 nav {
     background-color: #6495ED;
+    box-shadow: 0 0px 8px #333333;
     /* height: 64%; */
     height : 720px;
     display: flex;
@@ -53,8 +54,9 @@ nav {
     color: #ffffffe8;
     background-color: #6495ED;
     border-radius: 8px;
+    box-shadow: 0 4px 4px #333333;
     padding: 32px;
-    max-width: 45%;
+    max-width: 75%;
     margin: 0 auto;
 }
 
