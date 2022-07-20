@@ -7,3 +7,11 @@
         max-width: 50%!important;
     }
 }
+
+@media (max-width:412px) {
+    #main-bottom {
+        max-width: 88%!important;
+        margin: 0 auto!important;
+        font-size: 0.8rem!important;
+    }
+}

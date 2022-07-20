@@ -77,6 +77,11 @@ nav {
     padding: 16px 0;
 }
 
+#main-bottom {
+    max-width: 50%;
+    margin : 0 auto;
+}
+
 #tech {
     -webkit-appearance: none;
     -moz-appearance: none;
