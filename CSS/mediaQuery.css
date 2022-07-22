@@ -7,6 +7,7 @@
     .performance-container {
         max-width: 50%!important;
     }
+
 }
 
 @media (max-width:1250px) {
@@ -18,5 +19,8 @@
     .project-description-container {
         flex-direction: column!important;
         align-items: center!important;
+    }
+    .performance-description {
+        font-size: 0.4rem;
     }
 }
