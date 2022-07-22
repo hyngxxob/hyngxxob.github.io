@@ -188,12 +188,15 @@
 
 						</div>
 						<div class="w3-container">
-							<button id="tech" style="width: 100px;" onclick="document.getElementById('id01').style.display='block'">자세히 보기</button>
-
+							<button id="tech" style="width: 100px;" onclick="
+							document.getElementById('id01').style.display='block';
+							document.getElementById('full-container').style.overflow='hidden'">자세히 보기</button>
 							<div id="id01" class="w3-modal">
 								<div class="w3-modal-content" style="width: 90%!important; height: 60%; margin: 0 auto; top: 15%;">
 									<div class="w3-container" style="text-align: center;">
-										<span onclick="document.getElementById('id01').style.display='none'"
+										<span onclick="
+											document.getElementById('id01').style.display='none';
+											document.getElementById('full-container').style.overflow='visible'"
 											class="w3-button w3-display-topright">&times;</span>
 										<div style="padding-top: 40px;">
 											<img src="Common/pics/jmc/vacation_1.png" alt="" style="width: 100%;">
