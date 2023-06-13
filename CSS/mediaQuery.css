@@ -2,12 +2,29 @@
     #mypic {
         width : 256px!important;
     }
-    .intro-container,
+
     .project-container,
     .performance-container {
         max-width: 50%!important;
     }
 
+    
+}
+
+@media (max-width: 500px) {
+    .intro-inner {
+        margin : 0;
+    }
+    
+    .my-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-info > * {
+        width: 100%!important;
+    }
 }
 
 @media (max-width:1250px) {

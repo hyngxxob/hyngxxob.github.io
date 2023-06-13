@@ -41,7 +41,7 @@ html {
 .div-container {
     width: 100%;
     /* height: 100%; */
-    min-width: 500px;
+    /* min-width: 500px; */
     visibility: hidden;
 }
 
@@ -54,7 +54,7 @@ html {
     padding: 0 4px;
 }
 
-.intro-container,
+
 .project-container,
 .performance-container {
     color: #ffffffe8;
@@ -126,4 +126,64 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.intro-container {
+    width: 100%;
+    /* max-width: 71.25rem; */
+    margin: 0 auto;
+}
+
+.intro-inner {
+    margin: 0 8rem;
+    padding-top : 32px;
+}
+
+.intro-inner-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto 2rem;
+    gap:8px;
+}
+
+.my-info {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.my-history {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.my-info-item-container {
+    width: 33%;
+}
+.my-history-item-container {
+    /* width: 33%; */
+}
+
+.my-info-item-inner {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 20rem;
+    gap:16px;
+}
+
+.my-history-item-inner {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    /* max-width: 25rem; */
+    gap:16px;
 }

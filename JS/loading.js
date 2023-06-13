@@ -3,12 +3,12 @@ $(document).ready(function () {
     $('.loader6').hide();
     $("body").removeAttr("style");
     $(".div-container").css("visibility","visible");
-    $(document).bind('keydown',function(e){
-        if ( e.keyCode == 123 /* F12 */) {
-            e.preventDefault();
-            e.returnValue = false;
-        }
-    });
+    // $(document).bind('keydown',function(e){
+    //     if ( e.keyCode == 123 /* F12 */) {
+    //         e.preventDefault();
+    //         e.returnValue = false;
+    //     }
+    // });
     console.log("End");
 });
 
