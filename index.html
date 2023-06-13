@@ -22,7 +22,11 @@
 <body id="full-container" style="width: 100%; height:100%; background-color: black;">
 	<!-- Main -->
 	<div id="main-top" class="div-container headerBox">
-			<span style="color: #fffff9; font-size: 50px; font-weight: bold;">HYUNGSEOB-KIM</span>
+		<div style="display: flex; flex-direction:column; align-items:center;">
+			<span style="color: #fffff9; font-size: 50px; font-weight: bold;">HYUNGSEOB</span>
+			<span style="color: #fffff9; font-size: 50px; font-weight: bold;">KIM</span>
+		</div>
+			<!-- <span style="color: #fffff9; font-size: 50px; font-weight: bold;">HYUNGSEOB-KIM</span> -->
 		<hr style="width:1rem; margin-top:16px; margin-bottom:16px;">
 		<div style="text-align: center; color:white;">
 			<span>안녕하세요</span><br/>
@@ -158,38 +162,41 @@
 					</div>
 				</div>
 			</div>
-			<!-- 
-				<h1>Tech Stack</h1><br />
-				<button id="tech" style="width: 200px!important;">SAP Cloud Applications Studio</button>
-				<button id="tech" style="width: 72px!important;">SAP CPI</button>
-				<button id="tech">ABSL</button>
-				<button id="tech">Java</button>
-				<button id="tech">Unity</button>
-				<button id="tech">Ruby</button>
-				<button id="tech">Groovy</button>
-				<button id="tech">NodeJS</button>
-				<button id="tech">Python</button>
-				<button id="tech" style="width: 80px!important;">Firebase</button>
-				<br /><br /><br /><br /><br />
-				<h1>Cert.</h1><br />
-				<p>
-					정보처리기사 (21201020965F) - 2021.06
-				</p>
-			</div> -->
+		</div>
+		<div class="intro-inner">
+			<div class="intro-inner-header">
+				<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
+				<div style="font-size: 2rem; font-weight: bold; border-bottom: 1px solid;">CERT.</div>
+			</div>
+			<div class="my-history">
+				<div class="my-history-item-container">
+					<div class="my-history-item-inner">
+						정보처리기사 (21201020965F) - 2021.06
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Project -->
-	<div id="project" class="div-container" style="padding: 16px 0;">
-		<div class="project-container">
-			<h1>Project</h1><br /><br />
-			<div class="project-items-container">
-				<div class="project-items">
-					<div class="project-item-container">
-						<br />
-						<h3>현대두산인프라코어 완성차 오더링 시스템 - Machine Ordering Phase One</h3>
-						<!--<span>RFC통신으로 데이터를 주고받아 SAP Cloud for Customer에 출력</span>-->
-						<span>RFC통신으로 S4/HANA Cloud ERP측으로부터 수신한 데이터 가공</span>
-						<br />
+	<div id="project" class="div-container">
+		<div class="project-inner">
+			<div class="project-container">
+				<!-- 나중에 클래스명 바꾸기 -->
+				<div class="intro-inner-header">
+					<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
+					<div style="font-size: 2rem; font-weight: bold; border-bottom: 1px solid; color: white;">PROJECT</div>
+				</div>
+				<div class="project-item-container">
+					<div class="project-items">
+						<div style="display: flex; flex-direction : column; align-items : center;">
+							<div>
+								<h1>현대두산인프라코어(HDI) 완성차 오더링 시스템 - Machine Ordering Phase One</h1>
+							</div>
+							<div>
+								<span>RFC통신으로 S4/HANA Cloud ERP측으로부터 수신한 데이터 가공</span>
+							</div>
+						</div>
 						<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
 						<div class="project-description-container">
 							<img src="Common/pics/logo/hyundaidoosaninfra.png" style="width: 200px;" alt="">
@@ -206,17 +213,19 @@
 								</div>
 							</div>
 						</div>
-						<br />
 					</div>
 				</div>
-			</div>
-			<div class="project-items-container">
-				<div class="project-items">
-					<div class="project-item-container">
-						<br />
-						<h3>북미 HDI 완성차 오더링 시스템 - Machine Ordering Phase Two / Parts Ordering</h3>
-						<span>SAP Cloud for Customer OData API를 통한 웹 브라우저 데이터 노출</span>
-						<br />
+				<div class="divider"></div>
+				<div class="project-item-container">
+					<div class="project-items">
+						<div style="display: flex; flex-direction : column; align-items : center;">
+							<div>
+								<h1>북미 HDI 완성차 오더링 시스템 - Machine Ordering Phase Two / Parts Ordering</h1>
+							</div>
+							<div>
+								<span>SAP Cloud for Customer OData API를 통한 웹 브라우저 데이터 노출</span>
+							</div>
+						</div>
 						<div class="project-description-container">
 							<img src="Common/pics/logo/dina.jfif" alt="DINA" style="width: 200px;">
 							<div style="display: flex; flex-direction: column; justify-content: space-between;">
@@ -232,17 +241,20 @@
 								</div>
 							</div>
 						</div>
-						<br />
 					</div>
 				</div>
-			</div>
-			<div class="project-items-container">
-				<div class="project-items">
-					<div class="project-item-container">
-						<br />
-						<h3>동원시스템즈 매출 이력 관리 시스템 구축</h3>
-						<span>데이터 클렌징이 완료된 마이그레이션 매출 정보의 업로드를 위한 환경 구축</span>
-						<br />
+				<div class="divider"></div>
+	
+				<div class="project-item-container">
+					<div class="project-items">
+						<div style="display: flex; flex-direction : column; align-items : center;">
+							<div>
+								<h1>동원시스템즈 매출 이력 관리 시스템 구축</h1>
+							</div>
+							<div>
+								<span>데이터 클렌징이 완료된 마이그레이션 매출 정보의 업로드를 위한 환경 구축</span>
+							</div>
+						</div>
 						<div class="project-description-container">
 							<img src="Common/pics/logo/dongwonsystems.jpg" alt="DONGWONSYS" style="width: 200px;">
 							<div style="display: flex; flex-direction: column; justify-content: space-between;">
@@ -258,41 +270,41 @@
 								</div>
 							</div>
 						</div>
-						<br />
 					</div>
 				</div>
-			</div>
+
+		</div>
 		</div>
 	</div>
-	<div id="performance" class="div-container" style="padding: 16px 0;">
-		<div class="performance-container">
-			<h1>Performance</h1>
-			<div class="performance-items-container">
-				<div class="performance-items">
-					<div class="performance-item-container">
-						<br />
-						<h3>휴가 신청 시스템</h3>
-						<div class="performance-description">
-							<span>Logic 개발 : </span><br/>
-							<span>차감일 계산 / 차감 후 잔여 휴가 계산 / 휴가 삭제 시 잔여 휴가 복구</span><br/>
-							<hr size="1px" width="60%" style="margin: 16px auto; color: #a5a5a5;" color="#a5a5a5">
-							<span>기능 개발 : </span><br/>
-							<span>휴가를 상신하는 경우 Outlook 으로 메일 발송</span>
-						</div>
-						<div class="w3-container">
-							<button id="tech" style="width: 100px;" onclick="
-							document.getElementById('id01').style.display='block';
-							document.getElementById('full-container').style.overflow='hidden'">자세히 보기</button>
-							<div id="id01" class="w3-modal">
-								<div class="w3-modal-content" style="width: 90%!important; height: 60%; margin: 0 auto; top: 15%;box-shadow: 0 4px 8px #333333;">
-									<div class="w3-container" style="text-align: center;">
-										<span onclick="
-											document.getElementById('id01').style.display='none';
-											document.getElementById('full-container').style.overflow='visible'"
-											class="w3-button w3-display-topright">&times;</span>
-										<div style="padding-top: 40px;">
-											<img src="Common/pics/jmc/vacation_1.png" alt="" style="width: 100%;">
-										</div>
+	<div id="performance" class="div-container">
+		<div class="performance-inner">
+			<div class="performance-container">
+				<div class="intro-inner-header">
+					<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
+					<div style="font-size: 2rem; font-weight: bold; border-bottom: 1px solid; color: black;">PERFORMANCE</div>
+				</div>
+				<div class="performance-item-container">
+					<h3>휴가 신청 시스템</h3>
+					<div class="performance-description">
+						<span>Logic 개발 : </span><br/>
+						<span>차감일 계산 / 차감 후 잔여 휴가 계산 / 휴가 삭제 시 잔여 휴가 복구</span><br/>
+						<hr size="1px" width="60%" style="margin: 16px auto; color: #a5a5a5;" color="#a5a5a5">
+						<span>기능 개발 : </span><br/>
+						<span>휴가를 상신하는 경우 Outlook 으로 메일 발송</span>
+					</div>
+					<div class="w3-container">
+						<button id="tech" style="width: 100px;" onclick="
+						document.getElementById('id01').style.display='block';
+						document.getElementById('full-container').style.overflow='hidden'">자세히 보기</button>
+						<div id="id01" class="w3-modal">
+							<div class="w3-modal-content" style="width: 90%!important; height: 60%; margin: 0 auto; top: 15%;box-shadow: 0 4px 8px #333333;">
+								<div class="w3-container" style="text-align: center;">
+									<span onclick="
+										document.getElementById('id01').style.display='none';
+										document.getElementById('full-container').style.overflow='visible'"
+										class="w3-button w3-display-topright">&times;</span>
+									<div style="padding-top: 40px;">
+										<img src="Common/pics/jmc/vacation_1.png" alt="" style="width: 100%;">
 									</div>
 								</div>
 							</div>

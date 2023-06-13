@@ -1,14 +1,7 @@
 @media (min-width:950px) {
     #mypic {
         width : 256px!important;
-    }
-
-    .project-container,
-    .performance-container {
-        max-width: 50%!important;
-    }
-
-    
+    }   
 }
 
 @media (max-width: 500px) {
@@ -24,6 +17,10 @@
 
     .my-info > * {
         width: 100%!important;
+    }
+
+    .my-history-item-inner {
+        min-width: 0!important;
     }
 }
 
