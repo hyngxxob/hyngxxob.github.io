@@ -5,6 +5,17 @@
     line-height: 1.65;
 }
 
+/* box-shadow: 0 4px 8px #333333; */
+.customLogo-nodejs { background-color:#699f61; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
+.customLogo-sapui5 { background-color:#126dad; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
+.customLogo-js { background-color:#e0c22e; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
+.customLogo-html5 { background-color:#de4720; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
+.customLogo-css3 { background-color:#254bdd; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
+.customLogo-mysql { background-color:#42759c; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
+.customLogo-react { background-color:#5ed3f3; color:black;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
+.customLogo-groovy { background-color:#6093a5; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
+.customLogo-sap { background: linear-gradient(to bottom, #008FD3, #005CBF); color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
+
 a {
     text-decoration: none;
     color: #6495ED;
@@ -70,9 +81,14 @@ html {
     /* margin: 32px auto; */
 }
 
+.performance-container {
+    padding : 32px;
+}
+
 .performance-inner {
     /* color: #ffffffe8; */
     background-color: white;
+    /* padding-top: 32px; */
     /* border-radius: 8px; */
     /* box-shadow: 0 4px 4px #333333; */
     /* padding: 32px; */
@@ -107,7 +123,7 @@ html {
 }
 
 .project-description-container>* {
-    padding: 0 32px;
+    /* padding: 0 32px; */
 }
 
 .performance-item-container {

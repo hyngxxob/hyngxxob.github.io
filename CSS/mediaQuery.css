@@ -4,7 +4,15 @@
     }   
 }
 
-@media (max-width: 500px) {
+/* @media (max-width: 1152px) {
+    .my-info {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+} */
+
+@media (max-width: 1152px) {
     .intro-inner {
         margin : 0;
     }
@@ -22,9 +30,14 @@
     .my-history-item-inner {
         min-width: 0!important;
     }
+
+    .project-description-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
-@media (max-width:1250px) {
+/* @media (max-width:1250px) {
     #main-bottom {
         max-width: 88%!important;
         margin: 0 auto!important;
@@ -37,4 +50,4 @@
     .performance-description {
         font-size: 0.4rem;
     }
-}
+} */
