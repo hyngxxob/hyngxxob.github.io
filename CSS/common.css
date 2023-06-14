@@ -6,15 +6,24 @@
 }
 
 /* box-shadow: 0 4px 8px #333333; */
-.customLogo-nodejs { background-color:#699f61; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
-.customLogo-sapui5 { background-color:#126dad; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
-.customLogo-js { background-color:#e0c22e; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
-.customLogo-html5 { background-color:#de4720; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
-.customLogo-css3 { background-color:#254bdd; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
-.customLogo-mysql { background-color:#42759c; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
-.customLogo-react { background-color:#5ed3f3; color:black;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
-.customLogo-groovy { background-color:#6093a5; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
-.customLogo-sap { background: linear-gradient(to bottom, #008FD3, #005CBF); color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
+.customLogo-nodejs { background-color:#699f61; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-sapui5 { background-color:#126dad; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-js { background-color:#e0c22e; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-html5 { background-color:#de4720; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-css3 { background-color:#254bdd; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-mysql { background-color:#42759c; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-react { background-color:#5ed3f3; color:black;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-groovy { background-color:#6093a5; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-sap { background: linear-gradient(to bottom, #008FD3, #005CBF); color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-twig { background-color:#bccf28; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-python { background-color:#3572A5; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-java { background-color:#b07219; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-ruby { background-color:#701516; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-c { background-color:#659ad2; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-cpp { background-color:#00599c; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-cs { background-color:#a078db; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-jquery { background-color:#0060a9; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+.customLogo-firebase { background-color:#f57c00; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
 
 .main-top-header { align-items: center; display: flex; flex-direction: column; }
 .main-top-bottom { position:absolute; bottom: 3rem; }
@@ -166,13 +175,14 @@ html {
 
 .intro-container {
     width: 100%;
-    /* max-width: 71.25rem; */
+    max-width: 70%;
     margin: 0 auto;
 }
 
 .intro-inner {
     margin: 0 8rem;
     padding-top : 32px;
+    padding-bottom: 32px;
 }
 
 .intro-inner-header {
@@ -184,11 +194,17 @@ html {
     gap:8px;
 }
 
+.intro-inner-header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+
 .my-info {
     display: flex;
     flex-wrap:wrap;
     gap: 8px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .my-history {
@@ -198,11 +214,26 @@ html {
     gap: 8px;
 }
 
-.my-info-item-container {
-    width: 33%;
+.my-skill {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
 }
+
+.my-info-item-container {
+    width: 30%;
+}
+
 .my-history-item-container {
     /* width: 33%; */
+}
+
+.my-skill-item-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
 }
 
 .my-info-item-inner {
@@ -210,13 +241,13 @@ html {
     align-items: center;
     margin: 0 auto;
     width: 100%;
-    max-width: 20rem;
+    /* max-width: 20rem; */
     gap:16px;
 }
 
 .my-history-item-inner {
     display: flex;
-    width: 60%;
+    /* width: 60%; */
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
