@@ -16,9 +16,14 @@
 .customLogo-groovy { background-color:#6093a5; color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
 .customLogo-sap { background: linear-gradient(to bottom, #008FD3, #005CBF); color:white;font-size:0.7rem; border-radius:4px; padding:0 4px; font-weight:bold; }
 
+.main-top-header { align-items: center; display: flex; flex-direction: column; }
+.main-top-bottom { position:absolute; bottom: 3rem; }
+.main-top-more { background-color: white; border-radius:32px; padding: 4px 16px; cursor:pointer; box-shadow: 0 4px 8px #333333; }
+
 a {
     text-decoration: none;
     color: #6495ED;
+    font-weight: bold;
 }
 
 a:hover {
@@ -44,14 +49,13 @@ html {
 }
 
 .headerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
     background-color: #7B68EE;
     box-shadow: 0 0px 8px #333333;
-    display: flex;
-    position : relative;
     padding: 128px 0;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .div-container {
