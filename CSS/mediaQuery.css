@@ -41,7 +41,9 @@
         flex-direction: column;
         align-items: center;
     }
-
+    .outsourcing-description-content-container {
+        width: 100%;
+    }
     .outsourcing-description-container {
         flex-direction: column;
     }
@@ -52,5 +54,9 @@
 
     .outsourcing-container {
         max-width: 90%!important;
+    }
+
+    .outsourcing-description-content-item-container {
+        gap:16px;
     }
 }

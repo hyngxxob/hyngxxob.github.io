@@ -45,7 +45,8 @@
 
 a {
     text-decoration: none;
-    color: #6495ED;
+    /* color: #6495ED; */
+    color: black;
     font-weight: bold;
 }
 
@@ -111,7 +112,7 @@ html {
 .outsourcing-container {
     max-width: 70%;
     margin: 0 auto;
-    padding-top: 32px;
+    padding: 32px 0;
 }
 
 .performance-inner {
@@ -140,10 +141,8 @@ html {
 }
 
 .outsourcing-items {
-    /* background-color: white; */
     color: black;
     border : 0px;
-    /* border-radius: 8px; */
 }
 
 .project-item-container {
@@ -290,10 +289,19 @@ html {
     
 }
 
+.outsourcing-description-content-item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
 .outsourcing-description-content-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
 }
 
 .outsourcing-description-content-items {
@@ -310,4 +318,24 @@ html {
 
 .outsourcing-img-container {
     width: 500px;
+}
+
+.outsourcing-status-inactive {
+    width: 200px;
+    background: red;
+    text-align: center;
+    border-radius: 32px;
+    color: white;
+    padding: 8px;
+    cursor: not-allowed;
+}
+
+.outsourcing-status-active {
+    width: 200px;
+    background: green;
+    text-align: center;
+    border-radius: 32px;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
 }
