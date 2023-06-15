@@ -155,6 +155,12 @@ html {
 
 .project-description-container {
     display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+    /* margin: 0 auto; */
+    margin : 16px auto;
+    align-items: center;
+    gap:8px;
 }
 
 .project-description-container>* {
@@ -314,6 +320,7 @@ html {
     display: flex; 
     box-sizing: border-box;
     flex-wrap: wrap;
+    gap : 4px;
 }
 
 .outsourcing-img-container {
@@ -338,4 +345,16 @@ html {
     color: white;
     padding: 8px;
     cursor: pointer;
+}
+
+.project-description-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-description-badge {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
