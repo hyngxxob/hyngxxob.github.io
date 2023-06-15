@@ -33,8 +33,24 @@
         min-width: 0!important;
     }
 
+    .project-container {
+        max-width: 90%!important;
+    }
+
     .project-description-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .outsourcing-description-container {
+        flex-direction: column;
+    }
+
+    .outsourcing-img-container {
+        width: initial;
+    }
+
+    .outsourcing-container {
+        max-width: 90%!important;
     }
 }
