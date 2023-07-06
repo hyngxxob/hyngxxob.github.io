@@ -72,6 +72,12 @@ html {
     margin : 32px 0;
 }
 
+.outsourcing-divider {
+    width:80%;
+    border-bottom : 2px solid #7B68EE;
+    margin : 32px 0;
+}
+
 .headerBox {
     display: flex;
     flex-direction: column;
@@ -357,4 +363,8 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
 }
