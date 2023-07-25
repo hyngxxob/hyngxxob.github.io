@@ -209,12 +209,13 @@ html {
 
 .intro-container {
     width: 100%;
-    max-width: 70%;
+    /* max-width: 70%; */
     margin: 0 auto;
 }
 
 .intro-inner {
-    margin: 0 8rem;
+    /* margin: 0 8rem; */
+    margin: 0 22rem;
     padding-top : 32px;
     padding-bottom: 32px;
 }
@@ -236,9 +237,9 @@ html {
 
 .my-info {
     display: flex;
-    flex-wrap:wrap;
+    /* flex-wrap:wrap;
     gap: 8px;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 .my-history {
