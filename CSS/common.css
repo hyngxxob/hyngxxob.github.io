@@ -73,8 +73,9 @@ html {
 }
 
 .outsourcing-divider {
-    width:80%;
-    border-bottom : 2px solid #7B68EE;
+    /* width:80%; */
+    /* border-bottom : 2px solid #7B68EE; */
+    border-bottom: 1px solid black;
     margin : 32px 0;
 }
 
@@ -285,7 +286,7 @@ html {
     /* width: 60%; */
     margin: 0 auto;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     min-width: 600px;
     gap: 16px;
 }
@@ -368,4 +369,12 @@ html {
 
 .row-reverse {
     flex-direction: row-reverse;
+}
+
+.history-year-badge {
+    background: #7B68EE;
+    padding: 4px;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    color: white;
 }
