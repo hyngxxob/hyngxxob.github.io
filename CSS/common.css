@@ -69,7 +69,7 @@ html {
 
 .divider {
     border-bottom : 2px solid white;
-    margin : 32px 0;
+    margin : 64px 0;
 }
 
 .outsourcing-divider {
@@ -238,6 +238,7 @@ html {
 
 .my-info {
     display: flex;
+    justify-content: center;
     /* flex-wrap:wrap;
     gap: 8px;
     justify-content: space-between; */
@@ -292,10 +293,11 @@ html {
 }
 
 .project-inner{
-    background-color: #7B68EE;
+    /* background-color: #7B68EE; */
     /* box-shadow: 0 4px 4px #333333; */
 }
 
+.odd-section { background-color: #7B68EE; }
 
 .outsourcing-description-container {
     display: flex;
@@ -378,3 +380,120 @@ html {
     border-radius: 8px;
     color: white;
 }
+
+.record-container {
+    /* margin: 0 8rem; */
+    margin: 0 22rem;
+    padding-top : 32px;
+    padding-bottom: 32px;
+}
+
+
+
+
+.slide-container {
+    width: 300vw;
+    transition: all 1s;
+  }
+  
+  .slide-box {
+    width: 53vw;
+    float: left;
+  }
+  
+  .slide-box img {
+    width: 100%;
+  }
+  
+  .btns {
+    display: inline-block; /* margin-collapse 해결 */
+    width: 100%; /* margin-collapse 해결 */
+    text-align: center;
+    padding: 10px;
+    z-index: 5;
+    top: -70px;
+    position: relative;
+  }
+  
+  .angle-btn {
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    color: gold;
+  }
+  
+  .angle-btn:active {
+    color: darkgoldenrod;
+  }
+  
+  .prev {
+    margin-right: 20px;
+  }
+  
+  .next {
+    margin-left: 20px;
+  }
+  
+  .dot-btn {
+    background: gold;
+    border: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(0, -55%);
+    margin: 0 5px;
+  }
+  
+  .dot-btn:focus {
+    background: darkgoldenrod;
+  }
+
+
+  .carousel-container {
+    position: relative;
+    /* width: 400px; */
+    overflow: hidden;
+  }
+  
+  .slide-container {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+  .bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .bullet {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }

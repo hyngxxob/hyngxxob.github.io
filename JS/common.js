@@ -1,31 +1,35 @@
-const slider = document.querySelector(".slider");
-const prevButton = document.querySelector(".prev-btn");
-const nextButton = document.querySelector(".next-btn");
-let currentSlide = 0;
+$(document).ready(function() {
+    let slide = 0;
+    const totalSlides = $('.slide').length;
 
-function showSlide() {
-    const slides = document.querySelectorAll(".slider img");
-    slides.forEach((slide, index) => {
-        if (index === currentSlide) {
-            slide.style.display = "block";
-        } else {
-            slide.style.display = "none";
-        }
+    // Next 버튼 클릭 시
+    $('.next').on('click', function() {
+      slide = (slide + 1) % totalSlides;
+      updateSlidePosition();
     });
-}
 
-function showNextSlide() {
-    console.log("Clicked");
-    currentSlide = (currentSlide + 1) % slider.children.length;
-    showSlide();
-}
+    // Prev 버튼 클릭 시
+    $('.prev').on('click', function() {
+      slide = (slide - 1 + totalSlides) % totalSlides;
+      updateSlidePosition();
+    });
 
-function showPrevSlide() {
-    currentSlide = (currentSlide - 1 + slider.children.length) % slider.children.length;
-    showSlide();
-}
+    // Bullet 클릭 시
+    $('.bullet').on('click', function() {
+      slide = $(this).index();
+      updateSlidePosition();
+    });
 
-prevButton.addEventListener("click", showPrevSlide);
-nextButton.addEventListener("click", showNextSlide);
+    // Bullet 생성
+    for (let i = 0; i < totalSlides; i++) {
+      $('.bullets').append('<div class="bullet"></div>');
+    }
+    $('.bullet').eq(slide).addClass('active');
 
-showSlide();
+    // 슬라이드 위치 업데이트
+    function updateSlidePosition() {
+      $('.slide-container').css('transform', `translateX(-${slide * 100}%)`);
+      $('.bullet').removeClass('active');
+      $('.bullet').eq(slide).addClass('active');
+    }
+});
