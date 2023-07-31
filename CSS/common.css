@@ -163,6 +163,7 @@ html {
 .project-description-container {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     max-width: 70%;
     /* margin: 0 auto; */
     margin : 16px auto;
@@ -383,7 +384,7 @@ html {
 
 .record-container {
     /* margin: 0 8rem; */
-    margin: 0 22rem;
+    /* margin: 0 22rem; */
     padding-top : 32px;
     padding-bottom: 32px;
 }
