@@ -18,14 +18,19 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
 	<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
-	<title>Introduce Hyungseob-Kim</title>
+	<title>HYUNGSEOB KIM</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="public/assets/js/scroll-smooth.js"></script>
 	<script src="public/assets/js/common.js"></script>
 	<script src="public/assets/js/loading.js"></script>
 	<script src="public/assets/js/lang.js"></script>
+	<script src="public/assets/js/click.js"></script>
 
 	<script src="lang/ko.json" id="ko-data" type="text/javascript"></script>
 	<script src="lang/en.json" id="en-data" type="text/javascript"></script>
@@ -36,7 +41,6 @@
 
 <body onload="onload()">
 	<div id="full-container" style="width: 100%; height:100%; background-color: black;">
-
 		<!-- Main -->
 		<!-- <img src="Common/line_circle.png" alt="" style="position:absolute;z-index:-1;right:-500px;top:500px;"> -->
 		<!-- <div id="mainArea">
@@ -44,42 +48,32 @@
 				弘益人間
 			</div>
 		</div> -->
-		<header id="main-top" class="div-container headerBox">
-			<div class="main-top-header">
-				<div class="name" style="display: flex; flex-direction:column; align-items:center;">
-					<span style="color: #fffff9; font-size: 50px; font-weight: bold;">HYUNGSEOB</span>
-					<span style="color: #fffff9; font-size: 50px; font-weight: bold;">KIM</span>
-				</div>
-		
-				<div class="divider" style="width : 20%"></div>
-				<div style="text-align: center; color:white; white-space: pre-line;">
-					<span data-lang="greeting"></span>
-				</div>
-	
-			</div>
-			<div class="main-top-bottom">
-				<a href="#aboutMe">
-					<div data-lang="detail" class="main-top-more"></div>
-				</a>
-				<!-- <a href="./test.html">
-					<div class="main-top-more">ㅋ</div>
-				</a> -->
+		<header class="headerBox">
+			<span data-lang="greeting" id="display" class="typer"></span>
+			<div class="main-top-bottom" >
+			<!-- <div class="main-top-bottom" style="position: absolute; top: 70%; left: 50%; margin-left: -50px; margin-top: -50px;"> -->
+				<div id="moreBtn" data-lang="detail" class="button moreButton"></div>
 			</div>
 		</header>
-	
 		<!-- Intro -->
 		<div id="aboutMe" class="div-container">
-			<div class="intro-container">
+			<!-- <div class="intro-container"> -->
 				<div class="intro-inner">
 					<div class="intro-inner-header">
-						<a href="#aboutMe">
-							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
-						</a>
-						<div class="intro-inner-header-title" data-lang="introduceTitle"></div>
+						<div class="intro-inner-header-title">
+							<div style="display: flex; align-items: center; gap:8px; position: relative;">
+								<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="introLink" style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer;">
+								<div>
+									<span data-lang="introduceTitle"></span>
+									<div class="header-bar" style="animation-delay: 0.5s;"></div>
+								</div>
+
+							</div>
+						</div>
 					</div>
 					<div class="my-info">
 						<div style="text-align: center;">
-							<img src="Common/pics/me/hsk-circle.png" alt="" style="">
+							<img src="Common/pics/me/hsk-circle.png" alt="">
 	
 						</div>
 						<div style="display: flex; flex-wrap: wrap; gap:8px; justify-content: space-around;">
@@ -141,16 +135,23 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			<!-- </div> -->
 	
-			<div class="intro-container">
+			<!-- <div class="intro-container"> -->
 	
 				<div id="history" class="intro-inner">
 					<div class="intro-inner-header">
-						<a href="#history">
-							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
-						</a>
-						<div class="intro-inner-header-title">HISTORY</div>
+						<!-- <img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;"> -->
+						<div class="intro-inner-header-title">
+							<div style="display: flex; align-items: center; gap:8px; position: relative;">
+								<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="historyLink"
+									style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer;">
+								<div>
+									<span data-lang="historyTitle"></span>
+									<div class="header-bar" style="animation-delay: 0.5s;"></div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="my-history">
 						<div class="my-history-item-container">
@@ -257,17 +258,27 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			<!-- </div> -->
 	
 			<!-- 클래스명 수정 필요 -->
 			<div class="intro-container">
 	
 				<div id="cert" class="intro-inner">
 					<div class="intro-inner-header">
-						<a href="#cert">
+						<!-- <a href="#cert">
 							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
 						</a>
-						<div class="intro-inner-header-title">CERT.</div>
+						<div class="intro-inner-header-title">CERT.</div> -->
+						<div class="intro-inner-header-title">
+							<div style="display: flex; align-items: center; gap:8px; position: relative;">
+								<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="certLink"
+									style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer;">
+								<div>
+									<span data-lang="certTitle"></span>
+									<div class="header-bar" style="animation-delay: 0.5s;"></div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="my-history">
 						<div class="my-history-item-container">
@@ -283,10 +294,20 @@
 	
 				<div id="skill" class="intro-inner">
 					<div class="intro-inner-header">
-						<a href="#skill">
+						<!-- <a href="#skill">
 							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
 						</a>
-						<div class="intro-inner-header-title">SKILLS</div>
+						<div class="intro-inner-header-title">SKILLS</div> -->
+						<div class="intro-inner-header-title">
+							<div style="display: flex; align-items: center; gap:8px; position: relative;">
+								<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="skillLink"
+									style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer;">
+								<div>
+									<span data-lang="skillTitle"></span>
+									<div class="header-bar" style="animation-delay: 0.5s;"></div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="my-skill-item-container">
 						<span class="customLogo-sap" style="font-size : 1rem!important">SAP</span>
@@ -300,6 +321,7 @@
 						<span class="customLogo-html5" style="font-size : 1rem!important">HTML5</span>
 						<span class="customLogo-css3" style="font-size : 1rem!important">CSS3</span>
 						<span class="customLogo-mysql" style="font-size : 1rem!important">MySQL</span>
+						<span class="customLogo-postgre" style="font-size : 1rem!important">PostgreSQL</span>
 						<span class="customLogo-react" style="font-size : 1rem!important">React</span>
 						<span class="customLogo-groovy" style="font-size : 1rem!important">Groovy</span>
 						<span class="customLogo-twig" style="font-size : 1rem!important">TWIG</span>
@@ -314,20 +336,124 @@
 						<span class="customLogo-php" style="font-size : 1rem!important">PHP</span>
 						<span class="customLogo-laravel" style="font-size : 1rem!important">Laravel</span>
 					</div>
+					<div class="specialization" style="">
+						<div class="specialization-wrap">
+							<div class="specializationLabel">
+								HTML
+							</div>
+							<div class="ability-bar" style="flex:5;">
+								<div style="width: 90%;">
+									<div class="r " >
+										<span class="a90 percent">90%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="specialization-wrap">
+							<div class="specializationLabel">
+								CSS
+							</div>
+							<div class="ability-bar" style="flex:5;">
+								<div style="width: 85%;">
+									<div class="r " >
+										<span class="a85 percent">85%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="specialization-wrap">
+							<div class="specializationLabel">
+								JS
+							</div>
+							<div class="ability-bar" style="flex:5;">
+								<div style="width: 90%;">
+									<div class="r " >
+										<span class="a90 percent">90%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="specialization-wrap">
+							<div class="specializationLabel">
+								jQuery
+							</div>
+							<div class="ability-bar" style="flex:5;">
+								<div style="width: 85%;">
+									<div class="r " >
+										<span class="a85 percent">85%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="specialization-wrap">
+							<div class="specializationLabel">
+								MySQL
+							</div>
+							<div class="ability-bar" style="flex:5;">
+								<div style="width: 80%;">
+									<div class="r " >
+										<span class="a80 percent">80%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="specialization-wrap">
+							<div class="specializationLabel">
+								PostgreSQL
+							</div>
+							<div class="ability-bar" style="flex:5;">
+								<div style="width: 80%;">
+									<div class="r " >
+										<span class="a80 percent">80%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="specialization-wrap">
+							<div class="specializationLabel">
+								Laravel
+							</div>
+							<div class="ability-bar" style="flex:5;">
+								<div style="width: 80%;">
+									<div class="r " >
+										<span class="a80 percent">80%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="specialization-wrap">
+							<div class="specializationLabel">
+								Python
+							</div>
+							<div class="ability-bar" style="flex:5;">
+								<div style="width: 60%;">
+									<div class="r " >
+										<span class="a60 percent">60%</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			</div>
 	
 		<!-- Project -->
-		<div class="div-container">
+		<!-- <div class="div-container"> -->
 			<div class="project-inner odd-section">
 				<div id="project" class="project-container">
 					<!-- 나중에 클래스명 바꾸기 -->
 					<div class="intro-inner-header">
-						<a href="#project">
-							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px; filter: invert(1);">
-						</a>
-						<div class="intro-inner-header-title" style="color:white!important;">PROJECT</div>
+						<div class="intro-inner-header-title">
+							<div style="display: flex; align-items: center; gap:8px; position: relative;">
+								<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="projectLink"
+									style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer; filter: invert(1);">
+								<div>
+									<span data-lang="projectTitle" style="color:#fff;"></span>
+									<div class="header-bar" style="animation-delay: 0.5s; background: #fff;"></div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="project-item-container">
 						<div class="project-items">
@@ -608,17 +734,27 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		<!-- </div> -->
 	
 		<div id="outsourcing" class="div-container">
 			<div class="outsourcing-inner">
 				<div class="outsourcing-container">
 					<!-- 나중에 클래스명 바꾸기 -->
 					<div class="intro-inner-header">
-						<a href="#outsourcing">
+						<!-- <a href="#outsourcing">
 							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
 						</a>
-						<div class="intro-inner-header-title">OUTSOURCING</div>
+						<div class="intro-inner-header-title">OUTSOURCING</div> -->
+						<div class="intro-inner-header-title">
+							<div style="display: flex; align-items: center; gap:8px; position: relative;">
+								<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="outsourcingLink"
+									style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer;">
+								<div>
+									<span data-lang="outsourcingTitle"></span>
+									<div class="header-bar" style="animation-delay: 0.5s;"></div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="outsourcing-item-container">
 						<div class="outsourcing-items">
@@ -884,9 +1020,7 @@
 		
 		</div>
 		<footer class="div-container">
-			<a href="#main-top">
-				<img src="Common/icons/arrow-up.png" style="width: 16px;" alt="">
-			</a>
+			<img id="top" src="Common/icons/arrow-up.png" style="width: 16px; cursor: pointer;" alt="">
 			<h4>HYUNGSEOB KIM</h4>
 			<div class="icon-container">
 				<a href="https://ballistic-tang-9b7.notion.site/Welcome-aboard-hyngxxob-675a6fe036e2451bbb78045da3c170d9?pvs=4" target="_blank">
@@ -904,3 +1038,55 @@
 </body>
 
 </html>
+
+<script>
+	const elementsToAnimate = document.querySelectorAll('.header-bar');
+	const graphElements = document.querySelectorAll('.r');
+	const percentElements = document.querySelectorAll('.percent');
+	const duration = 150; // 애니메이션 지속 시간 (밀리초)
+
+	window.addEventListener('scroll', () => {
+		elementsToAnimate.forEach(element => {
+			const elementPosition = element.getBoundingClientRect().top;
+			const windowHeight = window.innerHeight;
+			const scrollPosition = window.scrollY || window.pageYOffset;
+			
+			if (elementPosition < windowHeight ) {
+				element.classList.add('slide-in-left');
+			}
+		});
+
+		graphElements.forEach(element => {
+			const elementPosition = element.getBoundingClientRect().top;
+			const windowHeight = window.innerHeight;
+			const scrollPosition = window.scrollY || window.pageYOffset;
+			
+			if (elementPosition < windowHeight ) {
+				element.classList.add('ability-percent');
+			}
+			//debugger;
+			if(!element.classList.contains('done')) {
+				element.classList.add('done');
+				const spanElement = element.querySelector('.percent');
+				const maxValueClass = Array.from(spanElement.classList).find(cls => cls.startsWith('a'));
+	
+				if (maxValueClass) {
+					const maxValue = parseInt(maxValueClass.substring(1));
+					let currentValue = 0;
+					const stepTime = 2000 / maxValue; // 최대값에 따라 각 퍼센트의 증가 시간 계산 (2000ms는 총 시간)
+	
+					const interval = setInterval(() => {
+						if (currentValue >= maxValue) {
+							clearInterval(interval);
+						} else {
+							currentValue++;
+							spanElement.textContent = `${currentValue}%`;
+						}
+					}, stepTime); // 각 스텝마다 숫자가 증가하는 시간(밀리초)
+				}
+				
+			}
+		});
+	});
+</script>
+

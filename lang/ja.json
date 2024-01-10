@@ -1,10 +1,15 @@
 ja = {
-    "greeting": "こんにちは\n挑戦が楽しい開発者のキム・ヒョンソプです。",
+    "greeting": "こんにちは。挑戦が楽しい開発者のキム・ヒョンソプです。",
 
     "detail" : "調べる",
 
     // Title
     "introduceTitle" : "紹介",
+    "historyTitle" : "履歴",
+    "certTitle" : "資格",
+    "skillTitle" : "スキル",
+    "projectTitle" : "プロジェクト",
+    "outsourcingTitle" : "外注",
 
     // Label
     "name" : "名前",

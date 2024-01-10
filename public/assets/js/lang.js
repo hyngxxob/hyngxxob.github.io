@@ -24,8 +24,33 @@ document.addEventListener('DOMContentLoaded', function() {
         elementsWithTranslation.forEach(element => {
             var translationKey = element.dataset.lang;
             if (data.hasOwnProperty(translationKey)) {
-                element.textContent = data[translationKey];
+                if(translationKey === "greeting") {
+                    // element.textContent = data[translationKey];
+                    const text = data[translationKey];
+                    const element = document.getElementById('display'); // 타이핑될 요소
+                    typeWriter(text, element, 100); 
+                } else {
+                    element.textContent = data[translationKey];
+                }
             }
         });
     }
 });
+
+function typeWriter(text, element, delay = 100) {
+    let i = 0;
+    const typing = setInterval(() => {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+        } else {
+            clearInterval(typing);
+        }
+    }, delay);
+}
+
+// const text = "안녕하세요."; // 타이핑할 텍스트
+// const element = document.getElementById('typing-effect'); // 타이핑될 요소
+
+// // 함수 호출
+// typeWriter(text, element, 100); 

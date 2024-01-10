@@ -52,6 +52,15 @@
     font-weight: bold;
 }
 
+.customLogo-postgre {
+    background-color: #316192;
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    padding: 0 4px;
+    font-weight: bold;
+}
+
 .customLogo-react {
     background-color: #5ed3f3;
     color: black;

@@ -1,5 +1,5 @@
 en = {
-    "greeting": "Hello\nI'm Hyungseop Kim, a developer who loves a challenge",
+    "greeting": "Hello. I'm Hyungseop Kim, a developer who loves a challenge.",
     "message": "저희 웹사이트에 오신 것을 환영합니다.",
     "buttonText": "여기를 클릭하세요",
 
@@ -7,6 +7,11 @@ en = {
 
     // Title
     "introduceTitle" : "Introduce",
+    "historyTitle" : "History",
+    "certTitle" : "Certification",
+    "skillTitle" : "Skills",
+    "projectTitle" : "Projects",
+    "outsourcingTitle" : "Outsourcing",
 
     // Label
     "name" : "Name",

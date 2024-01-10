@@ -24,11 +24,16 @@ function onload() {
     overlay.style.zIndex = '9';
     document.body.appendChild(overlay);
     
-    setTimeout(() => {
-        overlay.remove();
+    overlay.remove();
         loadingIcon.remove();
         
         fullContainer.style.display = 'initial';
         fullContainer.classList.add('fade-in');
-    }, 2500);
+    // setTimeout(() => {
+    //     overlay.remove();
+    //     loadingIcon.remove();
+        
+    //     fullContainer.style.display = 'initial';
+    //     fullContainer.classList.add('fade-in');
+    // }, 2500);
 }

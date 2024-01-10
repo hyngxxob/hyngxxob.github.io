@@ -1,12 +1,15 @@
 ko = {
-    "greeting": "반갑습니다\n도전이 즐거운 개발자 김형섭 입니다",
-    "message": "저희 웹사이트에 오신 것을 환영합니다.",
-    "buttonText": "여기를 클릭하세요",
+    "greeting": "반갑습니다. 도전이 즐거운 개발자 김형섭 입니다.",
 
     "detail" : "알아보기",
 
     // Title
     "introduceTitle" : "소개",
+    "historyTitle" : "이력",
+    "certTitle" : "자격증",
+    "skillTitle" : "기술",
+    "projectTitle" : "프로젝트",
+    "outsourcingTitle" : "외주",
 
     // Label
     "name" : "이름",
