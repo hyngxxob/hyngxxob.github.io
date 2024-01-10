@@ -1,0 +1,18 @@
+en = {
+    "greeting": "Hello\nI'm Hyungseop Kim, a developer who loves a challenge",
+    "message": "저희 웹사이트에 오신 것을 환영합니다.",
+    "buttonText": "여기를 클릭하세요",
+
+    "detail" : "More",
+
+    // Title
+    "introduceTitle" : "Introduce",
+
+    // Label
+    "name" : "Name",
+    "birth" : "Birth",
+    "address" : "Address",
+    "contact" : "Contact",
+    "email" : "Email",
+    "education" : "Education",
+}

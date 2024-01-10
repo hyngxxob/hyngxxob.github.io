@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'NanumSquareNeo', sans-serif;
+    font-family: 'NanumSquareNeo', 'Noto Sans JP', sans-serif;
     line-height: 1.65;
 }
 
@@ -19,25 +19,52 @@
     font-style: normal;
 }
 
-/* box-shadow: 0 4px 8px #333333; */
-.customLogo-nodejs { background-color:#699f61; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-sapui5 { background-color:#126dad; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-js { background-color:#e0c22e; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-html5 { background-color:#de4720; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-css3 { background-color:#254bdd; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-mysql { background-color:#42759c; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-react { background-color:#5ed3f3; color:black;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-groovy { background-color:#6093a5; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-sap { background: linear-gradient(to bottom, #008FD3, #005CBF); color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-twig { background-color:#bccf28; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-python { background-color:#3572A5; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-java { background-color:#b07219; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-ruby { background-color:#701516; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-c { background-color:#659ad2; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-cpp { background-color:#00599c; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-cs { background-color:#a078db; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-jquery { background-color:#0060a9; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
-.customLogo-firebase { background-color:#f57c00; color:white;font-size:0.7rem; border-radius:8px; padding:0 4px; font-weight:bold; }
+
+
+#full-container {
+    display: none;
+}
+
+.fade-in {
+    animation: fadein 1.5s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} 
+
+.page-loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    /* border-bottom-color: #FF3D00; */
+    /* border-bottom-color: rgb(0, 107, 234); */
+    /* border-bottom-color: rgb(45, 51, 114); */
+    border-bottom-color: #7B68EE;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 .main-top-header { align-items: center; display: flex; flex-direction: column; }
 .main-top-bottom { position:absolute; bottom: 3rem; }
@@ -93,7 +120,7 @@ html {
     width: 100%;
     /* height: 100%; */
     /* min-width: 500px; */
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 .menu-container {
@@ -134,10 +161,11 @@ html {
 }
 
 .project-items{
-    /* background-color: white; */
-    color: white;
+    background-color: white;
+    color: black;
     border : 0px;
-    /* border-radius: 8px; */
+    border-radius: 16px;
+    padding : 16px;
 }
 
 .performance-items {
@@ -153,6 +181,7 @@ html {
 }
 
 .project-item-container {
+    margin-bottom : 32px;
     /* display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -203,10 +232,11 @@ html {
     color: white;
 }
 
-#footer {
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .intro-container {
@@ -498,4 +528,22 @@ html {
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
+  }
+
+  #mainArea {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    min-width: 1200px;
+  }
+
+  #mainArea::after,
+  #mainArea::before {
+      text-align: right;
+      position: absolute;
+      left: calc(50% - 360px);
+      top: calc(50% - 80px);
+      opacity: 0;
+      width: 720px;
+      height: 160px;
   }

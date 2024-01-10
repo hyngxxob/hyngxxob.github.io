@@ -5,876 +5,901 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="CSS/common.css">
-	<link rel="stylesheet" href="CSS/mediaQuery.css">
-	<link rel="stylesheet" href="CSS/loading.css">
-	<link rel="stylesheet" href="CSS/modal.css">
+	<link rel="stylesheet" href="public/assets/css/common.css">
+	<link rel="stylesheet" href="public/assets/css/mediaQuery.css">
+	<link rel="stylesheet" href="public/assets/css/loading.css">
+	<link rel="stylesheet" href="public/assets/css/modal.css">
+	<link rel="stylesheet" href="public/assets/css/logo.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
 	<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
 	<title>Introduce Hyungseob-Kim</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="JS/scroll-smooth.js"></script>
-	<script src="JS/common.js"></script>
-	<script src="JS/loading.js"></script>
+	<script src="public/assets/js/scroll-smooth.js"></script>
+	<script src="public/assets/js/common.js"></script>
+	<script src="public/assets/js/loading.js"></script>
+	<script src="public/assets/js/lang.js"></script>
+
+	<script src="lang/ko.json" id="ko-data" type="text/javascript"></script>
+	<script src="lang/en.json" id="en-data" type="text/javascript"></script>
+	<script src="lang/ja.json" id="ja-data" type="text/javascript"></script>
+	<script>
+	</script>
 </head>
 
-<body id="full-container" style="width: 100%; height:100%; background-color: black;">
-	<!-- Main -->
-	<!-- <img src="Common/line_circle.png" alt="" style="position:absolute;z-index:-1;right:-500px;top:500px;"> -->
-	<div id="main-top" class="div-container headerBox">
-		<div class="main-top-header">
-			<div style="display: flex; flex-direction:column; align-items:center;">
-				<span style="color: #fffff9; font-size: 50px; font-weight: bold;">HYUNGSEOB</span>
-				<span style="color: #fffff9; font-size: 50px; font-weight: bold;">KIM</span>
+<body onload="onload()">
+	<div id="full-container" style="width: 100%; height:100%; background-color: black;">
+
+		<!-- Main -->
+		<!-- <img src="Common/line_circle.png" alt="" style="position:absolute;z-index:-1;right:-500px;top:500px;"> -->
+		<!-- <div id="mainArea">
+			<div style="font-size: 140px; white-space: nowrap;">
+				弘益人間
+			</div>
+		</div> -->
+		<header id="main-top" class="div-container headerBox">
+			<div class="main-top-header">
+				<div class="name" style="display: flex; flex-direction:column; align-items:center;">
+					<span style="color: #fffff9; font-size: 50px; font-weight: bold;">HYUNGSEOB</span>
+					<span style="color: #fffff9; font-size: 50px; font-weight: bold;">KIM</span>
+				</div>
+		
+				<div class="divider" style="width : 20%"></div>
+				<div style="text-align: center; color:white; white-space: pre-line;">
+					<span data-lang="greeting"></span>
+				</div>
+	
+			</div>
+			<div class="main-top-bottom">
+				<a href="#aboutMe">
+					<div data-lang="detail" class="main-top-more"></div>
+				</a>
+				<!-- <a href="./test.html">
+					<div class="main-top-more">ㅋ</div>
+				</a> -->
+			</div>
+		</header>
+	
+		<!-- Intro -->
+		<div id="aboutMe" class="div-container">
+			<div class="intro-container">
+				<div class="intro-inner">
+					<div class="intro-inner-header">
+						<a href="#aboutMe">
+							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
+						</a>
+						<div class="intro-inner-header-title" data-lang="introduceTitle"></div>
+					</div>
+					<div class="my-info">
+						<div style="text-align: center;">
+							<img src="Common/pics/me/hsk-circle.png" alt="" style="">
+	
+						</div>
+						<div style="display: flex; flex-wrap: wrap; gap:8px; justify-content: space-around;">
+	
+							<div class="my-info-item-container">
+								<div class="my-info-item-inner">
+									<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/me.png" alt=""></div>
+									<div style="display: flex; flex-direction:column;">
+										<span data-lang="name"></span>
+										<div>김형섭</div>
+									</div>
+								</div>
+							</div>
+							<div class="my-info-item-container">
+								<div class="my-info-item-inner">
+									<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/calendar.png" alt=""></div>
+									<div style="display: flex; flex-direction:column;">
+										<span data-lang="birth"></span>
+										<div>1997.06.16</div>
+									</div>
+								</div>
+							</div>
+							<div class="my-info-item-container">
+								<div class="my-info-item-inner">
+									<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/address.png" alt=""></div>
+									<div style="display: flex; flex-direction:column;">
+										<span data-lang="address"></span>
+										<div>서울특별시 동작구</div>
+									</div>
+								</div>
+							</div>
+							<div class="my-info-item-container">
+								<div class="my-info-item-inner">
+									<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/contact.png" alt=""></div>
+									<div style="display: flex; flex-direction:column;">
+										<span data-lang="contact"></span>
+										<div>010-9505-5170</div>
+									</div>
+								</div>
+							</div>
+							<div class="my-info-item-container">
+								<div class="my-info-item-inner">
+									<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/email.png" alt=""></div>
+									<div style="display: flex; flex-direction:column;">
+										<span data-lang="email"></span>
+										<div>hyngxxob@gmail.com</div>
+									</div>
+								</div>
+							</div>
+							<div class="my-info-item-container">
+								<div class="my-info-item-inner">
+									<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/graduate.png" alt=""></div>
+									<div style="display: flex; flex-direction:column;">
+										<span data-lang="education"></span>
+										<div style="font-size: 0.95rem;">호서대학교 컴퓨터소프트웨어학과</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 	
-			<div class="divider" style="width : 20%"></div>
-			<div style="text-align: center; color:white;">
-				<span>반갑습니다</span><br/>
-				<span>도전이 즐거운 개발자 김형섭 입니다</span>
-			</div>
-
-		</div>
-		<div class="main-top-bottom">
-			<a href="#aboutMe">
-				<div class="main-top-more">알아보기</div>
-			</a>
-		</div>
-	</div>
-
-	<!-- Intro -->
-	<div id="aboutMe" class="div-container">
-		<div class="intro-container">
-			<div class="intro-inner">
-				<div class="intro-inner-header">
-					<a href="#aboutMe">
-						<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
-					</a>
-					<div class="intro-inner-header-title">INTRODUCE</div>
-				</div>
-				<div class="my-info">
-					<div style="text-align: center;">
-						<img src="Common/pics/me/hsk-circle.png" alt="" style="">
-
+			<div class="intro-container">
+	
+				<div id="history" class="intro-inner">
+					<div class="intro-inner-header">
+						<a href="#history">
+							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
+						</a>
+						<div class="intro-inner-header-title">HISTORY</div>
 					</div>
-					<div style="display: flex; flex-wrap: wrap; gap:8px; justify-content: space-around;">
-
-						<div class="my-info-item-container">
-							<div class="my-info-item-inner">
-								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/me.png" alt=""></div>
-								<div style="display: flex; flex-direction:column;">
-									<div>이름</div>
-									<div>김형섭</div>
+					<div class="my-history">
+						<div class="my-history-item-container">
+							<div class="my-history-item-inner">
+								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/history-past.png" alt=""></div>
+								<div style="display: flex; flex-direction: column;">
+									<div>
+										호서대학교 컴퓨터소프트웨어학과 입학
+									</div>
+									<div>
+										<span class="history-year-badge">
+											2016.02
+										</span>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="my-info-item-container">
-							<div class="my-info-item-inner">
-								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/calendar.png" alt=""></div>
-								<div style="display: flex; flex-direction:column;">
-									<div>생년월일</div>
-									<div>1997.06.16</div>
+						<div class="my-history-item-container">
+							<div class="my-history-item-inner">
+								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/history-past.png" alt=""></div>
+								<div style="display: flex; flex-direction: column;">
+	
+									<div>
+										육군 병장 만기 전역
+									</div>
+									<div>
+										<span class="history-year-badge">
+											2018.11 ~ 2020.07
+	
+										</span>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="my-info-item-container">
-							<div class="my-info-item-inner">
-								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/address.png" alt=""></div>
-								<div style="display: flex; flex-direction:column;">
-									<div>주소지</div>
-									<div>서울특별시 동작구</div>
-								</div>
-							</div>
-						</div>
-						<div class="my-info-item-container">
-							<div class="my-info-item-inner">
-								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/contact.png" alt=""></div>
-								<div style="display: flex; flex-direction:column;">
-									<div>연락처</div>
-									<div>010-9505-5170</div>
-								</div>
-							</div>
-						</div>
-						<div class="my-info-item-container">
-							<div class="my-info-item-inner">
-								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/email.png" alt=""></div>
-								<div style="display: flex; flex-direction:column;">
-									<div>이메일</div>
-									<div>hyngxxob@gmail.com</div>
-								</div>
-							</div>
-						</div>
-						<div class="my-info-item-container">
-							<div class="my-info-item-inner">
-								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/graduate.png" alt=""></div>
-								<div style="display: flex; flex-direction:column;">
-									<div>학력</div>
-									<div style="font-size: 0.95rem;">호서대학교 컴퓨터소프트웨어학과</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="intro-container">
-
-			<div id="history" class="intro-inner">
-				<div class="intro-inner-header">
-					<a href="#history">
-						<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
-					</a>
-					<div class="intro-inner-header-title">HISTORY</div>
-				</div>
-				<div class="my-history">
-					<div class="my-history-item-container">
-						<div class="my-history-item-inner">
+						<div class="my-history-item-container">
+							<div class="my-history-item-inner">
 							<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/history-past.png" alt=""></div>
 							<div style="display: flex; flex-direction: column;">
 								<div>
-									호서대학교 컴퓨터소프트웨어학과 입학
+									KISIA 정보보호산업 인재양성과정 수료
 								</div>
 								<div>
 									<span class="history-year-badge">
-										2016.02
+	
+										2021.07 ~ 2021.08
 									</span>
 								</div>
+							</div>	
 							</div>
 						</div>
-					</div>
-					<div class="my-history-item-container">
-						<div class="my-history-item-inner">
-							<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/history-past.png" alt=""></div>
-							<div style="display: flex; flex-direction: column;">
-
-								<div>
-									육군 병장 만기 전역
-								</div>
-								<div>
-									<span class="history-year-badge">
-										2018.11 ~ 2020.07
-
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="my-history-item-container">
-						<div class="my-history-item-inner">
-						<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/history-past.png" alt=""></div>
-						<div style="display: flex; flex-direction: column;">
-							<div>
-								KISIA 정보보호산업 인재양성과정 수료
-							</div>
-							<div>
-								<span class="history-year-badge">
-
-									2021.07 ~ 2021.08
-								</span>
-							</div>
-						</div>	
-						</div>
-					</div>
-					<div class="my-history-item-container">
-						<div class="my-history-item-inner">
-							<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/history-past.png" alt=""></div>
-							<div style="display: flex; flex-direction:column;">
-								<div style="display: flex; flex-direction: column;">
-									<div>
-										㈜윈스 보안관제 인턴
-									</div>
-									<div>
-										<span class="history-year-badge">
-
-											2021.09 ~ 2021.11
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="my-history-item-container">
-						<div class="my-history-item-inner">
-							<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/history-past.png" alt=""></div>
-							<div style="display: flex; flex-direction:column;">
-								<div style="display: flex; flex-direction: column;">
-									<div>
-										호서대학교 컴퓨터소프트웨어학과 졸업
-									</div>
-									<div>
-										<span class="history-year-badge">
-
-											2022.02
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="my-history-item-container">
-						<div class="my-history-item-inner">
-							<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/history-present.png" alt=""></div>
-							<div style="display: flex; flex-direction:column;">
-								<div style="display: flex; flex-direction: column;">
-									<div>
-										JMC Corporation APJ Korea. SAP CRM Cloud 개발팀
-									</div>
-									<div>
-										<span class="history-year-badge">
-
-											2021.12 ~
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- 클래스명 수정 필요 -->
-		<div class="intro-container">
-
-			<div id="cert" class="intro-inner">
-				<div class="intro-inner-header">
-					<a href="#cert">
-						<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
-					</a>
-					<div class="intro-inner-header-title">CERT.</div>
-				</div>
-				<div class="my-history">
-					<div class="my-history-item-container">
-						<div class="my-history-item-inner">
-							정보처리기사 (21201020965F) - 2021.06
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="intro-container">
-
-			<div id="skill" class="intro-inner">
-				<div class="intro-inner-header">
-					<a href="#skill">
-						<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
-					</a>
-					<div class="intro-inner-header-title">SKILLS</div>
-				</div>
-				<div class="my-skill-item-container">
-					<span class="customLogo-sap" style="font-size : 1rem!important">SAP</span>
-					<span class="customLogo-sap" style="font-size : 1rem!important">SAP BTP</span>
-					<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP HANA DB</span>
-					<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP UI5</span>
-					<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP Cloud Application Studio</span>
-					<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP CPI</span>
-					<span class="customLogo-nodejs" style="font-size : 1rem!important">Nodejs</span>
-					<span class="customLogo-js" style="font-size : 1rem!important">JS</span>
-					<span class="customLogo-html5" style="font-size : 1rem!important">HTML5</span>
-					<span class="customLogo-css3" style="font-size : 1rem!important">CSS3</span>
-					<span class="customLogo-mysql" style="font-size : 1rem!important">MySQL</span>
-					<span class="customLogo-react" style="font-size : 1rem!important">React</span>
-					<span class="customLogo-groovy" style="font-size : 1rem!important">Groovy</span>
-					<span class="customLogo-twig" style="font-size : 1rem!important">TWIG</span>
-					<span class="customLogo-python" style="font-size : 1rem!important">Python</span>
-					<span class="customLogo-java" style="font-size : 1rem!important">JAVA</span>
-					<span class="customLogo-ruby" style="font-size : 1rem!important">Ruby</span>
-					<span class="customLogo-c" style="font-size : 1rem!important">C</span>
-					<span class="customLogo-cpp" style="font-size : 1rem!important">C++</span>
-					<span class="customLogo-cs" style="font-size : 1rem!important">C#</span>
-					<span class="customLogo-jquery" style="font-size : 1rem!important">jQuery</span>
-					<span class="customLogo-firebase" style="font-size : 1rem!important">Firebase</span>
-				</div>
-			</div>
-		</div>
-		</div>
-
-	<!-- Project -->
-	<div class="div-container">
-		<div class="project-inner odd-section">
-			<div id="project" class="project-container">
-				<!-- 나중에 클래스명 바꾸기 -->
-				<div class="intro-inner-header">
-					<a href="#project">
-						<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px; filter: invert(1);">
-					</a>
-					<div class="intro-inner-header-title" style="color:white!important;">PROJECT</div>
-				</div>
-				<div class="project-item-container">
-					<div class="project-items">
-						<div style="display: flex; flex-direction : column; align-items : center;">
-							<div>
-								<h2>코오롱 베니트 수주 산업 특화 프로세스 구현 및 개발</h2>
-							</div>
-							<div>
-								<span>통합 딜 관리</span>
-							</div>
-						</div>
-						<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
-						<div class="project-description-container">
-							<img src="Common/kolonBenit.jpg" style="width: 200px;" alt="">
-							<div class="project-description-content-container">
-								<div>
-									<ul>
-										<li>딜러 영업기회(Opportunity) 유지보수</li>
-									</ul>
-								</div>
-								<div class="project-description-badge">
-									<span class="customLogo-sap">SAP</span>
-									<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
-									<span class="customLogo-groovy">groovy</span>
-									<span class="customLogo-ruby">Ruby</span>
-									<span class="customLogo-sapui5">SAP CPI</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="divider"></div>
-				<div class="project-item-container">
-					<div class="project-items">
-						<div style="display: flex; flex-direction : column; align-items : center;">
-							<div>
-								<h2>젠틀몬스터 Customer Service 관리 및 무상/유상 서비스 주문 연계 시스템 개발</h2>
-							</div>
-							<div>
-								<span>CRM Service Cloud</span>
-							</div>
-						</div>
-						<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
-						<div class="project-description-container">
-							<img src="Common/gentlemonster.png" style="width: 200px;" alt="">
-							<div class="project-description-content-container">
-								<div>
-									<ul>
-										<li>Claim Ticket 유지보수</li>
-										<li>Service Cloud 유지보수</li>
-									</ul>
-								</div>
-								<div class="project-description-badge">
-									<span class="customLogo-sap">SAP</span>
-									<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
-									<span class="customLogo-groovy">groovy</span>
-									<span class="customLogo-ruby">Ruby</span>
-									<span class="customLogo-sapui5">SAP CPI</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="divider"></div>
-				<div class="project-item-container">
-					<div class="project-items">
-						<div style="display: flex; flex-direction : column; align-items : center;">
-							<div>
-								<h2>카카오엔터프라이즈 SAP Lead to Cash 클라우드 시스템</h2>
-							</div>
-							<div>
-								<span>C4HANA Cloud 영업관리 시스템</span>
-							</div>
-						</div>
-						<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
-						<div class="project-description-container">
-							<img src="Common/kakaoEnterprise.jpg" style="width: 200px;" alt="">
-							<div class="project-description-content-container">
-								<div>
-									<ul>
-										<li>Performance Report 유지보수</li>
-										<li>SuccessFactors 유지보수</li>
-									</ul>
-								</div>
-								<div class="project-description-badge">
-									<span class="customLogo-sap">SAP</span>
-									<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="divider"></div>
-				<div class="project-item-container">
-					<div class="project-items">
-						<div style="display: flex; flex-direction : column; align-items : center;">
-							<div>
-								<h2>KISCO 경인양행 마케팅/영업/서비스 CRM 전(全) 모듈 구축 및 S4Hana 연계 구현</h2>
-							</div>
-							<div>
-								<span>딜러 포털과 영업 시스템 일원화</span>
-							</div>
-						</div>
-						<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
-						<div class="project-description-container">
-							<img src="Common/kisco.jpg" style="width: 200px;" alt="">
-							<div class="project-description-content-container">
-								<div>
-									<ul>
-										<li>CRM Sales & Marketing Cloud 시스템 유지보수</li>
-									</ul>
-								</div>
-								<div class="project-description-badge">
-									<span class="customLogo-sap">SAP</span>
-									<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
-									<span class="customLogo-groovy">groovy</span>
-									<span class="customLogo-sapui5">SAP CPI</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="divider"></div>
-				<div class="project-item-container">
-					<div class="project-items">
-						<div style="display: flex; flex-direction : column; align-items : center;">
-							<div>
-								<h2>한화큐셀 B2B 고객 서비스 구현 및 글로벌 법인별 서비스 통합</h2>
-							</div>
-							<div>
-								<span>고객 Claim 데이터 기반 대시보드 및 레포트 구축</span>
-							</div>
-						</div>
-						<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
-						<div class="project-description-container">
-							<img src="Common/hanwhaQCELL.png" style="width: 200px;" alt="">
-							<div class="project-description-content-container">
-								<div>
-									<ul>
-										<li>CS Platform 시스템 유지보수</li>
-									</ul>
-								</div>
-								<div class="project-description-badge">
-									<span class="customLogo-sap">SAP</span>
-									<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
-									<span class="customLogo-ruby">Ruby</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="divider"></div>
-				<div class="project-item-container">
-					<div class="project-items">
-						<div style="display: flex; flex-direction : column; align-items : center;">
-							<div>
-								<h2>현대두산인프라코어(HDI) 완성차 오더링 시스템 - Machine Ordering Phase One</h2>
-							</div>
-							<div>
-								<span>RFC통신으로 S4/HANA Cloud ERP측으로부터 수신한 데이터 가공</span>
-							</div>
-						</div>
-						<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
-						<div class="project-description-container">
-							<img src="Common/pics/logo/hyundaidoosaninfra.png" style="width: 200px;" alt="">
-							<div class="project-description-content-container">
-								<div>
-									<ul>
-										<li>굴삭기 종류별 가격 및 Parts 등의 정보를 출력하는 Price Page 개발</li>
-										<li>대규모 데이터 조회 소요시간 단축 로직 개발</li>
-									</ul>
-								</div>
-								<div class="project-description-badge">
-									<span class="customLogo-sap">SAP</span>
-									<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
-									<span class="customLogo-groovy">groovy</span>
-									<span class="customLogo-sapui5">SAP CPI</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="divider"></div>
-				<div class="project-item-container">
-					<div class="project-items">
-						<div style="display: flex; flex-direction : column; align-items : center;">
-							<div>
-								<h2>북미 HDI 완성차 오더링 시스템 - Machine Ordering Phase Two / Parts Ordering</h2>
-							</div>
-							<div>
-								<span>SAP Cloud for Customer OData API를 통한 웹 브라우저 데이터 노출</span>
-							</div>
-						</div>
-						<div class="project-description-container">
-							<img src="Common/pics/logo/dina.jfif" alt="DINA" style="width: 200px;">
-							<div class="project-description-content-container">
-								<ul>
-									<li>제품 정보 간편 등록을 위한 CSV 파일 업로드 모듈 개발</li>
-									<li>딜러 데이터 조인 - Dealer Performance Report 렌더링</li>
-									<li>영업기회(Opportunity) 업로드 자동화(RPA) 개발</li>
-								</ul>
-								<div class="project-description-badge">
-									<span class="customLogo-sap">SAP</span>
-									<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
-									<span class="customLogo-groovy">groovy</span>
-									<span class="customLogo-ruby">Ruby</span>
-									<span class="customLogo-sapui5">SAP CPI</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="divider"></div>
+						<div class="my-history-item-container">
+							<div class="my-history-item-inner">
+								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/history-past.png" alt=""></div>
+								<div style="display: flex; flex-direction:column;">
+									<div style="display: flex; flex-direction: column;">
+										<div>
+											㈜윈스 보안관제 인턴
+										</div>
+										<div>
+											<span class="history-year-badge">
 	
-				<div class="project-item-container">
-					<div class="project-items">
-						<div style="display: flex; flex-direction : column; align-items : center;">
-							<div>
-								<h2>동원시스템즈 매출 이력 관리 시스템 구축</h2>
-							</div>
-							<div>
-								<span>데이터 클렌징이 완료된 마이그레이션 매출 정보의 업로드를 위한 환경 구축</span>
-							</div>
-						</div>
-						<div class="project-description-container">
-							<img src="Common/pics/logo/dongwonsystems.jpg" alt="DONGWONSYS" style="width: 200px;">
-							<div class="project-description-content-container">
-								<ul>
-									<li>고객별 매출 정보 내 연도별 성장률 측정 모듈 개발</li>
-								</ul>
-								<div class="project-description-badge">
-									<span class="customLogo-sap">SAP</span>
-									<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
-									<span class="customLogo-groovy">groovy</span>
-									<span class="customLogo-ruby">Ruby</span>
-									<span class="customLogo-sapui5">SAP CPI</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="divider"></div>
-
-				<div class="project-item-container">
-					<div class="project-items">
-						<div style="display: flex; flex-direction : column; align-items : center;">
-							<div>
-								<h2>고객 서비스 지원 티켓팅 플랫폼 솔루션 개발</h2>
-							</div>
-							<div>
-								<span>서비스 요청 티켓 상호작용 플랫폼 환경 구축</span>
-							</div>
-						</div>
-						<div class="project-description-container">
-							<img src="Common/pics/logo/ticketProject_logo.png" alt="" style="width: 200px;">
-							<div class="project-description-content-container">
-								<ul>
-									<li>라우팅 및 API 설계</li>
-									<li>S4 HANA DB 연동</li>
-									<li>MVC 패턴 설계 및 전반적인 CRUD(Create, Read, Update, Delete) API 구현</li>
-									<li>SMS 문자 발송 및 알림톡 서비스 개발</li>
-									<li>외부 API 서비스 통합(기상청, 증권, 뉴스, Slack 등)</li>
-								</ul>
-								<div class="project-description-badge">
-									<span class="customLogo-sap">SAP</span>
-									<span class="customLogo-sap">SAP UI5</span>
-									<span class="customLogo-sapui5">SAP BTP</span>
-									<span class="customLogo-sapui5">SAP HANA DB</span>
-									<span class="customLogo-firebase">Firebase</span>
-									<span class="customLogo-css3">CSS3</span>
-									<span class="customLogo-nodejs">Nodejs</span>
-									<span class="customLogo-js">JS</span>
-									<span class="customLogo-jquery">JQuery</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="outsourcing" class="div-container">
-		<div class="outsourcing-inner">
-			<div class="outsourcing-container">
-				<!-- 나중에 클래스명 바꾸기 -->
-				<div class="intro-inner-header">
-					<a href="#outsourcing">
-						<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
-					</a>
-					<div class="intro-inner-header-title">OUTSOURCING</div>
-				</div>
-				<div class="outsourcing-item-container">
-					<div class="outsourcing-items">
-						<div class="outsourcing-description-container ">
-							<div class="outsourcing-img-container">
-								<img src="Common/outsourcing/pomi.png" style="width: 100%;" alt="포미">
-							</div>
-							<div class="outsourcing-description-content-container">
-								<div class="outsourcing-description-content-item-container">
-									<div>
-										<div class="outsourcing-description-content-items">
-											<div>
-												<h1>Pomi(포미)</h1>
-											</div>
-											<div>
-												<span>당신의 안심 귀가에 도움을 줍니다</span>
-											</div>
-										</div>
-										<ul>
-											<li>반응형 웹 개발</li>
-											<li>위급 시 사용자 위치 지도 표시 서비스 개발</li>
-											<li>위급 시 사전에 입력한 긴급연락망 푸시 알림기능 개발</li>
-											<li>위험 지역 사전 공유 기능 개발</li>
-										</ul>
-										<div class="outsourcing-description-content-items-badge">
-											<span class="customLogo-js">JS</span>
-											<span class="customLogo-jquery">jQuery</span>
-											<span class="customLogo-html5">HTML5</span>
-											<span class="customLogo-css3">CSS3</span>
-											<span class="customLogo-mysql">MySQL</span>
-										</div>
-									</div>
-									<div>
-										<div class="outsourcing-status-inactive">
-											서비스 종료
+												2021.09 ~ 2021.11
+											</span>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="outsourcing-divider"></div>
-				<div class="outsourcing-item-container">
-					<div class="outsourcing-items">
-						<div class="outsourcing-description-container row-reverse">
-							<div class="outsourcing-img-container">
-								<img src="Common/outsourcing/iamjungpro.png" alt="아이엠정프로" style="width: 100%;">
-							</div>
-							<div class="outsourcing-description-content-container">
-								<div class="outsourcing-description-content-item-container">
-									<div>
-										<div class="outsourcing-description-content-items">
-											<div>
-												<h1>아이엠정프로</h1>
-											</div>
-											<div>
-												<span>SNS광고대행사 페이지 개발</span>
-											</div>
+						<div class="my-history-item-container">
+							<div class="my-history-item-inner">
+								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/history-past.png" alt=""></div>
+								<div style="display: flex; flex-direction:column;">
+									<div style="display: flex; flex-direction: column;">
+										<div>
+											호서대학교 컴퓨터소프트웨어학과 졸업
 										</div>
-										<ul>
-											<li>TWIG 템플릿을 활용한 웹 사이트 개발</li>
-										</ul>
-										<div class="outsourcing-description-content-items-badge">
-											<span class="customLogo-twig">TWIG</span>
-											<span class="customLogo-html5">HTML5</span>
-											<span class="customLogo-css3">CSS3</span>
-											<span class="customLogo-jquery">jQuery</span>
-											<span class="customLogo-js">JS</span>
-										</div>
-									</div>
-									<div>
-										<div class="outsourcing-status-active">
-											<a href="https://iamjungpro.com/" target="_blank" style="color:white;">
-												서비스중
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="outsourcing-divider"></div>
-				<div class="outsourcing-item-container">
-					<div class="outsourcing-items">
-						<div class="outsourcing-description-container">
-							<div class="outsourcing-img-container">
-								<img src="Common/outsourcing/snstopten.png" alt="아이엠정프로" style="width: 100%;">
-							</div>
-							<div class="outsourcing-description-content-container">
-								<div class="outsourcing-description-content-item-container">
-									<div>
-										<div class="outsourcing-description-content-items">
-											<div>
-												<h1>SNS탑텐</h1>
-											</div>
-											<div>
-												<span>SNS광고대행사 페이지 개발</span>
-											</div>
-										</div>
-										<ul>
-											<li>TWIG 템플릿을 활용한 웹 사이트 개발</li>
-										</ul>
-										<div class="outsourcing-description-content-items-badge">
-											<span class="customLogo-twig">TWIG</span>
-											<span class="customLogo-html5">HTML5</span>
-											<span class="customLogo-css3">CSS3</span>
-											<span class="customLogo-jquery">jQuery</span>
-											<span class="customLogo-js">JS</span>
-										</div>
-									</div>
-									<div>
-										<div class="outsourcing-status-active">
-											<a href="https://snstopten.com/" target="_blank" style="color:white;">
-												서비스중
-											</a>
-										</div>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="outsourcing-divider"></div>
-				<div class="outsourcing-item-container">
-					<div class="outsourcing-items">
-						<div class="outsourcing-description-container row-reverse">
-							<div class="outsourcing-img-container">
-								<img src="Common/outsourcing/snsmanual.png" alt="아이엠정프로" style="width: 100%;">
-							</div>
-							<div class="outsourcing-description-content-container">
-								<div class="outsourcing-description-content-item-container">
-									<div>
-										<div class="outsourcing-description-content-items">
-											<div>
-												<h1>SNS매뉴얼</h1>
-											</div>
-											<div>
-												<span>SNS광고대행사 페이지 개발</span>
-											</div>
-										</div>
-										<ul>
-											<li>TWIG 템플릿을 활용한 웹 사이트 개발</li>
-										</ul>
-										<div class="outsourcing-description-content-items-badge">
-											<span class="customLogo-twig">TWIG</span>
-											<span class="customLogo-html5">HTML5</span>
-											<span class="customLogo-css3">CSS3</span>
-											<span class="customLogo-jquery">jQuery</span>
-											<span class="customLogo-js">JS</span>
-										</div>
-									</div>
-									<div>
-										<div class="outsourcing-status-active">
-											<a href="https://snsmanual.kr/" target="_blank" style="color:white;">
-												서비스중
-											</a>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- <div id="record" class="div-container">
-		<div class="record-inner odd-section">
-			<div id="record" class="record-container">
-				<div class="intro-inner-header">
-					<a href="#record">
-						<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px; filter: invert(1);">
-					</a>
-					<div class="intro-inner-header-title" style="color:white!important;">RECORD</div>
-				</div>
-				<div class="project-item-container"> -->
-
-					<!-- <div style="overflow: hidden;">
-						<div class="slide-container">
-							<div class="slide-box">
-								<img src="Common/pics/hdi/cpi-rfc.png" width="100px">
-							</div>
-							<div class="slide-box">
-								<img src="Common/pics/hdi/cas-heavy-controller.png">
-							</div>
-							<div class="slide-box">
-								<img src="Common/pics/hdi/cas-heavy-datamodel.png">
-							</div>
-							<div class="slide-box">
-								<img src="Common/pics/hdi/cas-heavy-datamodel.png">
-							</div>
-						</div>
-						<div class="btns">
-							<button class="angle-btn prev">
-								<i class="fas fa-angle-left"></i>
-							</button>
-							<button class="dot-btn slide-1"> </button>
-							<button class="dot-btn slide-2"> </button>
-							<button class="dot-btn slide-3"> </button>
-							<button class="angle-btn next">
-								<i class="fas fa-angle-right"></i>
-							</button>
-						</div>
-					</div> -->
-					
-					<!-- <div class="carousel-container">
-						<div class="slide-container">
-						  <div class="slide"><img src="Common/pics/hdi/cpi-rfc.png" width="800px!important" alt="Image 1"></div>
-						  <div class="slide"><img src="Common/pics/hdi/cas-heavy-controller.png"width="800px!important" alt="Image 2"></div>
-						  <div class="slide"><img src="Common/pics/hdi/cas-heavy-datamodel.png" width="800px!important"alt="Image 3"></div>
-						</div>
-						<div class="prev">Prev</div>
-						<div class="next">Next</div>
-						<div class="bullets"></div>
-					</div> -->
-				<!-- </div>
-			</div>
-		</div>
-	</div> -->
-
-	<!-- <div id="performance" class="div-container">
-		<div class="performance-inner">
-			<div class="performance-container">
-				<div class="intro-inner-header">
-					<a href="#performance">
-						<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
-					</a>
-					<div class="intro-inner-header-title">PERFORMANCE</div>
-				</div>
-				<div class="performance-item-container">
-					<h3>휴가 신청 시스템</h3>
-					<div class="performance-description">
-						<span>Logic 개발 : </span><br/>
-						<span>차감일 계산 / 차감 후 잔여 휴가 계산 / 휴가 삭제 시 잔여 휴가 복구</span><br/>
-						<hr size="1px" width="60%" style="margin: 16px auto; color: #a5a5a5;" color="#a5a5a5">
-						<span>기능 개발 : </span><br/>
-						<span>휴가를 상신하는 경우 Outlook 으로 메일 발송</span>
-					</div>
-					<button id="tech" style="width: 100px;" onclick="
-					document.getElementById('id01').style.display='block';
-					document.getElementById('full-container').style.overflow='hidden'">자세히 보기</button>
-					<div id="id01" class="modal-container">
-						<div class="modal-content-full-container">
-							<div class="modal-content-container">
-								<span onclick="
-									document.getElementById('id01').style.display='none';
-									document.getElementById('full-container').style.overflow='visible'"
-									class="w3-button w3-display-topright">&times;</span>
-								<div style="margin: 0 32px;">
-									<img src="Common/pics/jmc/vacation_1.png" alt="" style="width: 100%;">
-								</div>
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
+										<div>
+											<span class="history-year-badge">
 	
-	</div>
-	<div id="footer" class="div-container">
-		<a href="#main-top">
-			<img src="Common/icons/arrow-up.png" style="width: 16px;" alt="">
-		</a>
-		<h4>HYUNGSEOB KIM</h4>
-		<div class="icon-container">
-			<a href="https://ballistic-tang-9b7.notion.site/Welcome-aboard-hyngxxob-675a6fe036e2451bbb78045da3c170d9?pvs=4" target="_blank">
-				<img src="Common/icons/blog.png" id="icons" style="width:32px;">
-			</a>
-			<a href="https://github.com/hyngxxob" target="_blank">
-				<img src="Common/icons/github.png" id="icons" style="width:36px;">
-			</a>
-			<a href="mailto:rspnsblepioneer@gmail.com" target="_blank">
-				<img src="Common/icons/mail.png" id="icons" style="width:36px;">
-			</a>
+												2022.02
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="my-history-item-container">
+							<div class="my-history-item-inner">
+								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="Common/icons/history-present.png" alt=""></div>
+								<div style="display: flex; flex-direction:column;">
+									<div style="display: flex; flex-direction: column;">
+										<div>
+											JMC Corporation APJ Korea. SAP CRM Cloud 개발팀
+										</div>
+										<div>
+											<span class="history-year-badge">
+	
+												2021.12 ~
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<!-- 클래스명 수정 필요 -->
+			<div class="intro-container">
+	
+				<div id="cert" class="intro-inner">
+					<div class="intro-inner-header">
+						<a href="#cert">
+							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
+						</a>
+						<div class="intro-inner-header-title">CERT.</div>
+					</div>
+					<div class="my-history">
+						<div class="my-history-item-container">
+							<div class="my-history-item-inner">
+								정보처리기사 (21201020965F) - 2021.06
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="intro-container">
+	
+				<div id="skill" class="intro-inner">
+					<div class="intro-inner-header">
+						<a href="#skill">
+							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
+						</a>
+						<div class="intro-inner-header-title">SKILLS</div>
+					</div>
+					<div class="my-skill-item-container">
+						<span class="customLogo-sap" style="font-size : 1rem!important">SAP</span>
+						<span class="customLogo-sap" style="font-size : 1rem!important">SAP BTP</span>
+						<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP HANA DB</span>
+						<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP UI5</span>
+						<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP Cloud Application Studio</span>
+						<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP CPI</span>
+						<span class="customLogo-nodejs" style="font-size : 1rem!important">Nodejs</span>
+						<span class="customLogo-js" style="font-size : 1rem!important">JS</span>
+						<span class="customLogo-html5" style="font-size : 1rem!important">HTML5</span>
+						<span class="customLogo-css3" style="font-size : 1rem!important">CSS3</span>
+						<span class="customLogo-mysql" style="font-size : 1rem!important">MySQL</span>
+						<span class="customLogo-react" style="font-size : 1rem!important">React</span>
+						<span class="customLogo-groovy" style="font-size : 1rem!important">Groovy</span>
+						<span class="customLogo-twig" style="font-size : 1rem!important">TWIG</span>
+						<span class="customLogo-python" style="font-size : 1rem!important">Python</span>
+						<span class="customLogo-java" style="font-size : 1rem!important">JAVA</span>
+						<span class="customLogo-ruby" style="font-size : 1rem!important">Ruby</span>
+						<span class="customLogo-c" style="font-size : 1rem!important">C</span>
+						<span class="customLogo-cpp" style="font-size : 1rem!important">C++</span>
+						<span class="customLogo-cs" style="font-size : 1rem!important">C#</span>
+						<span class="customLogo-jquery" style="font-size : 1rem!important">jQuery</span>
+						<span class="customLogo-firebase" style="font-size : 1rem!important">Firebase</span>
+						<span class="customLogo-php" style="font-size : 1rem!important">PHP</span>
+						<span class="customLogo-laravel" style="font-size : 1rem!important">Laravel</span>
+					</div>
+				</div>
+			</div>
+			</div>
+	
+		<!-- Project -->
+		<div class="div-container">
+			<div class="project-inner odd-section">
+				<div id="project" class="project-container">
+					<!-- 나중에 클래스명 바꾸기 -->
+					<div class="intro-inner-header">
+						<a href="#project">
+							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px; filter: invert(1);">
+						</a>
+						<div class="intro-inner-header-title" style="color:white!important;">PROJECT</div>
+					</div>
+					<div class="project-item-container">
+						<div class="project-items">
+							<div style="display: flex; flex-direction : column; align-items : center;">
+								<div>
+									<h2>코오롱 베니트 수주 산업 특화 프로세스 구현 및 개발</h2>
+								</div>
+								<div>
+									<span>통합 딜 관리</span>
+								</div>
+							</div>
+							<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
+							<div class="project-description-container">
+								<img src="Common/kolonBenit.jpg" style="width: 200px;" alt="">
+								<div class="project-description-content-container">
+									<div>
+										<ul>
+											<li>딜러 영업기회(Opportunity) 유지보수</li>
+										</ul>
+									</div>
+									<div class="project-description-badge">
+										<span class="customLogo-sap">SAP</span>
+										<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
+										<span class="customLogo-groovy">groovy</span>
+										<span class="customLogo-ruby">Ruby</span>
+										<span class="customLogo-sapui5">SAP CPI</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="divider"></div> -->
+					<div class="project-item-container">
+						<div class="project-items">
+							<div style="display: flex; flex-direction : column; align-items : center;">
+								<div>
+									<h2>젠틀몬스터 Customer Service 관리 및 무상/유상 서비스 주문 연계 시스템 개발</h2>
+								</div>
+								<div>
+									<span>CRM Service Cloud</span>
+								</div>
+							</div>
+							<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
+							<div class="project-description-container">
+								<img src="Common/gentlemonster.png" style="width: 200px;" alt="">
+								<div class="project-description-content-container">
+									<div>
+										<ul>
+											<li>Claim Ticket 유지보수</li>
+											<li>Service Cloud 유지보수</li>
+										</ul>
+									</div>
+									<div class="project-description-badge">
+										<span class="customLogo-sap">SAP</span>
+										<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
+										<span class="customLogo-groovy">groovy</span>
+										<span class="customLogo-ruby">Ruby</span>
+										<span class="customLogo-sapui5">SAP CPI</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="divider"></div> -->
+					<div class="project-item-container">
+						<div class="project-items">
+							<div style="display: flex; flex-direction : column; align-items : center;">
+								<div>
+									<h2>카카오엔터프라이즈 SAP Lead to Cash 클라우드 시스템</h2>
+								</div>
+								<div>
+									<span>C4HANA Cloud 영업관리 시스템</span>
+								</div>
+							</div>
+							<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
+							<div class="project-description-container">
+								<img src="Common/kakaoEnterprise.jpg" style="width: 200px;" alt="">
+								<div class="project-description-content-container">
+									<div>
+										<ul>
+											<li>Performance Report 유지보수</li>
+											<li>SuccessFactors 유지보수</li>
+										</ul>
+									</div>
+									<div class="project-description-badge">
+										<span class="customLogo-sap">SAP</span>
+										<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="divider"></div> -->
+					<div class="project-item-container">
+						<div class="project-items">
+							<div style="display: flex; flex-direction : column; align-items : center;">
+								<div>
+									<h2>KISCO 경인양행 마케팅/영업/서비스 CRM 전(全) 모듈 구축 및 S4Hana 연계 구현</h2>
+								</div>
+								<div>
+									<span>딜러 포털과 영업 시스템 일원화</span>
+								</div>
+							</div>
+							<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
+							<div class="project-description-container">
+								<img src="Common/kisco.jpg" style="width: 200px;" alt="">
+								<div class="project-description-content-container">
+									<div>
+										<ul>
+											<li>CRM Sales & Marketing Cloud 시스템 유지보수</li>
+										</ul>
+									</div>
+									<div class="project-description-badge">
+										<span class="customLogo-sap">SAP</span>
+										<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
+										<span class="customLogo-groovy">groovy</span>
+										<span class="customLogo-sapui5">SAP CPI</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="divider"></div> -->
+					<div class="project-item-container">
+						<div class="project-items">
+							<div style="display: flex; flex-direction : column; align-items : center;">
+								<div>
+									<h2>한화큐셀 B2B 고객 서비스 구현 및 글로벌 법인별 서비스 통합</h2>
+								</div>
+								<div>
+									<span>고객 Claim 데이터 기반 대시보드 및 레포트 구축</span>
+								</div>
+							</div>
+							<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
+							<div class="project-description-container">
+								<img src="Common/hanwhaQCELL.png" style="width: 200px;" alt="">
+								<div class="project-description-content-container">
+									<div>
+										<ul>
+											<li>CS Platform 시스템 유지보수</li>
+										</ul>
+									</div>
+									<div class="project-description-badge">
+										<span class="customLogo-sap">SAP</span>
+										<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
+										<span class="customLogo-ruby">Ruby</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="divider"></div> -->
+					<div class="project-item-container">
+						<div class="project-items">
+							<div style="display: flex; flex-direction : column; align-items : center;">
+								<div>
+									<h2>현대두산인프라코어(HDI) 완성차 오더링 시스템 - Machine Ordering Phase One</h2>
+								</div>
+								<div>
+									<span>RFC통신으로 S4/HANA Cloud ERP측으로부터 수신한 데이터 가공</span>
+								</div>
+							</div>
+							<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
+							<div class="project-description-container">
+								<img src="Common/pics/logo/hyundaidoosaninfra.png" style="width: 200px;" alt="">
+								<div class="project-description-content-container">
+									<div>
+										<ul>
+											<li>굴삭기 종류별 가격 및 Parts 등의 정보를 출력하는 Price Page 개발</li>
+											<li>대규모 데이터 조회 소요시간 단축 로직 개발</li>
+										</ul>
+									</div>
+									<div class="project-description-badge">
+										<span class="customLogo-sap">SAP</span>
+										<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
+										<span class="customLogo-groovy">groovy</span>
+										<span class="customLogo-sapui5">SAP CPI</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="divider"></div> -->
+					<div class="project-item-container">
+						<div class="project-items">
+							<div style="display: flex; flex-direction : column; align-items : center;">
+								<div>
+									<h2>북미 HDI 완성차 오더링 시스템 - Machine Ordering Phase Two / Parts Ordering</h2>
+								</div>
+								<div>
+									<span>SAP Cloud for Customer OData API를 통한 웹 브라우저 데이터 노출</span>
+								</div>
+							</div>
+							<div class="project-description-container">
+								<img src="Common/pics/logo/dina.jfif" alt="DINA" style="width: 200px;">
+								<div class="project-description-content-container">
+									<ul>
+										<li>제품 정보 간편 등록을 위한 CSV 파일 업로드 모듈 개발</li>
+										<li>딜러 데이터 조인 - Dealer Performance Report 렌더링</li>
+										<li>영업기회(Opportunity) 업로드 자동화(RPA) 개발</li>
+									</ul>
+									<div class="project-description-badge">
+										<span class="customLogo-sap">SAP</span>
+										<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
+										<span class="customLogo-groovy">groovy</span>
+										<span class="customLogo-ruby">Ruby</span>
+										<span class="customLogo-sapui5">SAP CPI</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="divider"></div> -->
+		
+					<div class="project-item-container">
+						<div class="project-items">
+							<div style="display: flex; flex-direction : column; align-items : center;">
+								<div>
+									<h2>동원시스템즈 매출 이력 관리 시스템 구축</h2>
+								</div>
+								<div>
+									<span>데이터 클렌징이 완료된 마이그레이션 매출 정보의 업로드를 위한 환경 구축</span>
+								</div>
+							</div>
+							<div class="project-description-container">
+								<img src="Common/pics/logo/dongwonsystems.jpg" alt="DONGWONSYS" style="width: 200px;">
+								<div class="project-description-content-container">
+									<ul>
+										<li>고객별 매출 정보 내 연도별 성장률 측정 모듈 개발</li>
+									</ul>
+									<div class="project-description-badge">
+										<span class="customLogo-sap">SAP</span>
+										<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
+										<span class="customLogo-groovy">groovy</span>
+										<span class="customLogo-ruby">Ruby</span>
+										<span class="customLogo-sapui5">SAP CPI</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="divider"></div> -->
+	
+					<div class="project-item-container">
+						<div class="project-items">
+							<div style="display: flex; flex-direction : column; align-items : center;">
+								<div>
+									<h2>고객 서비스 지원 티켓팅 플랫폼 솔루션 개발</h2>
+								</div>
+								<div>
+									<span>서비스 요청 티켓 상호작용 플랫폼 환경 구축</span>
+								</div>
+							</div>
+							<div class="project-description-container">
+								<img src="Common/pics/logo/ticketProject_logo.png" alt="" style="width: 200px;">
+								<div class="project-description-content-container">
+									<ul>
+										<li>라우팅 및 API 설계</li>
+										<li>S4 HANA DB 연동</li>
+										<li>MVC 패턴 설계 및 전반적인 CRUD(Create, Read, Update, Delete) API 구현</li>
+										<li>SMS 문자 발송 및 알림톡 서비스 개발</li>
+										<li>외부 API 서비스 통합(기상청, 증권, 뉴스, Slack 등)</li>
+									</ul>
+									<div class="project-description-badge">
+										<span class="customLogo-sap">SAP</span>
+										<span class="customLogo-sap">SAP UI5</span>
+										<span class="customLogo-sapui5">SAP BTP</span>
+										<span class="customLogo-sapui5">SAP HANA DB</span>
+										<span class="customLogo-firebase">Firebase</span>
+										<span class="customLogo-css3">CSS3</span>
+										<span class="customLogo-nodejs">Nodejs</span>
+										<span class="customLogo-js">JS</span>
+										<span class="customLogo-jquery">JQuery</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
+	
+		<div id="outsourcing" class="div-container">
+			<div class="outsourcing-inner">
+				<div class="outsourcing-container">
+					<!-- 나중에 클래스명 바꾸기 -->
+					<div class="intro-inner-header">
+						<a href="#outsourcing">
+							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
+						</a>
+						<div class="intro-inner-header-title">OUTSOURCING</div>
+					</div>
+					<div class="outsourcing-item-container">
+						<div class="outsourcing-items">
+							<div class="outsourcing-description-container ">
+								<div class="outsourcing-img-container">
+									<img src="Common/outsourcing/pomi.png" style="width: 100%;" alt="포미">
+								</div>
+								<div class="outsourcing-description-content-container">
+									<div class="outsourcing-description-content-item-container">
+										<div>
+											<div class="outsourcing-description-content-items">
+												<div>
+													<h1>Pomi(포미)</h1>
+												</div>
+												<div>
+													<span>당신의 안심 귀가에 도움을 줍니다</span>
+												</div>
+											</div>
+											<ul>
+												<li>반응형 웹 개발</li>
+												<li>위급 시 사용자 위치 지도 표시 서비스 개발</li>
+												<li>위급 시 사전에 입력한 긴급연락망 푸시 알림기능 개발</li>
+												<li>위험 지역 사전 공유 기능 개발</li>
+											</ul>
+											<div class="outsourcing-description-content-items-badge">
+												<span class="customLogo-js">JS</span>
+												<span class="customLogo-jquery">jQuery</span>
+												<span class="customLogo-html5">HTML5</span>
+												<span class="customLogo-css3">CSS3</span>
+												<span class="customLogo-mysql">MySQL</span>
+											</div>
+										</div>
+										<div>
+											<div class="outsourcing-status-inactive">
+												서비스 종료
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="outsourcing-divider"></div>
+					<div class="outsourcing-item-container">
+						<div class="outsourcing-items">
+							<div class="outsourcing-description-container row-reverse">
+								<div class="outsourcing-img-container">
+									<img src="Common/outsourcing/iamjungpro.png" alt="아이엠정프로" style="width: 100%;">
+								</div>
+								<div class="outsourcing-description-content-container">
+									<div class="outsourcing-description-content-item-container">
+										<div>
+											<div class="outsourcing-description-content-items">
+												<div>
+													<h1>아이엠정프로</h1>
+												</div>
+												<div>
+													<span>SNS광고대행사 페이지 개발</span>
+												</div>
+											</div>
+											<ul>
+												<li>TWIG 템플릿을 활용한 웹 사이트 개발</li>
+											</ul>
+											<div class="outsourcing-description-content-items-badge">
+												<span class="customLogo-twig">TWIG</span>
+												<span class="customLogo-html5">HTML5</span>
+												<span class="customLogo-css3">CSS3</span>
+												<span class="customLogo-jquery">jQuery</span>
+												<span class="customLogo-js">JS</span>
+											</div>
+										</div>
+										<div>
+											<div class="outsourcing-status-active">
+												<a href="https://iamjungpro.com/" target="_blank" style="color:white;">
+													서비스중
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="outsourcing-divider"></div>
+					<div class="outsourcing-item-container">
+						<div class="outsourcing-items">
+							<div class="outsourcing-description-container">
+								<div class="outsourcing-img-container">
+									<img src="Common/outsourcing/snstopten.png" alt="아이엠정프로" style="width: 100%;">
+								</div>
+								<div class="outsourcing-description-content-container">
+									<div class="outsourcing-description-content-item-container">
+										<div>
+											<div class="outsourcing-description-content-items">
+												<div>
+													<h1>SNS탑텐</h1>
+												</div>
+												<div>
+													<span>SNS광고대행사 페이지 개발</span>
+												</div>
+											</div>
+											<ul>
+												<li>TWIG 템플릿을 활용한 웹 사이트 개발</li>
+											</ul>
+											<div class="outsourcing-description-content-items-badge">
+												<span class="customLogo-twig">TWIG</span>
+												<span class="customLogo-html5">HTML5</span>
+												<span class="customLogo-css3">CSS3</span>
+												<span class="customLogo-jquery">jQuery</span>
+												<span class="customLogo-js">JS</span>
+											</div>
+										</div>
+										<div>
+											<div class="outsourcing-status-active">
+												<a href="https://snstopten.com/" target="_blank" style="color:white;">
+													서비스중
+												</a>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="outsourcing-divider"></div>
+					<div class="outsourcing-item-container">
+						<div class="outsourcing-items">
+							<div class="outsourcing-description-container row-reverse">
+								<div class="outsourcing-img-container">
+									<img src="Common/outsourcing/snsmanual.png" alt="아이엠정프로" style="width: 100%;">
+								</div>
+								<div class="outsourcing-description-content-container">
+									<div class="outsourcing-description-content-item-container">
+										<div>
+											<div class="outsourcing-description-content-items">
+												<div>
+													<h1>SNS매뉴얼</h1>
+												</div>
+												<div>
+													<span>SNS광고대행사 페이지 개발</span>
+												</div>
+											</div>
+											<ul>
+												<li>TWIG 템플릿을 활용한 웹 사이트 개발</li>
+											</ul>
+											<div class="outsourcing-description-content-items-badge">
+												<span class="customLogo-twig">TWIG</span>
+												<span class="customLogo-html5">HTML5</span>
+												<span class="customLogo-css3">CSS3</span>
+												<span class="customLogo-jquery">jQuery</span>
+												<span class="customLogo-js">JS</span>
+											</div>
+										</div>
+										<div>
+											<div class="outsourcing-status-active">
+												<a href="https://snsmanual.kr/" target="_blank" style="color:white;">
+													서비스중
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- <div id="record" class="div-container">
+			<div class="record-inner odd-section">
+				<div id="record" class="record-container">
+					<div class="intro-inner-header">
+						<a href="#record">
+							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px; filter: invert(1);">
+						</a>
+						<div class="intro-inner-header-title" style="color:white!important;">RECORD</div>
+					</div>
+					<div class="project-item-container"> -->
+	
+						<!-- <div style="overflow: hidden;">
+							<div class="slide-container">
+								<div class="slide-box">
+									<img src="Common/pics/hdi/cpi-rfc.png" width="100px">
+								</div>
+								<div class="slide-box">
+									<img src="Common/pics/hdi/cas-heavy-controller.png">
+								</div>
+								<div class="slide-box">
+									<img src="Common/pics/hdi/cas-heavy-datamodel.png">
+								</div>
+								<div class="slide-box">
+									<img src="Common/pics/hdi/cas-heavy-datamodel.png">
+								</div>
+							</div>
+							<div class="btns">
+								<button class="angle-btn prev">
+									<i class="fas fa-angle-left"></i>
+								</button>
+								<button class="dot-btn slide-1"> </button>
+								<button class="dot-btn slide-2"> </button>
+								<button class="dot-btn slide-3"> </button>
+								<button class="angle-btn next">
+									<i class="fas fa-angle-right"></i>
+								</button>
+							</div>
+						</div> -->
+						
+						<!-- <div class="carousel-container">
+							<div class="slide-container">
+							  <div class="slide"><img src="Common/pics/hdi/cpi-rfc.png" width="800px!important" alt="Image 1"></div>
+							  <div class="slide"><img src="Common/pics/hdi/cas-heavy-controller.png"width="800px!important" alt="Image 2"></div>
+							  <div class="slide"><img src="Common/pics/hdi/cas-heavy-datamodel.png" width="800px!important"alt="Image 3"></div>
+							</div>
+							<div class="prev">Prev</div>
+							<div class="next">Next</div>
+							<div class="bullets"></div>
+						</div> -->
+					<!-- </div>
+				</div>
+			</div>
+		</div> -->
+	
+		<!-- <div id="performance" class="div-container">
+			<div class="performance-inner">
+				<div class="performance-container">
+					<div class="intro-inner-header">
+						<a href="#performance">
+							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
+						</a>
+						<div class="intro-inner-header-title">PERFORMANCE</div>
+					</div>
+					<div class="performance-item-container">
+						<h3>휴가 신청 시스템</h3>
+						<div class="performance-description">
+							<span>Logic 개발 : </span><br/>
+							<span>차감일 계산 / 차감 후 잔여 휴가 계산 / 휴가 삭제 시 잔여 휴가 복구</span><br/>
+							<hr size="1px" width="60%" style="margin: 16px auto; color: #a5a5a5;" color="#a5a5a5">
+							<span>기능 개발 : </span><br/>
+							<span>휴가를 상신하는 경우 Outlook 으로 메일 발송</span>
+						</div>
+						<button id="tech" style="width: 100px;" onclick="
+						document.getElementById('id01').style.display='block';
+						document.getElementById('full-container').style.overflow='hidden'">자세히 보기</button>
+						<div id="id01" class="modal-container">
+							<div class="modal-content-full-container">
+								<div class="modal-content-container">
+									<span onclick="
+										document.getElementById('id01').style.display='none';
+										document.getElementById('full-container').style.overflow='visible'"
+										class="w3-button w3-display-topright">&times;</span>
+									<div style="margin: 0 32px;">
+										<img src="Common/pics/jmc/vacation_1.png" alt="" style="width: 100%;">
+									</div>
+	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		
+		</div>
+		<footer class="div-container">
+			<a href="#main-top">
+				<img src="Common/icons/arrow-up.png" style="width: 16px;" alt="">
+			</a>
+			<h4>HYUNGSEOB KIM</h4>
+			<div class="icon-container">
+				<a href="https://ballistic-tang-9b7.notion.site/Welcome-aboard-hyngxxob-675a6fe036e2451bbb78045da3c170d9?pvs=4" target="_blank">
+					<img src="Common/icons/blog.png" id="icons" style="width:32px;">
+				</a>
+				<a href="https://github.com/hyngxxob" target="_blank">
+					<img src="Common/icons/github.png" id="icons" style="width:36px;">
+				</a>
+				<a href="mailto:rspnsblepioneer@gmail.com" target="_blank">
+					<img src="Common/icons/mail.png" id="icons" style="width:36px;">
+				</a>
+			</div>
+		</footer>
 	</div>
 </body>
 

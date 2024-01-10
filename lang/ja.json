@@ -1,0 +1,16 @@
+ja = {
+    "greeting": "こんにちは\n挑戦が楽しい開発者のキム・ヒョンソプです。",
+
+    "detail" : "調べる",
+
+    // Title
+    "introduceTitle" : "紹介",
+
+    // Label
+    "name" : "名前",
+    "birth" : "生年月日",
+    "address" : "住所",
+    "contact" : "連絡先",
+    "email" : "メールアドレス",
+    "education" : "最終学歴",
+}

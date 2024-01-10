@@ -1,0 +1,18 @@
+ko = {
+    "greeting": "반갑습니다\n도전이 즐거운 개발자 김형섭 입니다",
+    "message": "저희 웹사이트에 오신 것을 환영합니다.",
+    "buttonText": "여기를 클릭하세요",
+
+    "detail" : "알아보기",
+
+    // Title
+    "introduceTitle" : "소개",
+
+    // Label
+    "name" : "이름",
+    "birth" : "생년월일",
+    "address" : "주소",
+    "contact" : "연락처",
+    "email" : "이메일",
+    "education" : "최종학력",
+}
