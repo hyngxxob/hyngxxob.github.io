@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('top').addEventListener('click', () => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth' // 부드럽게 스크롤하기 위해 smooth 설정
+            behavior: 'smooth'
         });
     });
 });
