@@ -4,12 +4,16 @@ document.addEventListener('DOMContentLoaded', function() {
     let lang;
     if (userLanguage === 'ko') {
         lang = ko;
+        document.body.style.fontFamily = "'NanumSquareNeo'";
     } else if (userLanguage === 'en') {
         lang = en;
+        document.body.style.fontFamily = "'Raleway', 'NanumSquareNeo'";
     } else if (userLanguage === 'ja') {
         lang = ja;
+        document.body.style.fontFamily = "'Noto Sans JP', 'NanumSquareNeo'";
     } else {
         lang = en;
+        document.body.style.fontFamily = "'Raleway', 'NanumSquareNeo'";
     }
 
     // 데이터를 HTML에 적용
