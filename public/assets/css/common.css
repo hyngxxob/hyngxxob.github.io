@@ -5,6 +5,19 @@
     line-height: 1.65;
 }
 
+.my-skill-item-container>* {
+    cursor: default;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.my-skill-item-container>*:hover {
+    background-color: #7B68EE;
+}
 
 .specialization {
     display: flex;
@@ -66,6 +79,14 @@
     animation: slideInLeft 0.75s ease both;
 }
 
+.slide-in-right {
+    animation: slideInRight 0.75s ease both;
+}
+
+.fade-in-up {
+    animation: fadeInUp 1s;
+}
+
 .ability-bar {
     background-color: #eee;
     border-radius: 5px;
@@ -91,6 +112,21 @@
     /* padding: 0 20px; */
 }
 
+.outsourcing-item-container {
+    animation-delay: .5s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
 
 @keyframes SkillUp {
     0% {
@@ -108,6 +144,18 @@
         transform: translateX(-300px);
     }
     
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
     100% {
         opacity: 1;
         transform: translateX(0);
@@ -310,7 +358,7 @@ html {
     /* width:80%; */
     /* border-bottom : 2px solid #7B68EE; */
     border-bottom: 1px solid black;
-    margin : 32px 0;
+    margin : 64px 0;
 }
 
 .div-container {
@@ -378,7 +426,7 @@ html {
 }
 
 .project-item-container {
-    margin-bottom : 32px;
+    margin-bottom : 64px;
     /* display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -433,6 +481,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 64px;
     width: 100%;
 }
 
@@ -508,6 +557,13 @@ footer {
     width: 100%;
     /* max-width: 20rem; */
     gap:16px;
+}
+
+.my-info-item-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: space-around;
 }
 
 .my-history-item-inner {

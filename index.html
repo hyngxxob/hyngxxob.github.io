@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
 	<meta charset="UTF-8">
@@ -26,11 +26,11 @@
 	<title>HYUNGSEOB KIM</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="public/assets/js/scroll-smooth.js"></script>
 	<script src="public/assets/js/common.js"></script>
 	<script src="public/assets/js/loading.js"></script>
 	<script src="public/assets/js/lang.js"></script>
 	<script src="public/assets/js/click.js"></script>
+	<script src="public/assets/js/scroll-animation.js"></script>
 
 	<script src="lang/ko.json" id="ko-data" type="text/javascript"></script>
 	<script src="lang/en.json" id="en-data" type="text/javascript"></script>
@@ -72,11 +72,11 @@
 						</div>
 					</div>
 					<div class="my-info">
-						<div style="text-align: center;">
+						<div class="img-wrap" style="text-align: center;">
 							<img src="Common/pics/me/hsk-circle.png" alt="">
 	
 						</div>
-						<div style="display: flex; flex-wrap: wrap; gap:8px; justify-content: space-around;">
+						<div class="my-info-item-wrap">
 	
 							<div class="my-info-item-container">
 								<div class="my-info-item-inner">
@@ -283,7 +283,9 @@
 					<div class="my-history">
 						<div class="my-history-item-container">
 							<div class="my-history-item-inner">
-								정보처리기사 (21201020965F) - 2021.06
+								<span data-lang="certOne"></span>
+								<span data-lang="licenseNo"></span>
+								<span data-lang="licenseDate" class="history-year-badge"></span>
 							</div>
 						</div>
 					</div>
@@ -1040,53 +1042,5 @@
 </html>
 
 <script>
-	const elementsToAnimate = document.querySelectorAll('.header-bar');
-	const graphElements = document.querySelectorAll('.r');
-	const percentElements = document.querySelectorAll('.percent');
-	const duration = 150; // 애니메이션 지속 시간 (밀리초)
-
-	window.addEventListener('scroll', () => {
-		elementsToAnimate.forEach(element => {
-			const elementPosition = element.getBoundingClientRect().top;
-			const windowHeight = window.innerHeight;
-			const scrollPosition = window.scrollY || window.pageYOffset;
-			
-			if (elementPosition < windowHeight ) {
-				element.classList.add('slide-in-left');
-			}
-		});
-
-		graphElements.forEach(element => {
-			const elementPosition = element.getBoundingClientRect().top;
-			const windowHeight = window.innerHeight;
-			const scrollPosition = window.scrollY || window.pageYOffset;
-			
-			if (elementPosition < windowHeight ) {
-				element.classList.add('ability-percent');
-			}
-			//debugger;
-			if(!element.classList.contains('done')) {
-				element.classList.add('done');
-				const spanElement = element.querySelector('.percent');
-				const maxValueClass = Array.from(spanElement.classList).find(cls => cls.startsWith('a'));
-	
-				if (maxValueClass) {
-					const maxValue = parseInt(maxValueClass.substring(1));
-					let currentValue = 0;
-					const stepTime = 2000 / maxValue; // 최대값에 따라 각 퍼센트의 증가 시간 계산 (2000ms는 총 시간)
-	
-					const interval = setInterval(() => {
-						if (currentValue >= maxValue) {
-							clearInterval(interval);
-						} else {
-							currentValue++;
-							spanElement.textContent = `${currentValue}%`;
-						}
-					}, stepTime); // 각 스텝마다 숫자가 증가하는 시간(밀리초)
-				}
-				
-			}
-		});
-	});
 </script>
 

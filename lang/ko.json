@@ -18,4 +18,9 @@ ko = {
     "contact" : "연락처",
     "email" : "이메일",
     "education" : "최종학력",
+    
+    // Certification
+    "certOne" : "정보처리기사",
+    "licenseNo" : "212*****965F",
+    "licenseDate" : "2021.06",
 }

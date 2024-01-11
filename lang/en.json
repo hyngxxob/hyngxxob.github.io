@@ -20,4 +20,9 @@ en = {
     "contact" : "Contact",
     "email" : "Email",
     "education" : "Education",
+    
+    // Certification
+    "certOne" : "Applied Information Technology Engineer",
+    "licenseNo" : "212*****965F",
+    "licenseDate" : "2021.06",
 }

@@ -18,4 +18,9 @@ ja = {
     "contact" : "連絡先",
     "email" : "メールアドレス",
     "education" : "最終学歴",
+
+    // Certification
+    "certOne" : "情報処理技術(Applied Information Technology Engineer)",
+    "licenseNo" : "212*****965F",
+    "licenseDate" : "2021.06",
 }
