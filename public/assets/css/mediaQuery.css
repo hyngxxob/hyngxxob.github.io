@@ -87,6 +87,68 @@
         flex-direction: column;
     }
     
+    .link-wrap {
+        display: none;
+    }
+
+    .mobile-link-wrap {
+        display: flex;
+        justify-content: space-evenly;
+        height: 50px;
+        border-bottom: 3px solid #7B68EE;
+        /* align-items: center; */
+    }
+
+    .mobile-menu-nav {
+        display: block;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        bottom: 0;
+        background-color: #7B68EE;
+    }
+
+    .mobile-menu-wrap {
+        position: relative;
+        height: 100%;
+    }
+
+    #mobile-closeNav {
+        position: absolute;
+        top: 18px;
+        right: 16px;
+        color: #fff;
+        width: 16px;
+        filter: invert(1);
+    }
+
+    .mobile-menu-link-wrap {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        gap: 16px;
+        color: white;
+        padding-top: 32px;
+    }
+
+    #navBtn {
+        width: 32px;
+    }
+
+    #mobileLogo {
+        font-family: 'Gurajada';
+        font-size: 2rem;
+    }
+
+    #mobile-openNav{
+        position: absolute;
+        left: 12px;
+        top: 8px;
+    }
+    
     @keyframes fadein {
         0% {
             opacity: 0;

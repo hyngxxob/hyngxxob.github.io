@@ -4,6 +4,10 @@
     line-height: 1.65;
 }
 
+.active {
+    display: initial;
+}
+
 body::-webkit-scrollbar {
     width: 10px;
 }
@@ -63,6 +67,14 @@ nav.fixed.desk {
 .link-wrap > * {
     color : #000;
     cursor : pointer;
+}
+
+.mobile-link-wrap {
+    display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 @keyframes popDown {
@@ -261,6 +273,10 @@ nav.fixed.desk {
     animation: fadein 1.5s;
 }
 
+.fade-out {
+    animation: fadeOut 1.5s;
+}
+
 
 @keyframes fadein {
     0% {
@@ -273,6 +289,20 @@ nav.fixed.desk {
 
     100% {
         opacity: 1;
+    }
+} 
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
     }
 } 
 

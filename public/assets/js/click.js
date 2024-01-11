@@ -64,6 +64,65 @@ document.addEventListener('DOMContentLoaded', function() {
         section.scrollIntoView({ behavior: 'smooth' });
     });
 
+    document.getElementById('introMobNavLink').addEventListener('click', function () {
+        document.getElementById('mobileMenu').style.display = 'none';
+        document.body.classList.remove('no-scroll');
+        const section = document.getElementById('aboutMe');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('historyMobNavLink').addEventListener('click', function () {
+        document.getElementById('mobileMenu').style.display = 'none';
+        document.body.classList.remove('no-scroll');
+        const section = document.getElementById('history');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('certMobNavLink').addEventListener('click', function () {
+        document.getElementById('mobileMenu').style.display = 'none';
+        document.body.classList.remove('no-scroll');
+        const section = document.getElementById('cert');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('skillMobNavLink').addEventListener('click', function () {
+        document.getElementById('mobileMenu').style.display = 'none';
+        document.body.classList.remove('no-scroll');
+        const section = document.getElementById('skill');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('projectMobNavLink').addEventListener('click', function () {
+        document.getElementById('mobileMenu').style.display = 'none';
+        document.body.classList.remove('no-scroll');
+        const section = document.getElementById('project');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('outsourcingMobNavLink').addEventListener('click', function () {
+        document.getElementById('mobileMenu').style.display = 'none';
+        document.body.classList.remove('no-scroll');
+        const section = document.getElementById('outsourcing');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+
+    document.getElementById('mobileLogo').addEventListener('click', () => {
+        window.location.reload();
+    });
+
+    document.getElementById('mobile-openNav').addEventListener('click', () => {
+        document.getElementById('mobileMenu').style.display = 'initial';
+        document.getElementById('mobileMenu').classList.add('slide-in-left');
+        document.body.classList.add('no-scroll');
+    });
+
+    document.getElementById('mobile-closeNav').addEventListener('click', () => {
+        document.getElementById('mobileMenu').style.display = 'none';
+        document.getElementById('mobileMenu').classList.remove('slide-in-left');
+        document.body.classList.remove('no-scroll');
+    });
+
     document.getElementById('top').addEventListener('click', () => {
         window.scrollTo({
             top: 0,
