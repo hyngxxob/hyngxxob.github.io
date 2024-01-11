@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 데이터를 HTML에 적용
     if (lang) {
-        applyTranslationsToHTML(lang);
+        setTimeout(() =>
+            applyTranslationsToHTML(lang)
+        , 2500);
     }
 
     // 데이터를 HTML에 삽입하는 함수

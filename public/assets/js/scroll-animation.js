@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const greetingMsg = document.querySelectorAll('.greetingMsg');
     const elementsToAnimate = document.querySelectorAll('.header-bar');
     const myInfo = document.querySelectorAll('.my-info');
     const imgWrap = document.querySelectorAll('.img-wrap');
