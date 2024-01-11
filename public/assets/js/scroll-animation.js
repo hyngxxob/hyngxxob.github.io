@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const myInfoItemWrap = document.querySelectorAll('.my-info-item-wrap');
 	const specializationItems = document.querySelectorAll('.specialization-wrap');
 	const outsourcingItems = document.querySelectorAll('.outsourcing-item-container');
+	const myCertItems = document.querySelectorAll('.my-cert-item-container');
 	const myHistoryItems = document.querySelectorAll('.my-history-item-container');
 	const graphElements = document.querySelectorAll('.r');
 	const percentElements = document.querySelectorAll('.percent');
@@ -24,6 +25,16 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
 
 		myHistoryItems.forEach(element => {
+			const elementPosition = element.getBoundingClientRect().top;
+			const windowHeight = window.innerHeight;
+			const scrollPosition = window.scrollY || window.pageYOffset;
+			
+			if (elementPosition < windowHeight ) {
+				element.classList.add('fade-in-up');
+			}
+		});
+
+		myCertItems.forEach(element => {
 			const elementPosition = element.getBoundingClientRect().top;
 			const windowHeight = window.innerHeight;
 			const scrollPosition = window.scrollY || window.pageYOffset;

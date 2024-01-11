@@ -15,6 +15,11 @@ ko = {
     "shutdown" : "서비스 종료",
     "inprogress" : "서비스중",
 
+    // Badge
+    "nationaltech" : "국가기술자격",
+    "nationalrecog" : "국가공인자격",
+    "driverLicense" : "자동차운전면허증",
+
     // Label
     "name" : "이름",
     "birth" : "생년월일",
@@ -32,6 +37,7 @@ ko = {
     "educationVal" : "호서대학교 컴퓨터소프트웨어학과",
 
     // History
+    "his-000" : "덕수고등학교 디지털콘텐츠학과",
     "his-001" : "호서대학교 컴퓨터소프트웨어학과 입학",
     "his-002" : "육군 병장 만기 전역",
     "his-003" : "KISIA 정보보호산업 인재양성과정 수료",
@@ -40,9 +46,29 @@ ko = {
     "his-006" : "JMC Corporation APJ Korea. SAP CRM Cloud 개발팀",
 
     // Certification
-    "certOne" : "정보처리기사",
-    "licenseNo" : "212*****965F",
-    "licenseDate" : "2021.06",
+    "certOne" : "GTQ(그래픽기술자격)",
+    "certOneLicenseNo" : "GA01********8024",
+    "certOneLicenseDate" : "2013.11",
+
+    "certTwo" : "워드프로세서",
+    "certTwoLicenseNo" : "1*****7463",
+    "certTwoLicenseDate" : "2014.05",
+
+    "certThree" : "정보기술자격(ITQ)",
+    "certThreeLicenseNo" : "A0012********4278",
+    "certThreeLicenseDate" : "2014.08",    
+
+    "certFour" : "전산회계운용사 3급",
+    "certFourLicenseNo" : "1*****0139",
+    "certFourLicenseDate" : "2015.07",
+
+    "certFive" : "자동차운전면허 1종보통",
+    "certFiveLicenseNo" : "**1661****00",
+    "certFiveLicenseDate" : "2016.05",
+
+    "certSix" : "정보처리기사",
+    "certSixLicenseNo" : "212*****965F",
+    "certSixLicenseDate" : "2021.06",
     
     // OutSourcing
     "outsource-001-subtitle" : "당신의 안심 귀가에 도움을 줍니다",

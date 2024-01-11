@@ -80,7 +80,11 @@
         position: absolute;
         color: white;
         margin-left: 8px;
-        animation: slideInLeft 5.5s;
+        animation: slideInLeft 6s;
+    }
+
+    .my-cert-item-inner {
+        flex-direction: column;
     }
     
     @keyframes fadein {

@@ -552,8 +552,17 @@ footer {
     width: 30%;
 }
 
-.my-history-item-container {
-    /* width: 33%; */
+.my-cert-item-container:nth-child(2n) {
+    background-color: #fff;
+    border-radius: 8px;
+    padding : 8px;
+}
+
+.my-cert-item-container:nth-child(2n+1) {
+    background-color: #7B68EE;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px;
 }
 
 .my-skill-item-container {
@@ -586,6 +595,16 @@ footer {
     align-items: center;
     /* justify-content: space-between; */
     min-width: 600px;
+    gap: 16px;
+}
+
+.my-cert-item-inner {
+    display: flex;
+    /* width: 60%; */
+    margin: 0 auto;
+    align-items: center;
+    /* justify-content: space-between; */
+    /* min-width: 600px; */
     gap: 16px;
 }
 
@@ -671,12 +690,46 @@ footer {
     flex-direction: row-reverse;
 }
 
+.nationaltech-badge {
+    background: #DAA520;
+    /* background: #1a2e6a; */
+    padding: 4px;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    color: white;
+    width: 100px;
+    text-align: center;
+}
+
+.nationalrecog-badge {
+    background: #DEB887;
+    /* background: #1a2e6aa0; */
+    padding: 4px;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    color: white;
+    width: 100px;
+    text-align: center;
+}
+
+.driverLicense-badge {
+    background: #32CD32;
+    padding: 4px;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    color: white;
+    width: 100px;
+    text-align: center;
+}
+
 .history-year-badge {
     background: #7B68EE;
     padding: 4px;
     font-size: 0.7rem;
     border-radius: 8px;
     color: white;
+    width: 48px;
+    text-align: center;
 }
 
 .record-container {
@@ -685,9 +738,6 @@ footer {
     padding-top : 32px;
     padding-bottom: 32px;
 }
-
-
-
 
 .slide-container {
     width: 300vw;

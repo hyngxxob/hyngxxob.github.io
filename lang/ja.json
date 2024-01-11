@@ -15,6 +15,11 @@ ja = {
     "shutdown" : "サービス終了",
     "inprogress" : "サービス中",
 
+    // Badge
+    "nationaltech" : "國家技術資格",
+    "nationalrecog" : "国家公認資格",
+    "driverLicense" : "自動車運轉免許證",
+
     // Label
     "name" : "名前",
     "birth" : "生年月日",
@@ -40,9 +45,29 @@ ja = {
     "his-006" : "JMC Corporation APJ Korea. SAP CRM Cloud 開発チーム",
  
     // Certification
-    "certOne" : "情報処理技術(Applied Information Technology Engineer)",
-    "licenseNo" : "212*****965F",
-    "licenseDate" : "2021.06",
+    "certOne" : "グラフィック技術資格 (GTQ)",
+    "certOneLicenseNo" : "GA01********8024",
+    "certOneLicenseDate" : "2013.11",
+
+    "certTwo" : "ワードプロセッサ",
+    "certTwoLicenseNo" : "1*****7463",
+    "certTwoLicenseDate" : "2014.05",
+
+    "certThree" : "情報技術資格 (ITQ)",
+    "certThreeLicenseNo" : "A0012********4278",
+    "certThreeLicenseDate" : "2014.08",    
+
+    "certFour" : "電算会計運用士3級",
+    "certFourLicenseNo" : "1*****0139",
+    "certFourLicenseDate" : "2015.07",
+
+    "certFive" : "自動車運転免許1種普通",
+    "certFiveLicenseNo" : "**1661****00",
+    "certFiveLicenseDate" : "2016.05",
+
+    "certSix" : "情報處理技士",
+    "certSixLicenseNo" : "212*****965F",
+    "certSixLicenseDate" : "2021.06",
 
     // OutSourcing
     "outsource-001-subtitle" : "あなたの安心帰宅をサポートします",

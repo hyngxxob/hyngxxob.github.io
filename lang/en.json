@@ -17,6 +17,11 @@ en = {
     "shutdown" : "Shut down the service",
     "inprogress" : "Providing service",
 
+    // Badge
+    "nationaltech" : "Nat'l Tech. Qual.",
+    "nationalrecog" : "Nat'l Recog. Creds.",
+    "driverLicense" : "Driver's License",
+
     // Label
     "name" : "Name",
     "birth" : "Birth",
@@ -34,17 +39,38 @@ en = {
     "educationVal" : "Hoseo Univ. major in Computer & Software Engineering",
 
     // History
+    "his-000" : "Admitted to the Hoseo Univ. major in Computer & Software Engineering",
     "his-001" : "Admitted to the Hoseo Univ. major in Computer & Software Engineering",
     "his-002" : "Army Sergeant Expired Retired",
-    "his-003" : "KISIA Completed the Information Security Industry Talent Development Program",
+    "his-003" : "Completed the KISIA Information Security Industry Talent Development Program",
     "his-004" : "Wins Inc. Security Control Intern",
     "his-005" : "Graduated from Hoseo Univ. major in Computer & Software Engineering",
     "his-006" : "JMC Corporation APJ Korea. SAP CRM Cloud Development Team",
     
     // Certification
-    "certOne" : "Applied Information Technology Engineer",
-    "licenseNo" : "212*****965F",
-    "licenseDate" : "2021.06",
+    "certOne" : "Graphic Technology Qualification (GTQ)",
+    "certOneLicenseNo" : "GA01********8024",
+    "certOneLicenseDate" : "2013.11",
+
+    "certTwo" : "Word Processor Specialist",
+    "certTwoLicenseNo" : "1*****7463",
+    "certTwoLicenseDate" : "2014.05",
+
+    "certThree" : "Information Technology Qualification (ITQ)",
+    "certThreeLicenseNo" : "A0012********4278",
+    "certThreeLicenseDate" : "2014.08",    
+
+    "certFour" : "Computerized Accounting Specialist Level-3",
+    "certFourLicenseNo" : "1*****0139",
+    "certFourLicenseDate" : "2015.07",
+
+    "certFive" : "Class 1 Regular Driver's License",
+    "certFiveLicenseNo" : "**1661****00",
+    "certFiveLicenseDate" : "2016.05",
+
+    "certSix" : "Applied Information Technology Engineer",
+    "certSixLicenseNo" : "212*****965F",
+    "certSixLicenseDate" : "2021.06",
     
     // OutSourcing
     "outsource-001-subtitle" : "Helping you get home safely",
