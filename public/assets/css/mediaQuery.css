@@ -86,7 +86,7 @@
     .my-cert-item-inner {
         flex-direction: column;
     }
-    
+
     .link-wrap {
         display: none;
     }
@@ -117,6 +117,7 @@
 
     #mobile-closeNav {
         position: absolute;
+        cursor: pointer;
         top: 18px;
         right: 16px;
         color: #fff;
@@ -136,6 +137,7 @@
 
     #navBtn {
         width: 32px;
+        cursor: pointer;
     }
 
     #mobileLogo {
@@ -143,32 +145,32 @@
         font-size: 2rem;
     }
 
-    #mobile-openNav{
+    #mobile-openNav {
         position: absolute;
         left: 12px;
         top: 8px;
     }
-    
+
     @keyframes fadein {
         0% {
             opacity: 0;
         }
-    
+
         50% {
             opacity: 0.5;
         }
-    
+
         100% {
             opacity: 1;
         }
     }
-    
+
     @keyframes slideInLeft {
         0% {
             opacity: 0;
             transform: translateX(-300px);
         }
-    
+
         100% {
             opacity: 1;
             transform: translateX(0);
