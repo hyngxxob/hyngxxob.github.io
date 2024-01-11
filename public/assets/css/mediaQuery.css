@@ -1,7 +1,8 @@
 @media (max-width: 1500px) {
     .my-info-item-container {
-        width: 100%!important;
+        width: 100% !important;
     }
+
     .my-info {
         display: flex;
         flex-direction: column;
@@ -11,8 +12,8 @@
 
 @media (min-width:950px) {
     #mypic {
-        width : 256px!important;
-    }   
+        width: 256px !important;
+    }
 }
 
 @media (max-width: 1765px) {
@@ -27,34 +28,38 @@
     }
 
     .intro-inner {
-        margin : 0;
+        margin: 0;
+        padding-left: 8px;
+        padding-right: 8px;
     }
-    
+
     .my-info {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .my-info > * {
-        width: 100%!important;
+    .my-info>* {
+        width: 100% !important;
     }
 
     .my-history-item-inner {
-        min-width: 0!important;
+        min-width: 0 !important;
     }
 
     .project-container {
-        max-width: 90%!important;
+        max-width: 90% !important;
     }
 
     .project-description-container {
         flex-direction: column;
         align-items: center;
     }
+
     .outsourcing-description-content-container {
         width: 100%;
     }
+
     .outsourcing-description-container {
         flex-direction: column;
     }
@@ -64,10 +69,43 @@
     }
 
     .outsourcing-container {
-        max-width: 90%!important;
+        max-width: 90% !important;
     }
 
     .outsourcing-description-content-item-container {
-        gap:16px;
+        gap: 16px;
+    }
+
+    .specializationLabel {
+        position: absolute;
+        color: white;
+        margin-left: 8px;
+        animation: slideInLeft 5.5s;
+    }
+    
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+    
+        50% {
+            opacity: 0.5;
+        }
+    
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes slideInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-300px);
+        }
+    
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
     }
 }

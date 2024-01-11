@@ -4,11 +4,12 @@ function onload() {
     
     const fullContainer = document.getElementById('full-container');
 
-    loadingIcon.classList.add('page-loader');
+    loadingIcon.classList.add('loader');
     loadingIcon.style.position = 'fixed';
     loadingIcon.style.top = '50%';
     loadingIcon.style.left = '50%';
     loadingIcon.style.zIndex = '10';
+    loadingIcon.style.transform = 'translate(-50%, -50%)';
     document.body.appendChild(loadingIcon);
 
     overlay.style.position = 'fixed';
