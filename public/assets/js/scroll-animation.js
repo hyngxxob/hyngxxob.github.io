@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const greetingMsg = document.querySelectorAll('.greetingMsg');
+    const headerBox = document.querySelectorAll('.headerBox');
+    const router = document.querySelectorAll('.router');
     const elementsToAnimate = document.querySelectorAll('.header-bar');
     const myInfo = document.querySelectorAll('.my-info');
     const imgWrap = document.querySelectorAll('.img-wrap');
@@ -13,6 +14,22 @@ document.addEventListener('DOMContentLoaded', function() {
 	const duration = 150; // 애니메이션 지속 시간 (밀리초)
 
 	window.addEventListener('scroll', () => {
+		headerBox.forEach(element => {
+			const elementPosition = element.getBoundingClientRect().top;
+			// const windowHeight = window.innerHeight;
+			const scrollPosition = window.scrollY || window.pageYOffset;
+			
+			if (scrollPosition > 700 ) {
+				router[0].classList.add("fixed");
+				router[0].classList.add("desk");
+				router[0].classList.remove("none");
+			} else {
+				router[0].classList.remove("fixed");
+				router[0].classList.remove("desk");
+				router[0].classList.add("none");
+			}
+		});
+
 		myInfo.forEach(element => {
 			const elementPosition = element.getBoundingClientRect().top;
 			const windowHeight = window.innerHeight;

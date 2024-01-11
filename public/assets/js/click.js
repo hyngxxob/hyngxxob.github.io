@@ -34,6 +34,36 @@ document.addEventListener('DOMContentLoaded', function() {
         section.scrollIntoView({ behavior: 'smooth' });
     });
 
+    document.getElementById('introNavLink').addEventListener('click', function () {
+        const section = document.getElementById('aboutMe');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('historyNavLink').addEventListener('click', function () {
+        const section = document.getElementById('history');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('certNavLink').addEventListener('click', function () {
+        const section = document.getElementById('cert');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('skillNavLink').addEventListener('click', function () {
+        const section = document.getElementById('skill');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('projectNavLink').addEventListener('click', function () {
+        const section = document.getElementById('project');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('outsourcingNavLink').addEventListener('click', function () {
+        const section = document.getElementById('outsourcing');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
     document.getElementById('top').addEventListener('click', () => {
         window.scrollTo({
             top: 0,

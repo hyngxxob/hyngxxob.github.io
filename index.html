@@ -1,67 +1,87 @@
 <!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="public/assets/css/common.css">
+		<link rel="stylesheet" href="public/assets/css/mediaQuery.css">
+		<link rel="stylesheet" href="public/assets/css/loading.css">
+		<link rel="stylesheet" href="public/assets/css/modal.css">
+		<link rel="stylesheet" href="public/assets/css/logo.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="public/assets/css/common.css">
-	<link rel="stylesheet" href="public/assets/css/mediaQuery.css">
-	<link rel="stylesheet" href="public/assets/css/loading.css">
-	<link rel="stylesheet" href="public/assets/css/modal.css">
-	<link rel="stylesheet" href="public/assets/css/logo.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+		<title>HYUNGSEOB KIM</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="public/assets/js/common.js"></script>
+		<script src="public/assets/js/loading.js"></script>
+		<script src="public/assets/js/lang.js"></script>
+		<script src="public/assets/js/click.js"></script>
+		<script src="public/assets/js/scroll-animation.js"></script>
 
-	<link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
-	<title>HYUNGSEOB KIM</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="public/assets/js/common.js"></script>
-	<script src="public/assets/js/loading.js"></script>
-	<script src="public/assets/js/lang.js"></script>
-	<script src="public/assets/js/click.js"></script>
-	<script src="public/assets/js/scroll-animation.js"></script>
+		<script src="lang/ko.json" id="ko-data" type="text/javascript"></script>
+		<script src="lang/en.json" id="en-data" type="text/javascript"></script>
+		<script src="lang/ja.json" id="ja-data" type="text/javascript"></script>
+		<script>
+		</script>
+	</head>
 
-	<script src="lang/ko.json" id="ko-data" type="text/javascript"></script>
-	<script src="lang/en.json" id="en-data" type="text/javascript"></script>
-	<script src="lang/ja.json" id="ja-data" type="text/javascript"></script>
-	<script>
-	</script>
-</head>
-
-<body onload="onload()">
-	<div id="full-container" style="width: 100%; height:100%; background-color: black;">
-		<!-- Main -->
-		<!-- <img src="Common/line_circle.png" alt="" style="position:absolute;z-index:-1;right:-500px;top:500px;"> -->
-		<!-- <div id="mainArea">
-			<div style="font-size: 140px; white-space: nowrap;">
-				弘益人間
+	<body onload="onload()">
+		<div id="full-container" style="width: 100%; height:100%; background-color: black;">
+			<!-- Main -->
+			<!-- <img src="Common/line_circle.png" alt="" style="position:absolute;z-index:-1;right:-500px;top:500px;"> -->
+			<!-- <div id="mainArea">
+				<div style="font-size: 140px; white-space: nowrap;">
+					弘益人間
+				</div>
+			</div> -->
+			<div class="lang-wrap">
+				<img id="langKo" src="public/assets/img/country/southkorea.png" alt="ko">
+				<img id="langEn" src="public/assets/img/country/usa.png" alt="en">
+				<img id="langJa" src="public/assets/img/country/japan.png" alt="ja">
 			</div>
-		</div> -->
-		<div class="lang-wrap">
-			<img id="langKo" src="public/assets/img/country/southkorea.png" alt="ko">
-			<img id="langEn" src="public/assets/img/country/usa.png" alt="en">
-			<img id="langJa" src="public/assets/img/country/japan.png" alt="ja">
-		</div>
-		<header class="headerBox">
-			<span data-lang="greeting" id="display" class="typer"></span>
-			<div class="main-top-bottom" >
-				<div id="moreBtn" data-lang="detail" class="button moreButton"></div>
-			</div>
-		</header>
-		<!-- Intro -->
-		<div id="aboutMe" class="div-container">
-			<!-- <div class="intro-container"> -->
+			<header class="headerBox">
+				<span data-lang="greeting" id="display" class="typer"></span>
+				<div class="main-top-bottom" >
+					<div id="moreBtn" data-lang="detail" class="button moreButton"></div>
+				</div>
+			</header>
+			<nav class="router none">
+				<div class="link-wrap">
+					<div>
+						<span id="introNavLink" data-lang="introduceTitle"></span>
+					</div>
+					<div>
+						<span id="historyNavLink" data-lang="historyTitle"></span>
+					</div>
+					<div>
+						<span id="certNavLink" data-lang="certTitle"></span>
+					</div>
+					<div>
+						<span id="skillNavLink" data-lang="skillTitle"></span>
+					</div>
+					<div>
+						<span id="projectNavLink" data-lang="projectTitle"></span>
+					</div>
+					<div>
+						<span id="outsourcingNavLink" data-lang="outsourcingTitle"></span>
+					</div>
+				</div>
+			</nav>
+			<!-- Intro -->
+			<div id="aboutMe" class="div-container">
 				<div class="intro-inner">
 					<div class="intro-inner-header">
 						<div class="intro-inner-header-title">
@@ -78,10 +98,10 @@
 					<div class="my-info">
 						<div class="img-wrap" style="text-align: center;">
 							<img src="public/assets/img/profile/hsk-circle.png" alt="">
-	
+
 						</div>
 						<div class="my-info-item-wrap">
-	
+
 							<div class="my-info-item-container">
 								<div class="my-info-item-inner">
 									<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="public/assets/img/icons/me.png" alt=""></div>
@@ -139,343 +159,120 @@
 						</div>
 					</div>
 				</div>
-			<!-- </div> -->
-	
-			<!-- <div class="intro-container"> -->
-	
-				<div id="history" class="intro-inner">
-					<div class="intro-inner-header">
-						<!-- <img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;"> -->
-						<div class="intro-inner-header-title">
-							<div style="display: flex; align-items: center; gap:8px; position: relative;">
-								<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="historyLink"
-									style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer;">
-								<div>
-									<span data-lang="historyTitle"></span>
-									<div class="header-bar" style="animation-delay: 0.5s;"></div>
-								</div>
+			</div>
+
+			<div id="history" class="intro-inner">
+				<div class="intro-inner-header">
+					<!-- <img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;"> -->
+					<div class="intro-inner-header-title">
+						<div style="display: flex; align-items: center; gap:8px; position: relative;">
+							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="historyLink"
+								style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer;">
+							<div>
+								<span data-lang="historyTitle"></span>
+								<div class="header-bar" style="animation-delay: 0.5s;"></div>
 							</div>
 						</div>
 					</div>
-					<div class="my-history">
-						<div class="my-history-item-container">
-							<div class="my-history-item-inner">
-								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="public/assets/img/icons/history-past.png" alt=""></div>
-								<div style="display: flex; flex-direction: column;">
-									<span data-lang="his-000"></span>
-									<div>
-										<span class="history-year-badge">
-											2013.03 ~ 2016.02
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="my-history-item-container">
-							<div class="my-history-item-inner">
-								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="public/assets/img/icons/history-past.png" alt=""></div>
-								<div style="display: flex; flex-direction: column;">
-									<span data-lang="his-001"></span>
-									<div>
-										<span class="history-year-badge">
-											2016.03
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="my-history-item-container">
-							<div class="my-history-item-inner">
-								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="public/assets/img/icons/history-past.png" alt=""></div>
-								<div style="display: flex; flex-direction: column;">
-									<span data-lang="his-002"></span>
-									<div>
-										<span class="history-year-badge">
-											2018.11 ~ 2020.07
-	
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="my-history-item-container">
-							<div class="my-history-item-inner">
+				</div>
+				<div class="my-history">
+					<div class="my-history-item-container">
+						<div class="my-history-item-inner">
 							<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="public/assets/img/icons/history-past.png" alt=""></div>
 							<div style="display: flex; flex-direction: column;">
-								<span data-lang="his-003"></span>
+								<span data-lang="his-000"></span>
 								<div>
 									<span class="history-year-badge">
-	
-										2021.07 ~ 2021.08
+										2013.03 ~ 2016.02
 									</span>
 								</div>
-							</div>	
-							</div>
-						</div>
-						<div class="my-history-item-container">
-							<div class="my-history-item-inner">
-								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="public/assets/img/icons/history-past.png" alt=""></div>
-								<div style="display: flex; flex-direction:column;">
-									<div style="display: flex; flex-direction: column;">
-										<span data-lang="his-004"></span>
-										<div>
-											<span class="history-year-badge">
-	
-												2021.09 ~ 2021.11
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="my-history-item-container">
-							<div class="my-history-item-inner">
-								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="public/assets/img/icons/history-past.png" alt=""></div>
-								<div style="display: flex; flex-direction:column;">
-									<div style="display: flex; flex-direction: column;">
-										<span data-lang="his-005"></span>
-										<div>
-											<span class="history-year-badge">
-	
-												2022.02
-											</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="my-history-item-container">
-							<div class="my-history-item-inner">
-								<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="public/assets/img/icons/history-present.png" alt=""></div>
-								<div style="display: flex; flex-direction:column;">
-									<div style="display: flex; flex-direction: column;">
-										<span data-lang="his-006"></span>
-										<div>
-											<span class="history-year-badge">
-	
-												2021.12 ~
-											</span>
-										</div>
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			<!-- </div> -->
-	
-			<!-- 클래스명 수정 필요 -->
-			<!-- <div class="intro-container"> -->
-	
-				<div id="cert" class="intro-inner">
-					<div class="intro-inner-header">
-						<!-- <a href="#cert">
-							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
-						</a>
-						<div class="intro-inner-header-title">CERT.</div> -->
-						<div class="intro-inner-header-title">
-							<div style="display: flex; align-items: center; gap:8px; position: relative;">
-								<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="certLink"
-									style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer;">
+					<div class="my-history-item-container">
+						<div class="my-history-item-inner">
+							<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="public/assets/img/icons/history-past.png" alt=""></div>
+							<div style="display: flex; flex-direction: column;">
+								<span data-lang="his-001"></span>
 								<div>
-									<span data-lang="certTitle"></span>
-									<div class="header-bar" style="animation-delay: 0.5s;"></div>
+									<span class="history-year-badge">
+										2016.03
+									</span>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="my-history">
-						<div class="my-cert-item-container">
-							<div class="my-cert-item-inner">
-								<span data-lang="nationalrecog" class="nationalrecog-badge"></span>
-								<span data-lang="certOne" style="flex: 2;"></span>
-								<span data-lang="certOneLicenseNo" style="flex: 1;"></span>
-								<span data-lang="certOneLicenseDate"></span>
-							</div>
-						</div>
-						<div class="my-cert-item-container">
-							<div class="my-cert-item-inner">
-								<span data-lang="nationaltech" class="nationaltech-badge"></span>
-								<span data-lang="certTwo" style="flex: 2;"></span>
-								<span data-lang="certTwoLicenseNo" style="flex: 1;"></span>
-								<span data-lang="certTwoLicenseDate"></span>
-							</div>
-						</div>
-						<div class="my-cert-item-container">
-							<div class="my-cert-item-inner">
-								<span data-lang="nationalrecog" class="nationalrecog-badge"></span>
-								<span data-lang="certThree" style="flex: 2;"></span>
-								<span data-lang="certThreeLicenseNo" style="flex: 1;"></span>
-								<span data-lang="certThreeLicenseDate"></span>
-							</div>
-						</div>
-						<div class="my-cert-item-container">
-							<div class="my-cert-item-inner">
-								<span data-lang="nationaltech" class="nationaltech-badge"></span>
-								<span data-lang="certFour" style="flex: 2;"></span>
-								<span data-lang="certFourLicenseNo" style="flex: 1;"></span>
-								<span data-lang="certFourLicenseDate"></span>
-							</div>
-						</div>
-						<div class="my-cert-item-container">
-							<div class="my-cert-item-inner">
-								<span data-lang="driverLicense" class="driverLicense-badge"></span>
-								<span data-lang="certFive" style="flex: 2;"></span>
-								<span data-lang="certFiveLicenseNo" style="flex: 1;"></span>
-								<span data-lang="certFiveLicenseDate"></span>
-							</div>
-						</div>
-						<div class="my-cert-item-container">
-							<div class="my-cert-item-inner">
-								<span data-lang="nationaltech" class="nationaltech-badge"></span>
-								<span data-lang="certSix" style="flex: 2;"></span>
-								<span data-lang="certSixLicenseNo" style="flex: 1;"></span>
-								<span data-lang="certSixLicenseDate"></span>
-							</div>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-	
-			<!-- <div class="intro-container"> -->
-	
-				<div id="skill" class="intro-inner">
-					<div class="intro-inner-header">
-						<!-- <a href="#skill">
-							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
-						</a>
-						<div class="intro-inner-header-title">SKILLS</div> -->
-						<div class="intro-inner-header-title">
-							<div style="display: flex; align-items: center; gap:8px; position: relative;">
-								<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="skillLink"
-									style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer;">
+					<div class="my-history-item-container">
+						<div class="my-history-item-inner">
+							<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="public/assets/img/icons/history-past.png" alt=""></div>
+							<div style="display: flex; flex-direction: column;">
+								<span data-lang="his-002"></span>
 								<div>
-									<span data-lang="skillTitle"></span>
-									<div class="header-bar" style="animation-delay: 0.5s;"></div>
+									<span class="history-year-badge">
+										2018.11 ~ 2020.07
+
+									</span>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="my-skill-item-container">
-						<span class="customLogo-sap" style="font-size : 1rem!important">SAP</span>
-						<span class="customLogo-sapbtp" style="font-size : 1rem!important">SAP BTP</span>
-						<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP HANA DB</span>
-						<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP UI5</span>
-						<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP Cloud Application Studio</span>
-						<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP CPI</span>
-						<span class="customLogo-nodejs" style="font-size : 1rem!important">Nodejs</span>
-						<span class="customLogo-js" style="font-size : 1rem!important">JS</span>
-						<span class="customLogo-html5" style="font-size : 1rem!important">HTML5</span>
-						<span class="customLogo-css3" style="font-size : 1rem!important">CSS3</span>
-						<span class="customLogo-mysql" style="font-size : 1rem!important">MySQL</span>
-						<span class="customLogo-postgre" style="font-size : 1rem!important">PostgreSQL</span>
-						<span class="customLogo-react" style="font-size : 1rem!important">React</span>
-						<span class="customLogo-groovy" style="font-size : 1rem!important">Groovy</span>
-						<span class="customLogo-twig" style="font-size : 1rem!important">TWIG</span>
-						<span class="customLogo-python" style="font-size : 1rem!important">Python</span>
-						<span class="customLogo-java" style="font-size : 1rem!important">JAVA</span>
-						<span class="customLogo-ruby" style="font-size : 1rem!important">Ruby</span>
-						<span class="customLogo-c" style="font-size : 1rem!important">C</span>
-						<span class="customLogo-cpp" style="font-size : 1rem!important">C++</span>
-						<span class="customLogo-cs" style="font-size : 1rem!important">C#</span>
-						<span class="customLogo-jquery" style="font-size : 1rem!important">jQuery</span>
-						<span class="customLogo-firebase" style="font-size : 1rem!important">Firebase</span>
-						<span class="customLogo-php" style="font-size : 1rem!important">PHP</span>
-						<span class="customLogo-laravel" style="font-size : 1rem!important">Laravel</span>
+					<div class="my-history-item-container">
+						<div class="my-history-item-inner">
+						<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="public/assets/img/icons/history-past.png" alt=""></div>
+						<div style="display: flex; flex-direction: column;">
+							<span data-lang="his-003"></span>
+							<div>
+								<span class="history-year-badge">
+
+									2021.07 ~ 2021.08
+								</span>
+							</div>
+						</div>	
+						</div>
 					</div>
-					<div class="specialization" style="">
-						<div class="specialization-wrap">
-							<div class="specializationLabel">
-								HTML
-							</div>
-							<div class="ability-bar" style="flex:5;">
-								<div style="width: 90%;">
-									<div class="r " >
-										<span class="a90 percent">90%</span>
+					<div class="my-history-item-container">
+						<div class="my-history-item-inner">
+							<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="public/assets/img/icons/history-past.png" alt=""></div>
+							<div style="display: flex; flex-direction:column;">
+								<div style="display: flex; flex-direction: column;">
+									<span data-lang="his-004"></span>
+									<div>
+										<span class="history-year-badge">
+
+											2021.09 ~ 2021.11
+										</span>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="specialization-wrap">
-							<div class="specializationLabel">
-								CSS
-							</div>
-							<div class="ability-bar" style="flex:5;">
-								<div style="width: 85%;">
-									<div class="r " >
-										<span class="a85 percent">85%</span>
+					</div>
+					<div class="my-history-item-container">
+						<div class="my-history-item-inner">
+							<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="public/assets/img/icons/history-past.png" alt=""></div>
+							<div style="display: flex; flex-direction:column;">
+								<div style="display: flex; flex-direction: column;">
+									<span data-lang="his-005"></span>
+									<div>
+										<span class="history-year-badge">
+
+											2022.02
+										</span>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="specialization-wrap">
-							<div class="specializationLabel">
-								JS
-							</div>
-							<div class="ability-bar" style="flex:5;">
-								<div style="width: 90%;">
-									<div class="r " >
-										<span class="a90 percent">90%</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="specialization-wrap">
-							<div class="specializationLabel">
-								jQuery
-							</div>
-							<div class="ability-bar" style="flex:5;">
-								<div style="width: 85%;">
-									<div class="r " >
-										<span class="a85 percent">85%</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="specialization-wrap">
-							<div class="specializationLabel">
-								MySQL
-							</div>
-							<div class="ability-bar" style="flex:5;">
-								<div style="width: 80%;">
-									<div class="r " >
-										<span class="a80 percent">80%</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="specialization-wrap">
-							<div class="specializationLabel">
-								PostgreSQL
-							</div>
-							<div class="ability-bar" style="flex:5;">
-								<div style="width: 80%;">
-									<div class="r " >
-										<span class="a80 percent">80%</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="specialization-wrap">
-							<div class="specializationLabel">
-								Laravel
-							</div>
-							<div class="ability-bar" style="flex:5;">
-								<div style="width: 80%;">
-									<div class="r " >
-										<span class="a80 percent">80%</span>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="specialization-wrap">
-							<div class="specializationLabel">
-								Python
-							</div>
-							<div class="ability-bar" style="flex:5;">
-								<div style="width: 60%;">
-									<div class="r " >
-										<span class="a60 percent">60%</span>
+					</div>
+					<div class="my-history-item-container">
+						<div class="my-history-item-inner">
+							<div><img class="AboutMe_icon-img__YYpc_" style="width: 30px;" src="public/assets/img/icons/history-present.png" alt=""></div>
+							<div style="display: flex; flex-direction:column;">
+								<div style="display: flex; flex-direction: column;">
+									<span data-lang="his-006"></span>
+									<div>
+										<span class="history-year-badge">
+
+											2021.12 ~
+										</span>
 									</div>
 								</div>
 							</div>
@@ -483,13 +280,232 @@
 					</div>
 				</div>
 			</div>
+				<!-- </div> -->
+		
+				<!-- 클래스명 수정 필요 -->
+				<!-- <div class="intro-container"> -->
+		
+			<div id="cert" class="intro-inner">
+				<div class="intro-inner-header">
+					<!-- <a href="#cert">
+						<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
+					</a>
+					<div class="intro-inner-header-title">CERT.</div> -->
+					<div class="intro-inner-header-title">
+						<div style="display: flex; align-items: center; gap:8px; position: relative;">
+							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="certLink"
+								style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer;">
+							<div>
+								<span data-lang="certTitle"></span>
+								<div class="header-bar" style="animation-delay: 0.5s;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="my-history">
+					<div class="my-cert-item-container">
+						<div class="my-cert-item-inner">
+							<span data-lang="nationalrecog" class="nationalrecog-badge"></span>
+							<span data-lang="certOne" style="flex: 2;"></span>
+							<span data-lang="certOneLicenseNo" style="flex: 1;"></span>
+							<span data-lang="certOneLicenseDate"></span>
+						</div>
+					</div>
+					<div class="my-cert-item-container">
+						<div class="my-cert-item-inner">
+							<span data-lang="nationaltech" class="nationaltech-badge"></span>
+							<span data-lang="certTwo" style="flex: 2;"></span>
+							<span data-lang="certTwoLicenseNo" style="flex: 1;"></span>
+							<span data-lang="certTwoLicenseDate"></span>
+						</div>
+					</div>
+					<div class="my-cert-item-container">
+						<div class="my-cert-item-inner">
+							<span data-lang="nationalrecog" class="nationalrecog-badge"></span>
+							<span data-lang="certThree" style="flex: 2;"></span>
+							<span data-lang="certThreeLicenseNo" style="flex: 1;"></span>
+							<span data-lang="certThreeLicenseDate"></span>
+						</div>
+					</div>
+					<div class="my-cert-item-container">
+						<div class="my-cert-item-inner">
+							<span data-lang="nationaltech" class="nationaltech-badge"></span>
+							<span data-lang="certFour" style="flex: 2;"></span>
+							<span data-lang="certFourLicenseNo" style="flex: 1;"></span>
+							<span data-lang="certFourLicenseDate"></span>
+						</div>
+					</div>
+					<div class="my-cert-item-container">
+						<div class="my-cert-item-inner">
+							<span data-lang="driverLicense" class="driverLicense-badge"></span>
+							<span data-lang="certFive" style="flex: 2;"></span>
+							<span data-lang="certFiveLicenseNo" style="flex: 1;"></span>
+							<span data-lang="certFiveLicenseDate"></span>
+						</div>
+					</div>
+					<div class="my-cert-item-container">
+						<div class="my-cert-item-inner">
+							<span data-lang="nationaltech" class="nationaltech-badge"></span>
+							<span data-lang="certSix" style="flex: 2;"></span>
+							<span data-lang="certSixLicenseNo" style="flex: 1;"></span>
+							<span data-lang="certSixLicenseDate"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+				<!-- </div> -->
+		
+				<!-- <div class="intro-container"> -->
+		
+			<div id="skill" class="intro-inner">
+				<div class="intro-inner-header">
+					<!-- <a href="#skill">
+						<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
+					</a>
+					<div class="intro-inner-header-title">SKILLS</div> -->
+					<div class="intro-inner-header-title">
+						<div style="display: flex; align-items: center; gap:8px; position: relative;">
+							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="skillLink"
+								style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer;">
+							<div>
+								<span data-lang="skillTitle"></span>
+								<div class="header-bar" style="animation-delay: 0.5s;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="my-skill-item-container">
+					<span class="customLogo-sap" style="font-size : 1rem!important">SAP</span>
+					<span class="customLogo-sapbtp" style="font-size : 1rem!important">SAP BTP</span>
+					<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP HANA DB</span>
+					<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP UI5</span>
+					<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP Cloud Application Studio</span>
+					<span class="customLogo-sapui5" style="font-size : 1rem!important">SAP CPI</span>
+					<span class="customLogo-nodejs" style="font-size : 1rem!important">Nodejs</span>
+					<span class="customLogo-js" style="font-size : 1rem!important">JS</span>
+					<span class="customLogo-html5" style="font-size : 1rem!important">HTML5</span>
+					<span class="customLogo-css3" style="font-size : 1rem!important">CSS3</span>
+					<span class="customLogo-mysql" style="font-size : 1rem!important">MySQL</span>
+					<span class="customLogo-postgre" style="font-size : 1rem!important">PostgreSQL</span>
+					<span class="customLogo-react" style="font-size : 1rem!important">React</span>
+					<span class="customLogo-groovy" style="font-size : 1rem!important">Groovy</span>
+					<span class="customLogo-twig" style="font-size : 1rem!important">TWIG</span>
+					<span class="customLogo-python" style="font-size : 1rem!important">Python</span>
+					<span class="customLogo-java" style="font-size : 1rem!important">JAVA</span>
+					<span class="customLogo-ruby" style="font-size : 1rem!important">Ruby</span>
+					<span class="customLogo-c" style="font-size : 1rem!important">C</span>
+					<span class="customLogo-cpp" style="font-size : 1rem!important">C++</span>
+					<span class="customLogo-cs" style="font-size : 1rem!important">C#</span>
+					<span class="customLogo-jquery" style="font-size : 1rem!important">jQuery</span>
+					<span class="customLogo-firebase" style="font-size : 1rem!important">Firebase</span>
+					<span class="customLogo-php" style="font-size : 1rem!important">PHP</span>
+					<span class="customLogo-laravel" style="font-size : 1rem!important">Laravel</span>
+				</div>
+				<div class="specialization" style="">
+					<div class="specialization-wrap">
+						<div class="specializationLabel">
+							HTML
+						</div>
+						<div class="ability-bar" style="flex:5;">
+							<div style="width: 90%;">
+								<div class="r " >
+									<span class="a90 percent">90%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="specialization-wrap">
+						<div class="specializationLabel">
+							CSS
+						</div>
+						<div class="ability-bar" style="flex:5;">
+							<div style="width: 85%;">
+								<div class="r " >
+									<span class="a85 percent">85%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="specialization-wrap">
+						<div class="specializationLabel">
+							JS
+						</div>
+						<div class="ability-bar" style="flex:5;">
+							<div style="width: 90%;">
+								<div class="r " >
+									<span class="a90 percent">90%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="specialization-wrap">
+						<div class="specializationLabel">
+							jQuery
+						</div>
+						<div class="ability-bar" style="flex:5;">
+							<div style="width: 85%;">
+								<div class="r " >
+									<span class="a85 percent">85%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="specialization-wrap">
+						<div class="specializationLabel">
+							MySQL
+						</div>
+						<div class="ability-bar" style="flex:5;">
+							<div style="width: 80%;">
+								<div class="r " >
+									<span class="a80 percent">80%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="specialization-wrap">
+						<div class="specializationLabel">
+							PostgreSQL
+						</div>
+						<div class="ability-bar" style="flex:5;">
+							<div style="width: 80%;">
+								<div class="r " >
+									<span class="a80 percent">80%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="specialization-wrap">
+						<div class="specializationLabel">
+							Laravel
+						</div>
+						<div class="ability-bar" style="flex:5;">
+							<div style="width: 80%;">
+								<div class="r " >
+									<span class="a80 percent">80%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="specialization-wrap">
+						<div class="specializationLabel">
+							Python
+						</div>
+						<div class="ability-bar" style="flex:5;">
+							<div style="width: 60%;">
+								<div class="r " >
+									<span class="a60 percent">60%</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		<!-- </div> -->
-	
-		<!-- Project -->
-		<!-- <div class="div-container"> -->
-			<div class="project-inner odd-section">
-				<div id="project" class="project-container">
-					<!-- 나중에 클래스명 바꾸기 -->
+			<!-- </div> -->
+		
+			<!-- Project -->
+			<div id="project" class="div-container odd-section">
+				<div class="intro-inner">
 					<div class="intro-inner-header">
 						<div class="intro-inner-header-title">
 							<div style="display: flex; align-items: center; gap:8px; position: relative;">
@@ -714,7 +730,7 @@
 						</div>
 					</div>
 					<!-- <div class="divider"></div> -->
-		
+
 					<div class="project-item-container">
 						<div class="project-items">
 							<div style="display: flex; flex-direction : column; align-items : center;">
@@ -743,7 +759,7 @@
 						</div>
 					</div>
 					<!-- <div class="divider"></div> -->
-	
+
 					<div class="project-item-container">
 						<div class="project-items">
 							<div style="display: flex; flex-direction : column; align-items : center;">
@@ -781,17 +797,10 @@
 					</div>
 				</div>
 			</div>
-		<!-- </div> -->
-	
-		<div id="outsourcing" class="div-container">
-			<div class="outsourcing-inner">
-				<div class="outsourcing-container">
-					<!-- 나중에 클래스명 바꾸기 -->
+
+			<div id="outsourcing" class="div-container">
+				<div class="intro-inner ">
 					<div class="intro-inner-header">
-						<!-- <a href="#outsourcing">
-							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
-						</a>
-						<div class="intro-inner-header-title">OUTSOURCING</div> -->
 						<div class="intro-inner-header-title">
 							<div style="display: flex; align-items: center; gap:8px; position: relative;">
 								<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="outsourcingLink"
@@ -968,122 +977,25 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- <div id="record" class="div-container">
-			<div class="record-inner odd-section">
-				<div id="record" class="record-container">
-					<div class="intro-inner-header">
-						<a href="#record">
-							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px; filter: invert(1);">
-						</a>
-						<div class="intro-inner-header-title" style="color:white!important;">RECORD</div>
-					</div>
-					<div class="project-item-container"> -->
-	
-						<!-- <div style="overflow: hidden;">
-							<div class="slide-container">
-								<div class="slide-box">
-									<img src="Common/pics/hdi/cpi-rfc.png" width="100px">
-								</div>
-								<div class="slide-box">
-									<img src="Common/pics/hdi/cas-heavy-controller.png">
-								</div>
-								<div class="slide-box">
-									<img src="Common/pics/hdi/cas-heavy-datamodel.png">
-								</div>
-								<div class="slide-box">
-									<img src="Common/pics/hdi/cas-heavy-datamodel.png">
-								</div>
-							</div>
-							<div class="btns">
-								<button class="angle-btn prev">
-									<i class="fas fa-angle-left"></i>
-								</button>
-								<button class="dot-btn slide-1"> </button>
-								<button class="dot-btn slide-2"> </button>
-								<button class="dot-btn slide-3"> </button>
-								<button class="angle-btn next">
-									<i class="fas fa-angle-right"></i>
-								</button>
-							</div>
-						</div> -->
 						
-						<!-- <div class="carousel-container">
-							<div class="slide-container">
-							  <div class="slide"><img src="Common/pics/hdi/cpi-rfc.png" width="800px!important" alt="Image 1"></div>
-							  <div class="slide"><img src="Common/pics/hdi/cas-heavy-controller.png"width="800px!important" alt="Image 2"></div>
-							  <div class="slide"><img src="Common/pics/hdi/cas-heavy-datamodel.png" width="800px!important"alt="Image 3"></div>
-							</div>
-							<div class="prev">Prev</div>
-							<div class="next">Next</div>
-							<div class="bullets"></div>
-						</div> -->
-					<!-- </div>
+			<footer class="div-container">
+				<img id="top" src="public/assets/img/icons/arrow-up.png" style="width: 16px; cursor: pointer;" alt="">
+				<h4>HYUNGSEOB KIM</h4>
+				<div class="icon-container">
+					<a href="https://ballistic-tang-9b7.notion.site/Welcome-aboard-hyngxxob-675a6fe036e2451bbb78045da3c170d9?pvs=4" target="_blank">
+						<img src="public/assets/img/icons/blog.png" id="icons" style="width:32px;">
+					</a>
+					<a href="https://github.com/hyngxxob" target="_blank">
+						<img src="public/assets/img/icons/github.png" id="icons" style="width:36px;">
+					</a>
+					<a href="mailto:rspnsblepioneer@gmail.com" target="_blank">
+						<img src="public/assets/img/icons/mail.png" id="icons" style="width:36px;">
+					</a>
 				</div>
-			</div>
-		</div> -->
-	
-		<!-- <div id="performance" class="div-container">
-			<div class="performance-inner">
-				<div class="performance-container">
-					<div class="intro-inner-header">
-						<a href="#performance">
-							<img src="https://cdg-portfolio.com/images/black-link.png" alt="" style="width: 30px; height: 30px;">
-						</a>
-						<div class="intro-inner-header-title">PERFORMANCE</div>
-					</div>
-					<div class="performance-item-container">
-						<h3>휴가 신청 시스템</h3>
-						<div class="performance-description">
-							<span>Logic 개발 : </span><br/>
-							<span>차감일 계산 / 차감 후 잔여 휴가 계산 / 휴가 삭제 시 잔여 휴가 복구</span><br/>
-							<hr size="1px" width="60%" style="margin: 16px auto; color: #a5a5a5;" color="#a5a5a5">
-							<span>기능 개발 : </span><br/>
-							<span>휴가를 상신하는 경우 Outlook 으로 메일 발송</span>
-						</div>
-						<button id="tech" style="width: 100px;" onclick="
-						document.getElementById('id01').style.display='block';
-						document.getElementById('full-container').style.overflow='hidden'">자세히 보기</button>
-						<div id="id01" class="modal-container">
-							<div class="modal-content-full-container">
-								<div class="modal-content-container">
-									<span onclick="
-										document.getElementById('id01').style.display='none';
-										document.getElementById('full-container').style.overflow='visible'"
-										class="w3-button w3-display-topright">&times;</span>
-									<div style="margin: 0 32px;">
-										<img src="Common/pics/jmc/vacation_1.png" alt="" style="width: 100%;">
-									</div>
-	
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-		
+			</footer>
 		</div>
-		<footer class="div-container">
-			<img id="top" src="public/assets/img/icons/arrow-up.png" style="width: 16px; cursor: pointer;" alt="">
-			<h4>HYUNGSEOB KIM</h4>
-			<div class="icon-container">
-				<a href="https://ballistic-tang-9b7.notion.site/Welcome-aboard-hyngxxob-675a6fe036e2451bbb78045da3c170d9?pvs=4" target="_blank">
-					<img src="public/assets/img/icons/blog.png" id="icons" style="width:32px;">
-				</a>
-				<a href="https://github.com/hyngxxob" target="_blank">
-					<img src="public/assets/img/icons/github.png" id="icons" style="width:36px;">
-				</a>
-				<a href="mailto:rspnsblepioneer@gmail.com" target="_blank">
-					<img src="public/assets/img/icons/mail.png" id="icons" style="width:36px;">
-				</a>
-			</div>
-		</footer>
-	</div>
-</body>
-
+	</body>
 </html>
 
 <script>
 </script>
-
