@@ -11,6 +11,10 @@ ko = {
     "projectTitle" : "프로젝트",
     "outsourcingTitle" : "외주",
 
+    // Button
+    "shutdown" : "서비스 종료",
+    "inprogress" : "서비스중",
+
     // Label
     "name" : "이름",
     "birth" : "생년월일",
@@ -19,8 +23,39 @@ ko = {
     "email" : "이메일",
     "education" : "최종학력",
     
+    // Introduce
+    "nameVal" : "김형섭",
+    "birthVal" : "1997. 06. 16",
+    "addressVal" : "대한민국 서울시 동작구",
+    "contactVal" : "010-9505-5170",
+    "emailVal" : "hyngxxob@gmail.com",
+    "educationVal" : "호서대학교 컴퓨터소프트웨어학과",
+
+    // History
+    "his-001" : "호서대학교 컴퓨터소프트웨어학과 입학",
+    "his-002" : "육군 병장 만기 전역",
+    "his-003" : "KISIA 정보보호산업 인재양성과정 수료",
+    "his-004" : "㈜윈스 보안관제 인턴",
+    "his-005" : "호서대학교 컴퓨터소프트웨어학과 졸업",
+    "his-006" : "JMC Corporation APJ Korea. SAP CRM Cloud 개발팀",
+
     // Certification
     "certOne" : "정보처리기사",
     "licenseNo" : "212*****965F",
     "licenseDate" : "2021.06",
+    
+    // OutSourcing
+    "outsource-001-subtitle" : "당신의 안심 귀가에 도움을 줍니다",
+    "outsource-001-list-01" : "반응형 웹 개발",
+    "outsource-001-list-02" :"위급시 사용자 위치 지도 표시 서비스 개발",
+    "outsource-001-list-03" :"위급시 사전에 입력한 긴급연락망 푸시 알림기능 개발",
+    "outsource-001-list-04" :"위험 지역 사전 공유 기능 개발",
+
+    "outsource-002-title" : "아이엠정프로",
+    "outsource-002-subtitle" : "SNS광고대행사 페이지 개발",
+    "outsource-002-list-01" : "TWIG 템플릿을 활용한 웹 사이트 개발",
+
+    "outsource-003-title" : "SNS탑텐",
+
+    "outsource-004-title" : "SNS메뉴얼",
 }

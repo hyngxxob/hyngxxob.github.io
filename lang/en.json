@@ -13,6 +13,10 @@ en = {
     "projectTitle" : "Projects",
     "outsourcingTitle" : "Outsourcing",
 
+    // Button
+    "shutdown" : "Shut down the service",
+    "inprogress" : "Providing service",
+
     // Label
     "name" : "Name",
     "birth" : "Birth",
@@ -20,9 +24,40 @@ en = {
     "contact" : "Contact",
     "email" : "Email",
     "education" : "Education",
+        
+    // Introduce
+    "nameVal" : "Hyungseub Kim",
+    "birthVal" : "June 16th, 1997",
+    "addressVal" : "Dongjak-gu, Seoul, Republic of Korea",
+    "contactVal" : "+82 010-9505-5170",
+    "emailVal" : "hyngxxob@gmail.com",
+    "educationVal" : "Hoseo Univ. major in Computer & Software Engineering",
+
+    // History
+    "his-001" : "Admitted to the Hoseo Univ. major in Computer & Software Engineering",
+    "his-002" : "Army Sergeant Expired Retired",
+    "his-003" : "KISIA Completed the Information Security Industry Talent Development Program",
+    "his-004" : "Wins Inc. Security Control Intern",
+    "his-005" : "Graduated from Hoseo Univ. major in Computer & Software Engineering",
+    "his-006" : "JMC Corporation APJ Korea. SAP CRM Cloud Development Team",
     
     // Certification
     "certOne" : "Applied Information Technology Engineer",
     "licenseNo" : "212*****965F",
     "licenseDate" : "2021.06",
+    
+    // OutSourcing
+    "outsource-001-subtitle" : "Helping you get home safely",
+    "outsource-001-list-01" : "Responsive web development",
+    "outsource-001-list-02" : "Developed a service to map user locations during emergencies",
+    "outsource-001-list-03" : "Developed push notifications to pre-populated emergency contacts in the event of a crisis",
+    "outsource-001-list-04" : "Developing risk area proactive sharing capabilities",
+
+    "outsource-002-title" : "IAMJUNGPRO",
+    "outsource-002-subtitle" : "Developed a social media agency page",
+    "outsource-002-list-01" : "Website development using TWIG templates",
+
+    "outsource-003-title" : "SNSTOPTEN",
+
+    "outsource-004-title" : "SNSMANUAL",
 }

@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const userLanguage = navigator.language || navigator.userLanguage;
+    const currLang = window.sessionStorage.getItem("lang");
+    let userLanguage;
+    if(currLang) {
+        userLanguage = currLang;
+    } else {
+        userLanguage = navigator.language || navigator.userLanguage;
+    }
 
     let lang;
     if (userLanguage === 'ko') {
@@ -47,7 +53,7 @@ function typeWriter(text, element, delay = 100) {
     let i = 0;
     const typing = setInterval(() => {
         if (i < text.length) {
-            element.innerHTML += text.charAt(i);
+            element.textContent += text.charAt(i);
             i++;
         } else {
             clearInterval(typing);

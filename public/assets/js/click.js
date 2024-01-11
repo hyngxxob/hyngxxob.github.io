@@ -40,4 +40,19 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
     });
+
+    document.getElementById('langKo').addEventListener('click', () => {
+        window.sessionStorage.setItem("lang", "ko");
+        window.location.reload();
+    });
+
+    document.getElementById('langEn').addEventListener('click', () => {
+        window.sessionStorage.setItem("lang", "en");
+        window.location.reload();
+    });
+
+    document.getElementById('langJa').addEventListener('click', () => {
+        window.sessionStorage.setItem("lang", "ja");
+        window.location.reload();
+    });
 });

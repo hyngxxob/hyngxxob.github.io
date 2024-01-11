@@ -88,6 +88,15 @@
     font-weight: bold;
 }
 
+.customLogo-sapbtp {
+    background: linear-gradient(to bottom, #008FD3, #005CBF);
+    color: white;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    padding: 0 4px;
+    font-weight: bold;
+}
+
 .customLogo-twig {
     background-color: #bccf28;
     color: white;

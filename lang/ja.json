@@ -11,6 +11,10 @@ ja = {
     "projectTitle" : "プロジェクト",
     "outsourcingTitle" : "外注",
 
+    // Button
+    "shutdown" : "サービス終了",
+    "inprogress" : "サービス中",
+
     // Label
     "name" : "名前",
     "birth" : "生年月日",
@@ -18,9 +22,40 @@ ja = {
     "contact" : "連絡先",
     "email" : "メールアドレス",
     "education" : "最終学歴",
+        
+    // Introduce
+    "nameVal" : "キム・ヒョンソプ(Hyungseub Kim)",
+    "birthVal" : "1997年6月16日(平成9年)",
+    "addressVal" : "韓国ソウル市銅雀区",
+    "contactVal" : "+82 010-9505-5170",
+    "emailVal" : "hyngxxob@gmail.com",
+    "educationVal" : "湖西大學校 コンピュータソフトウェア学科",
 
+    // History
+    "his-001" : "湖西大學校 コンピュータソフトウェア学科入学",
+    "his-002" : "陸軍兵長満期退役",
+    "his-003" : "KISIA 情報保護産業人材養成課程修了",
+    "his-004" : "株式会社ウィンズセキュリティ監視インターン。",
+    "his-005" : "湖西大學校 コンピュータソフトウェア学科卒業",
+    "his-006" : "JMC Corporation APJ Korea. SAP CRM Cloud 開発チーム",
+ 
     // Certification
     "certOne" : "情報処理技術(Applied Information Technology Engineer)",
     "licenseNo" : "212*****965F",
     "licenseDate" : "2021.06",
+
+    // OutSourcing
+    "outsource-001-subtitle" : "あなたの安心帰宅をサポートします",
+    "outsource-001-list-01" : "レスポンシブWeb開発",
+    "outsource-001-list-02" :"緊急時のユーザー位置地図表示サービスを開発",
+    "outsource-001-list-03" :"緊急時、事前に入力した緊急連絡網にプッシュ通知機能を開発",
+    "outsource-001-list-04" :"危険地域事前共有機能開発",
+
+    "outsource-002-title" : "アイエムジョンフロ",
+    "outsource-002-subtitle" : "SNS広告代理店ページ開発",
+    "outsource-002-list-01" : "TWIGテンプレートを活用したウェブサイト開発",
+
+    "outsource-003-title" : "SNSトップテン",
+
+    "outsource-004-title" : "SNSマニュアル",
 }

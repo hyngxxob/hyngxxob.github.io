@@ -4,6 +4,20 @@
     line-height: 1.65;
 }
 
+.lang-wrap {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    top: 16px;
+}
+
+.lang-wrap > * {
+    margin : 0 4px;
+    width: 32px;
+    cursor: pointer;
+}
+
 .my-skill-item-container>* {
     cursor: default;
     -webkit-touch-callout: none;
@@ -83,7 +97,7 @@
 }
 
 .fade-in-up {
-    animation: fadeInUp 1s;
+    animation: fadeInUp .5s;
 }
 
 .ability-bar {
