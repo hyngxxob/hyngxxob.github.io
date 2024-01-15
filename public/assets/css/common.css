@@ -4,6 +4,55 @@
     line-height: 1.65;
 }
 
+.project-modal-detail {
+    display: block;
+}
+
+.outsourcing-status-active:hover {
+    background: #0080009e;
+}
+
+.project-modal-title {
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.project-modal-subTitle {
+    color: #fff;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+}
+
+#modalclose {
+    position: absolute;
+    cursor: pointer;
+    top: 18px;
+    right: 16px;
+    color: #fff;
+    width: 16px;
+    filter: invert(1);
+}
+
+.blur {
+    background: #000000e3;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.link-wrap > *:hover {
+    background: #7B68EE;
+    border-radius: 8px;
+    padding : 0 4px;
+    color: #fff;
+}
+
 .active {
     display: initial;
 }
@@ -283,9 +332,9 @@ nav.fixed.desk {
         opacity: 0;
     }
 
-    50% {
+    /* 50% {
         opacity: 0.5;
-    }
+    } */
 
     100% {
         opacity: 1;
@@ -521,6 +570,13 @@ html {
     border : 0px;
     border-radius: 16px;
     padding : 16px;
+    cursor: pointer;
+}
+
+.project-items:hover {
+    background-color: rgba(0, 0, 0, .15);
+    /* border-left: 3px solid black; */
+    color: white;
 }
 
 .performance-items {

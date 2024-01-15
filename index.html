@@ -34,6 +34,9 @@
 		<script src="public/assets/js/lang.js"></script>
 		<script src="public/assets/js/click.js"></script>
 		<script src="public/assets/js/scroll-animation.js"></script>
+		<script src="public/assets/js/getLanguage.js"></script>
+		<script src="public/assets/js/projectContents.js"></script>
+		<script src="public/assets/js/project/stellaSync.js"></script>
 
 		<script src="lang/ko.json" id="ko-data" type="text/javascript"></script>
 		<script src="lang/en.json" id="en-data" type="text/javascript"></script>
@@ -558,16 +561,15 @@
 						</div>
 					</div>
 					<div class="project-item-container">
-						<div class="project-items">
+						<div class="project-items" data-pn="kolon">
 							<div style="display: flex; flex-direction : column; align-items : center;">
 								<div>
-									<h2>코오롱 베니트 수주 산업 특화 프로세스 구현 및 개발</h2>
+									<h2 data-lang="kolonTitle"></h2>
 								</div>
 								<div>
-									<span>통합 딜 관리</span>
+									<span data-lang="kolonSubtitle"></span>
 								</div>
 							</div>
-							<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
 							<div class="project-description-container">
 								<img src="public/assets/img/companyLogo/kolonBenit.jpg" style="width: 200px;" alt="">
 								<div class="project-description-content-container">
@@ -587,18 +589,16 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="divider"></div> -->
 					<div class="project-item-container">
-						<div class="project-items">
+						<div class="project-items" data-pn="gentlemonster">
 							<div style="display: flex; flex-direction : column; align-items : center;">
 								<div>
-									<h2>젠틀몬스터 Customer Service 관리 및 무상/유상 서비스 주문 연계 시스템 개발</h2>
+									<h2 data-lang="gentlemonsterTitle"></h2>
 								</div>
 								<div>
-									<span>CRM Service Cloud</span>
+									<span data-lang="gentlemonsterSubtitle"></span>
 								</div>
 							</div>
-							<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
 							<div class="project-description-container">
 								<img src="public/assets/img/companyLogo/gentlemonster.png" style="width: 200px;" alt="">
 								<div class="project-description-content-container">
@@ -619,18 +619,16 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="divider"></div> -->
 					<div class="project-item-container">
-						<div class="project-items">
+						<div class="project-items" data-pn="kakaoent">
 							<div style="display: flex; flex-direction : column; align-items : center;">
 								<div>
-									<h2>카카오엔터프라이즈 SAP Lead to Cash 클라우드 시스템</h2>
+									<h2 data-lang="kakaoentTitle"></h2>
 								</div>
 								<div>
-									<span>C4HANA Cloud 영업관리 시스템</span>
+									<span data-lang="kakaoentSubtitle"></span>
 								</div>
 							</div>
-							<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
 							<div class="project-description-container">
 								<img src="public/assets/img/companyLogo/kakaoEnterprise.jpg" style="width: 200px;" alt="">
 								<div class="project-description-content-container">
@@ -648,18 +646,16 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="divider"></div> -->
 					<div class="project-item-container">
-						<div class="project-items">
+						<div class="project-items" data-pn="kisco">
 							<div style="display: flex; flex-direction : column; align-items : center;">
 								<div>
-									<h2>KISCO 경인양행 마케팅/영업/서비스 CRM 전(全) 모듈 구축 및 S4Hana 연계 구현</h2>
+									<h2 data-lang="kiscoTitle"></h2>
 								</div>
 								<div>
-									<span>딜러 포털과 영업 시스템 일원화</span>
+									<span data-lang="kiscoSubtitle"></span>
 								</div>
 							</div>
-							<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
 							<div class="project-description-container">
 								<img src="public/assets/img/companyLogo/kisco.jpg" style="width: 200px;" alt="">
 								<div class="project-description-content-container">
@@ -678,18 +674,16 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="divider"></div> -->
 					<div class="project-item-container">
-						<div class="project-items">
+						<div class="project-items" data-pn="hanwha">
 							<div style="display: flex; flex-direction : column; align-items : center;">
 								<div>
-									<h2>한화큐셀 B2B 고객 서비스 구현 및 글로벌 법인별 서비스 통합</h2>
+									<h2 data-lang="hanwhaTitle"></h2>
 								</div>
 								<div>
-									<span>고객 Claim 데이터 기반 대시보드 및 레포트 구축</span>
+									<span data-lang="hanwhaSubtitle"></span>
 								</div>
 							</div>
-							<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
 							<div class="project-description-container">
 								<img src="public/assets/img/companyLogo/hanwhaQCELL.png" style="width: 200px;" alt="">
 								<div class="project-description-content-container">
@@ -707,18 +701,16 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="divider"></div> -->
 					<div class="project-item-container">
-						<div class="project-items">
+						<div class="project-items" data-pn="hdi">
 							<div style="display: flex; flex-direction : column; align-items : center;">
 								<div>
-									<h2>현대두산인프라코어(HDI) 완성차 오더링 시스템 - Machine Ordering Phase One</h2>
+									<h2 data-lang="hdiTitle"></h2>
 								</div>
 								<div>
-									<span>RFC통신으로 S4/HANA Cloud ERP측으로부터 수신한 데이터 가공</span>
+									<span data-lang="hdiSubtitle"></span>
 								</div>
 							</div>
-							<!-- <img src="Common/pics/hdi.jpg" alt="HDI" style="width: 300px;"> -->
 							<div class="project-description-container">
 								<img src="public/assets/img/companyLogo/hyundaidoosaninfra.png" style="width: 200px;" alt="">
 								<div class="project-description-content-container">
@@ -738,15 +730,14 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="divider"></div> -->
 					<div class="project-item-container">
-						<div class="project-items">
+						<div class="project-items" data-pn="dina">
 							<div style="display: flex; flex-direction : column; align-items : center;">
 								<div>
-									<h2>북미 HDI 완성차 오더링 시스템 - Machine Ordering Phase Two / Parts Ordering</h2>
+									<h2 data-lang="dinaTitle"></h2>
 								</div>
 								<div>
-									<span>SAP Cloud for Customer OData API를 통한 웹 브라우저 데이터 노출</span>
+									<span data-lang="dinaSubtitle"></span>
 								</div>
 							</div>
 							<div class="project-description-container">
@@ -768,16 +759,15 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="divider"></div> -->
 
 					<div class="project-item-container">
-						<div class="project-items">
+						<div class="project-items" data-pn="dongwon">
 							<div style="display: flex; flex-direction : column; align-items : center;">
 								<div>
-									<h2>동원시스템즈 매출 이력 관리 시스템 구축</h2>
+									<h2 data-lang="dongwonTitle"></h2>
 								</div>
 								<div>
-									<span>데이터 클렌징이 완료된 마이그레이션 매출 정보의 업로드를 위한 환경 구축</span>
+									<span data-lang="dongwonSubtitle"></span>
 								</div>
 							</div>
 							<div class="project-description-container">
@@ -797,27 +787,26 @@
 							</div>
 						</div>
 					</div>
-					<!-- <div class="divider"></div> -->
 
 					<div class="project-item-container">
-						<div class="project-items">
+						<div class="project-items" data-pn="stellasync">
 							<div style="display: flex; flex-direction : column; align-items : center;">
 								<div>
-									<h2>고객 서비스 지원 티켓팅 플랫폼 솔루션 개발</h2>
+									<h2 data-lang="stellaTitle"></h2>
 								</div>
 								<div>
-									<span>서비스 요청 티켓 상호작용 플랫폼 환경 구축</span>
+									<span data-lang="stellaSubtitle"></span>
 								</div>
 							</div>
 							<div class="project-description-container">
 								<img src="public/assets/img/companyLogo/ticketProject_logo.png" alt="" style="width: 200px;">
 								<div class="project-description-content-container">
 									<ul>
-										<li>라우팅 및 API 설계</li>
-										<li>S4 HANA DB 연동</li>
-										<li>MVC 패턴 설계 및 전반적인 CRUD(Create, Read, Update, Delete) API 구현</li>
-										<li>SMS 문자 발송 및 알림톡 서비스 개발</li>
-										<li>외부 API 서비스 통합(기상청, 증권, 뉴스, Slack 등)</li>
+										<li data-lang="stellaDetail-001"></li>
+										<li data-lang="stellaDetail-002"></li>
+										<li data-lang="stellaDetail-003"></li>
+										<li data-lang="stellaDetail-004"></li>
+										<li data-lang="stellaDetail-005"></li>
 									</ul>
 									<div class="project-description-badge">
 										<span class="customLogo-sap">SAP</span>
@@ -1037,4 +1026,102 @@
 </html>
 
 <script>
+	document.addEventListener('DOMContentLoaded', function () {
+		var projectItems = document.querySelectorAll('.project-items');
+		projectItems.forEach(function (item) {
+			item.addEventListener('click', function () {
+				var companyName = item.getAttribute('data-pn');
+
+				//var list = getDataLangValues(item);
+
+				handleModal(companyName, item);
+			});
+		});
+	});
+
+	function handleModal(cn, item) {
+		const overlay = document.createElement('div');
+		const content = document.createElement('div');
+		const picinner = document.createElement('div');
+		const textinner = document.createElement('div');
+		const closebtn = document.createElement('img');
+		
+		overlay.id = "project-modal";
+		overlay.classList.add("blur");
+		overlay.classList.add("fade-in");
+
+		closebtn.id = "modalclose";
+		closebtn.src = "public/assets/img/icons/x.png";
+
+		picinner.style.flex = "1";
+		textinner.style.flex = "1";
+		textinner.style.color = "#fff";
+
+		content.style.display = "flex";
+		content.style.gap = "8px";
+		content.style.paddingTop = "64px";
+
+		const modalContentContainer = getDataLangValues(item);
+
+		const base = modalContentContainer[0];
+		const detail = modalContentContainer[1];
+		const modalContent = getContent(cn);
+
+		base.appendChild(modalContent);
+		base.appendChild(closebtn);
+
+		picinner.appendChild(modalContent);
+		textinner.appendChild(detail);
+		content.appendChild(picinner);
+		content.appendChild(textinner);
+
+		base.appendChild(content);
+		overlay.appendChild(base);
+
+		document.body.appendChild(overlay);
+		document.body.classList.add('no-scroll');
+
+		document.getElementById('modalclose').addEventListener('click', () => {
+			const modal = document.getElementById('project-modal');
+			document.body.classList.remove('no-scroll');
+			modal.remove();
+		});
+	}
+
+	function getDataLangValues(pn) {
+		var element = pn;
+
+		var langElements = element ? element.querySelectorAll('[data-lang]') : [];
+		
+		const lang = getLanguage();
+
+		const modalContentContainer = document.createElement('div');
+
+		const modalDetails = document.createElement('div');
+		modalDetails.id = "modalDetails";
+
+		modalContentContainer.style.padding = '64px 32px';
+		modalContentContainer.style.height = '100%';
+		
+		Array.from(langElements).forEach(function (el) {
+			const text = document.createElement('span');
+
+			if (el.getAttribute('data-lang').toUpperCase().includes('SUB')) {
+				text.textContent = lang[el.getAttribute('data-lang')];
+				text.classList.add("project-modal-subTitle");
+				modalContentContainer.appendChild(text);
+			} else if (el.getAttribute('data-lang').toUpperCase().includes('DETAIL')) {
+				text.textContent = lang[el.getAttribute('data-lang')];
+				text.classList.add("project-modal-detail");
+				modalDetails.appendChild(text);
+			} else {
+				text.textContent = lang[el.getAttribute('data-lang')];
+				text.classList.add("project-modal-title");
+				modalContentContainer.appendChild(text);
+			}
+			//modalContentContainer.appendChild(modalDetails);
+			
+		});
+		return [modalContentContainer, modalDetails];
+	}
 </script>

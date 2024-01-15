@@ -144,4 +144,5 @@ document.addEventListener('DOMContentLoaded', function() {
         window.sessionStorage.setItem("lang", "ja");
         window.location.reload();
     });
+    
 });
