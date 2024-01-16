@@ -30,7 +30,7 @@ function hdiContent() {
     picinner.appendChild(img1);
     picinner.appendChild(img2);
     picinner.appendChild(img3);
-    picinner.appendChild(img3);
+    picinner.appendChild(img4);
 
     picwrap.appendChild(leftbtn);
     picwrap.appendChild(rightbtn);
@@ -62,32 +62,8 @@ function hdiContent() {
     let touchStartX = 0;
     let touchEndX = 0;
 
-    // picinner.addEventListener('touchstart', (event) => {
-    //     touchStartX = event.touches[0].clientX;
-    // });
-
-    // picinner.addEventListener('touchend', (event) => {
-    //     touchEndX = event.changedTouches[0].clientX;
-    //     handleGesture();
-    // });
-
-    // function handleGesture() {
-    //     const gestureDistance = touchEndX - touchStartX;
-
-    //     if (gestureDistance > 50) {
-    //         prevSlide();
-    //     } else if (gestureDistance < -50) {
-    //         nextSlide();
-    //     }
-    // }
-
-    // 터치 제스처를 사용한 슬라이딩
     picinner.addEventListener('touchstart', (event) => {
         touchStartX = event.touches[0].clientX;
-    });
-
-    picinner.addEventListener('touchmove', (event) => {
-        event.preventDefault(); // 스와이프 동작 중에 기본 스크롤 방지
     });
 
     picinner.addEventListener('touchend', (event) => {
@@ -99,9 +75,9 @@ function hdiContent() {
         const gestureDistance = touchEndX - touchStartX;
 
         if (gestureDistance > 50) {
-        prevSlide();
+            prevSlide();
         } else if (gestureDistance < -50) {
-        nextSlide();
+            nextSlide();
         }
     }
 
