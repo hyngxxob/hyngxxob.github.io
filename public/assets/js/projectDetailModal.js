@@ -66,12 +66,14 @@ function getDataLangValues(pn) {
     const lang = getLanguage();
 
     const modalContentContainer = document.createElement('div');
+    modalContentContainer.id = "project-modal-content-wrap";
 
     const modalDetails = document.createElement('div');
     modalDetails.id = "modalDetails";
 
     modalContentContainer.style.padding = '64px 32px';
     modalContentContainer.style.height = '100%';
+    modalContentContainer.style.overflowY = 'scroll';
     
     Array.from(langElements).forEach(function (el) {
         const text = document.createElement('span');
