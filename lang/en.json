@@ -72,6 +72,52 @@ en = {
     "certSixLicenseNo" : "212*****965F",
     "certSixLicenseDate" : "2021.06",
     
+    // Project
+    "kolonTitle" : "Implementing and developing processes for each of KOLON BENIT's ordering industries",
+    "kolonSubtitle" : "Unified deal management",
+    "kolonDetail-001" : "Dealer's Opportunity Maintenance",
+
+    "gentlemonsterTitle" : "Developed a system for managing GENTLE-MONSTER customer service and linking orders for free and paid services",
+    "gentlemonsterSubtitle" : "CRM Service Cloud",
+    "gentlemonsterDetail-001" : "Claim Ticket Maintenance",
+    "gentlemonsterDetail-002" : "Service Cloud Maintenance",
+
+    "kakaoentTitle" : "KAKAO ENTERPRISE SAP Lead to Cash Cloud System",
+    "kakaoentSubtitle" : "C4HANA Cloud Opportunity Management System",
+    "kakaoentDetail-001" : "Performance Report Maintenance",
+    "kakaoentDetail-002" : "SuccessFactors Maintenance",
+
+    "kiscoTitle" : "Built all modules of KISCO's marketing/sales/service CRM and implemented S4Hana connection",
+    "kiscoSubtitle" : "Unify dealer portal and sales systems",
+    "kiscoDetail-001" : "CRM Sales & Marketing Cloud System Maintenance",
+
+    "hanwhaTitle" : "Implementing HANWHA Q-CELLS B2B customer service and integrating services by global entities",
+    "hanwhaSubtitle" : "Build dashboards and reports based on customer claims data",
+    "hanwhaDetail-001" : "CS Platform System Maintenance",
+
+    "hdiTitle" : "HYUNDAI DOOSAN INFRACORE (HDI) Complete Vehicle Ordering System - Machine Ordering Phase One",
+    "hdiSubtitle" : "Processing data received from S4/HANA Cloud ERP via RFC communication",
+    "hdiDetail-001" : "Developed a Price Page that displays information such as prices and parts by excavator type",
+    "hdiDetail-002" : "Improved logic to speed up large data lookups",
+
+    "dinaTitle" : "North America HDI Complete Vehicle Ordering System - Machine Ordering Phase Two / Parts Ordering",
+    "dinaSubtitle" : "Developed customer data delivery services with SAP Cloud for Customer OData APIs",
+    "dinaDetail-001" : "Developed a CSV file upload module for easy registration of product information",
+    "dinaDetail-002" : "Join dealer data - Render the Dealer Performance Report",
+    "dinaDetail-003" : "Developed Opportunity Upload Automation (RPA)",
+
+    "dongwonTitle" : "Implementation of Sales History Management System for DONGWON SYSTEMS",
+    "dongwonSubtitle" : "Implementation of environment for uploading migrated revenue information with data cleansing complete",
+    "dongwonDetail-001" : "Developed a module to measure year-over-year growth in revenue information by customer",
+
+    "stellaTitle" : "Developed a customer service support ticketing platform solution",
+    "stellaSubtitle" : "Building a service request ticket interaction platform environment",
+    "stellaDetail-001" : "Routing and API design",
+    "stellaDetail-002" : "S4 HANA DB Integrations",
+    "stellaDetail-003" : "MVC pattern design and overall Create, Read, Update, Delete (CRUD) API implementation",
+    "stellaDetail-004" : "Developed SMS texting and alert talk services",
+    "stellaDetail-005" : "Integrated external API services (weather, stocks, news, Slack, etc.)",
+    
     // OutSourcing
     "outsource-001-subtitle" : "Helping you get home safely",
     "outsource-001-list-01" : "Responsive web development",

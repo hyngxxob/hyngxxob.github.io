@@ -35,8 +35,17 @@
 		<script src="public/assets/js/click.js"></script>
 		<script src="public/assets/js/scroll-animation.js"></script>
 		<script src="public/assets/js/getLanguage.js"></script>
+		<script src="public/assets/js/projectDetailModal.js"></script>
 		<script src="public/assets/js/projectContents.js"></script>
 		<script src="public/assets/js/project/stellaSync.js"></script>
+		<script src="public/assets/js/project/dina.js"></script>
+		<script src="public/assets/js/project/dongwon.js"></script>
+		<script src="public/assets/js/project/gentlemonster.js"></script>
+		<script src="public/assets/js/project/hanwhaContent.js"></script>
+		<script src="public/assets/js/project/hdiContent.js"></script>
+		<script src="public/assets/js/project/kakaoent.js"></script>
+		<script src="public/assets/js/project/kisco.js"></script>
+		<script src="public/assets/js/project/kolon.js"></script>
 
 		<script src="lang/ko.json" id="ko-data" type="text/javascript"></script>
 		<script src="lang/en.json" id="en-data" type="text/javascript"></script>
@@ -575,7 +584,7 @@
 								<div class="project-description-content-container">
 									<div>
 										<ul>
-											<li>딜러 영업기회(Opportunity) 유지보수</li>
+											<li data-lang="kolonDetail-001"></li>
 										</ul>
 									</div>
 									<div class="project-description-badge">
@@ -604,8 +613,8 @@
 								<div class="project-description-content-container">
 									<div>
 										<ul>
-											<li>Claim Ticket 유지보수</li>
-											<li>Service Cloud 유지보수</li>
+											<li data-lang="gentlemonsterDetail-001"></li>
+											<li data-lang="gentlemonsterDetail-002"></li>
 										</ul>
 									</div>
 									<div class="project-description-badge">
@@ -634,8 +643,8 @@
 								<div class="project-description-content-container">
 									<div>
 										<ul>
-											<li>Performance Report 유지보수</li>
-											<li>SuccessFactors 유지보수</li>
+											<li data-lang="kakaoentDetail-001"></li>
+											<li data-lang="kakaoentDetail-002"></li>
 										</ul>
 									</div>
 									<div class="project-description-badge">
@@ -661,7 +670,7 @@
 								<div class="project-description-content-container">
 									<div>
 										<ul>
-											<li>CRM Sales & Marketing Cloud 시스템 유지보수</li>
+											<li data-lang="kiscoDetail-001"></li>
 										</ul>
 									</div>
 									<div class="project-description-badge">
@@ -689,7 +698,7 @@
 								<div class="project-description-content-container">
 									<div>
 										<ul>
-											<li>CS Platform 시스템 유지보수</li>
+											<li data-lang="hanwhaDetail-001"></li>
 										</ul>
 									</div>
 									<div class="project-description-badge">
@@ -716,8 +725,8 @@
 								<div class="project-description-content-container">
 									<div>
 										<ul>
-											<li>굴삭기 종류별 가격 및 Parts 등의 정보를 출력하는 Price Page 개발</li>
-											<li>대규모 데이터 조회 소요시간 단축 로직 개발</li>
+											<li data-lang="hdiDetail-001"></li>
+											<li data-lang="hdiDetail-002"></li>
 										</ul>
 									</div>
 									<div class="project-description-badge">
@@ -744,9 +753,9 @@
 								<img src="public/assets/img/companyLogo/dina.jfif" alt="DINA" style="width: 200px;">
 								<div class="project-description-content-container">
 									<ul>
-										<li>제품 정보 간편 등록을 위한 CSV 파일 업로드 모듈 개발</li>
-										<li>딜러 데이터 조인 - Dealer Performance Report 렌더링</li>
-										<li>영업기회(Opportunity) 업로드 자동화(RPA) 개발</li>
+										<li data-lang="dinaDetail-001"></li>
+										<li data-lang="dinaDetail-002"></li>
+										<li data-lang="dinaDetail-003"></li>
 									</ul>
 									<div class="project-description-badge">
 										<span class="customLogo-sap">SAP</span>
@@ -774,7 +783,7 @@
 								<img src="public/assets/img/companyLogo/dongwonsystems.jpg" alt="DONGWONSYS" style="width: 200px;">
 								<div class="project-description-content-container">
 									<ul>
-										<li>고객별 매출 정보 내 연도별 성장률 측정 모듈 개발</li>
+										<li data-lang="dongwonDetail-001"></li>
 									</ul>
 									<div class="project-description-badge">
 										<span class="customLogo-sap">SAP</span>
@@ -1026,102 +1035,5 @@
 </html>
 
 <script>
-	document.addEventListener('DOMContentLoaded', function () {
-		var projectItems = document.querySelectorAll('.project-items');
-		projectItems.forEach(function (item) {
-			item.addEventListener('click', function () {
-				var companyName = item.getAttribute('data-pn');
-
-				//var list = getDataLangValues(item);
-
-				handleModal(companyName, item);
-			});
-		});
-	});
-
-	function handleModal(cn, item) {
-		const overlay = document.createElement('div');
-		const content = document.createElement('div');
-		const picinner = document.createElement('div');
-		const textinner = document.createElement('div');
-		const closebtn = document.createElement('img');
-		
-		overlay.id = "project-modal";
-		overlay.classList.add("blur");
-		overlay.classList.add("fade-in");
-
-		closebtn.id = "modalclose";
-		closebtn.src = "public/assets/img/icons/x.png";
-
-		picinner.style.flex = "1";
-		textinner.style.flex = "1";
-		textinner.style.color = "#fff";
-
-		content.style.display = "flex";
-		content.style.gap = "8px";
-		content.style.paddingTop = "64px";
-
-		const modalContentContainer = getDataLangValues(item);
-
-		const base = modalContentContainer[0];
-		const detail = modalContentContainer[1];
-		const modalContent = getContent(cn);
-
-		base.appendChild(modalContent);
-		base.appendChild(closebtn);
-
-		picinner.appendChild(modalContent);
-		textinner.appendChild(detail);
-		content.appendChild(picinner);
-		content.appendChild(textinner);
-
-		base.appendChild(content);
-		overlay.appendChild(base);
-
-		document.body.appendChild(overlay);
-		document.body.classList.add('no-scroll');
-
-		document.getElementById('modalclose').addEventListener('click', () => {
-			const modal = document.getElementById('project-modal');
-			document.body.classList.remove('no-scroll');
-			modal.remove();
-		});
-	}
-
-	function getDataLangValues(pn) {
-		var element = pn;
-
-		var langElements = element ? element.querySelectorAll('[data-lang]') : [];
-		
-		const lang = getLanguage();
-
-		const modalContentContainer = document.createElement('div');
-
-		const modalDetails = document.createElement('div');
-		modalDetails.id = "modalDetails";
-
-		modalContentContainer.style.padding = '64px 32px';
-		modalContentContainer.style.height = '100%';
-		
-		Array.from(langElements).forEach(function (el) {
-			const text = document.createElement('span');
-
-			if (el.getAttribute('data-lang').toUpperCase().includes('SUB')) {
-				text.textContent = lang[el.getAttribute('data-lang')];
-				text.classList.add("project-modal-subTitle");
-				modalContentContainer.appendChild(text);
-			} else if (el.getAttribute('data-lang').toUpperCase().includes('DETAIL')) {
-				text.textContent = lang[el.getAttribute('data-lang')];
-				text.classList.add("project-modal-detail");
-				modalDetails.appendChild(text);
-			} else {
-				text.textContent = lang[el.getAttribute('data-lang')];
-				text.classList.add("project-modal-title");
-				modalContentContainer.appendChild(text);
-			}
-			//modalContentContainer.appendChild(modalDetails);
-			
-		});
-		return [modalContentContainer, modalDetails];
-	}
+	
 </script>

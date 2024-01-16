@@ -2,24 +2,30 @@ function getContent(cn) {
     let content;
     switch(cn) {
         case 'kolon' :
-            // const text = document.createElement('span');
-            // text.textContent = 'kolon';
-            // return text;
+            content = kolonContent();
+            return content;
             break;
         case 'gentlemonster' :
-            break;
+            content = gentlemonsterContent();
+            return content;
         case 'kakaoent' :
-            break;
+            content = kakaoentContent();
+            return content;
         case 'kisco' :
-            break;
+            content = kiscoContent();
+            return content;
         case 'hanwha' :
-            break;
+            content = hanwhaContent();
+            return content;
         case 'hdi' :
-            break;
+            content = hdiContent();
+            return content;
         case 'dina' :
-            break;
+            content = dinaContent();
+            return content;
         case 'dongwon' :
-            break;
+            content = dongwonContent();
+            return content;
         case 'stellasync' :
             content = stellaSyncContent();
             return content;

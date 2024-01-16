@@ -4,6 +4,86 @@
     line-height: 1.65;
 }
 
+#project-modal {
+    overflow-y: scroll;
+}
+
+#project-modal::-webkit-scrollbar {
+    width: 10px;
+}
+
+#project-modal::-webkit-scrollbar-thumb {
+    /* background-color: #c1c1c1; */
+    background-color: #FFD700;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+
+#project-modal::-webkit-scrollbar-track {
+    /* background-color: white; */
+    border-radius: 10px;
+    /* box-shadow: inset 0px 0px 5px white; */
+}
+
+.project-modal-content {
+    display : flex;
+    gap : 8px;
+    padding-top : 64px;
+}
+
+.left {
+    left: 0;
+}
+
+.left::before {
+    content: '❮';
+    cursor: pointer;
+    /* Unicode 코드 포인트로 화살표 아이콘 지정 */
+    /* font-family: 'Font Awesome 5 Free'; */
+    /* Font Awesome의 아이콘 폰트를 사용합니다. */
+}
+
+.right {
+    right: 0;
+}
+
+.right::before {
+    content: '❯';
+    cursor: pointer;
+    /* 오른쪽 화살표 */
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    outline: none;
+    z-index: 5;
+}
+
 .project-modal-detail {
     display: block;
 }
@@ -70,9 +150,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track {
-    background-color: white;
+    /* background-color: white; */
     border-radius: 10px;
-    box-shadow: inset 0px 0px 5px white;
+    /* box-shadow: inset 0px 0px 5px white; */
 }
 
 .flex {

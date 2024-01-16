@@ -70,6 +70,52 @@ ja = {
     "certSixLicenseNo" : "212*****965F",
     "certSixLicenseDate" : "2021.06",
 
+    // Project
+    "kolonTitle" : "KOLON BENITの受注産業特化プロセスの実装及び開発",
+    "kolonSubtitle" : "統合ディール管理",
+    "kolonDetail-001" : "ディーラー営業機会(Opportunity)メンテナンス",
+
+    "gentlemonsterTitle" : "ジェントルモンスター Customer Service 管理及び無償/有償サービス注文連携システム開発",
+    "gentlemonsterSubtitle" : "CRM Service Cloud",
+    "gentlemonsterDetail-001" : "Claim Ticket メンテナンス",
+    "gentlemonsterDetail-002" : "Service Cloud メンテナンス",
+
+    "kakaoentTitle" : "カカオエンタープライズ SAP Lead to Cash クラウドシステム",
+    "kakaoentSubtitle" : "C4HANA Cloud 営業管理システム",
+    "kakaoentDetail-001" : "Performance Report メンテナンス",
+    "kakaoentDetail-002" : "SuccessFactors メンテナンス",
+
+    "kiscoTitle" : "KISCO京仁洋行マーケティング/営業/サービスCRM全モジュール構築及びS4Hana連携実装",
+    "kiscoSubtitle" : "ディーラーポータルと営業システムの一元化",
+    "kiscoDetail-001" : "CRM Sales & Marketing Cloud システム メンテナンス",
+
+    "hanwhaTitle" : "ハンファQセルB2B顧客サービスの実装及びグローバル法人別サービスの統合",
+    "hanwhaSubtitle" : "顧客Claimデータベースのダッシュボード及びレポート構築",
+    "hanwhaDetail-001" : "CS Platform システム メンテナンス",
+
+    "hdiTitle" : "現代斗山インフラコア(HDI)完成車オーダリングシステム - Machine Ordering Phase One",
+    "hdiSubtitle" : "RFC通信でS4/HANA Cloud ERP側から受信したデータ処理",
+    "hdiDetail-001" : "掘削機の種類別価格及びPartsなどの情報を出力するPrice Pageを開発",
+    "hdiDetail-002" : "大規模データ照会所要時間短縮 ロジック改善",
+
+    "dinaTitle" : "北米HDI完成車オーダーシステム - Machine Ordering Phase Two / Parts Ordering",
+    "dinaSubtitle" : "SAP Cloud for Customer OData APIによるWebブラウザデータの出力",
+    "dinaDetail-001" : "製品情報を簡単に登録するためのCSVファイルアップロードモジュールの開発",
+    "dinaDetail-002" : "ディーラーデータの結合 - Dealer Performance Reportのレンダリング",
+    "dinaDetail-003" : "営業機会(Opportunity)アップロード自動化(RPA)開発",
+
+    "dongwonTitle" : "動員システムズの売上履歴管理システムを構築",
+    "dongwonSubtitle" : "データクレンジングが完了した移行売上情報をアップロードするための環境を構築",
+    "dongwonDetail-001" : "顧客別売上情報内の年度別成長率測定モジュールの開発",
+
+    "stellaTitle" : "カスタマーサービスサポートチケットプラットフォームソリューションの開発",
+    "stellaSubtitle" : "サービス要請チケット対話プラットフォーム環境構築",
+    "stellaDetail-001" : "ルーティングとAPI設計",
+    "stellaDetail-002" : "S4 HANA DB 連動",
+    "stellaDetail-003" : "MVCパターン設計と全体的なCRUD(Create, Read, Update, Delete) APIの実装",
+    "stellaDetail-004" : "SMSメール送信及び通知トークサービス開発",
+    "stellaDetail-005" : "外部APIサービス統合(気象庁、証券、ニュース、Slackなど)",
+    
     // OutSourcing
     "outsource-001-subtitle" : "あなたの安心帰宅をサポートします",
     "outsource-001-list-01" : "レスポンシブWeb開発",

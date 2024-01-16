@@ -73,27 +73,40 @@ ko = {
     // Project
     "kolonTitle" : "코오롱 베니트 수주 산업 특화 프로세스 구현 및 개발",
     "kolonSubtitle" : "통합 딜 관리",
+    "kolonDetail-001" : "딜러 영업기회(Opportunity) 유지보수",
 
     "gentlemonsterTitle" : "젠틀몬스터 Customer Service 관리 및 무상/유상 서비스 주문 연계 시스템 개발",
     "gentlemonsterSubtitle" : "CRM Service Cloud",
+    "gentlemonsterDetail-001" : "Claim Ticket 유지보수",
+    "gentlemonsterDetail-002" : "Service Cloud 유지보수",
 
     "kakaoentTitle" : "카카오엔터프라이즈 SAP Lead to Cash 클라우드 시스템",
     "kakaoentSubtitle" : "C4HANA Cloud 영업관리 시스템",
+    "kakaoentDetail-001" : "Performance Report 유지보수",
+    "kakaoentDetail-002" : "SuccessFactors 유지보수",
 
     "kiscoTitle" : "KISCO 경인양행 마케팅/영업/서비스 CRM 전(全) 모듈 구축 및 S4Hana 연계 구현",
     "kiscoSubtitle" : "딜러 포털과 영업 시스템 일원화",
+    "kiscoDetail-001" : "CRM Sales & Marketing Cloud 시스템 유지보수",
 
     "hanwhaTitle" : "한화큐셀 B2B 고객 서비스 구현 및 글로벌 법인별 서비스 통합",
     "hanwhaSubtitle" : "고객 Claim 데이터 기반 대시보드 및 레포트 구축",
+    "hanwhaDetail-001" : "CS Platform 시스템 유지보수",
 
     "hdiTitle" : "현대두산인프라코어(HDI) 완성차 오더링 시스템 - Machine Ordering Phase One",
-    "dinaSubtitle" : "RFC통신으로 S4/HANA Cloud ERP측으로부터 수신한 데이터 가공",
+    "hdiSubtitle" : "RFC통신으로 S4/HANA Cloud ERP측으로부터 수신한 데이터 가공",
+    "hdiDetail-001" : "굴삭기 종류별 가격 및 Parts 등의 정보를 출력하는 Price Page 개발",
+    "hdiDetail-002" : "대규모 데이터 조회 소요시간 단축 로직 개발",
 
     "dinaTitle" : "북미 HDI 완성차 오더링 시스템 - Machine Ordering Phase Two / Parts Ordering",
     "dinaSubtitle" : "SAP Cloud for Customer OData API를 통한 웹 브라우저 데이터 노출",
+    "dinaDetail-001" : "제품 정보 간편 등록을 위한 CSV 파일 업로드 모듈 개발",
+    "dinaDetail-002" : "딜러 데이터 조인 - Dealer Performance Report 렌더링",
+    "dinaDetail-003" : "영업기회(Opportunity) 업로드 자동화(RPA) 개발",
 
     "dongwonTitle" : "동원시스템즈 매출 이력 관리 시스템 구축",
     "dongwonSubtitle" : "데이터 클렌징이 완료된 마이그레이션 매출 정보의 업로드를 위한 환경 구축",
+    "dongwonDetail-001" : "고객별 매출 정보 내 연도별 성장률 측정 모듈 개발",
 
     "stellaTitle" : "고객 서비스 지원 티켓팅 플랫폼 솔루션 개발",
     "stellaSubtitle" : "서비스 요청 티켓 상호작용 플랫폼 환경 구축",
