@@ -10,7 +10,8 @@ en = {
     "historyTitle" : "History",
     "certTitle" : "Certification",
     "skillTitle" : "Skills",
-    "projectTitle" : "Projects",
+    "projectCompTitle" : "Company Projects",
+    "projectPersTitle" : "Personal Projects",
     "outsourcingTitle" : "Outsourcing",
 
     // Button
@@ -118,6 +119,10 @@ en = {
     "stellaDetail-004" : "Developed SMS texting and alert talk services",
     "stellaDetail-005" : "Integrated external API services (weather, stocks, news, Slack, etc.)",
     
+    // Personal Project
+    "cruisemateTitle" : "Driving Course Recommendations :: Cruisemate Cruisemate",
+    "cruisemateSubtitle" : "Every time you're thinking about where to drive, we'll give you options.",
+
     // OutSourcing
     "outsource-001-subtitle" : "Helping you get home safely",
     "outsource-001-list-01" : "Responsive web development",

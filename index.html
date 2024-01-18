@@ -89,7 +89,10 @@
 						<span id="skillNavLink" data-lang="skillTitle"></span>
 					</div>
 					<div>
-						<span id="projectNavLink" data-lang="projectTitle"></span>
+						<span id="projectCompNavLink" data-lang="projectCompTitle"></span>
+					</div>
+					<div>
+						<span id="projectPersNavLink" data-lang="projectPersTitle"></span>
 					</div>
 					<div>
 						<span id="outsourcingNavLink" data-lang="outsourcingTitle"></span>
@@ -122,7 +125,10 @@
 							<span id="skillMobNavLink" data-lang="skillTitle"></span>
 						</div>
 						<div>
-							<span id="projectMobNavLink" data-lang="projectTitle"></span>
+							<span id="projectCompMobNavLink" data-lang="projectCompTitle"></span>
+						</div>
+						<div>
+							<span id="projectPersMobNavLink" data-lang="projectPersTitle"></span>
 						</div>
 						<div>
 							<span id="outsourcingMobNavLink" data-lang="outsourcingTitle"></span>
@@ -555,15 +561,15 @@
 			<!-- </div> -->
 		
 			<!-- Project -->
-			<div id="project" class="div-container odd-section">
+			<div id="projectcomp" class="div-container odd-section">
 				<div class="intro-inner">
 					<div class="intro-inner-header">
 						<div class="intro-inner-header-title">
 							<div style="display: flex; align-items: center; gap:8px; position: relative;">
-								<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="projectLink"
+								<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="projectCompLink"
 									style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer; filter: invert(1);">
 								<div>
-									<span data-lang="projectTitle" style="color:#fff;"></span>
+									<span data-lang="projectCompTitle" style="color:#fff;"></span>
 									<div class="header-bar" style="animation-delay: 0.5s; background: #fff;"></div>
 								</div>
 							</div>
@@ -834,17 +840,68 @@
 					</div>
 				</div>
 			</div>
+			<!-- Project -->
+			<div id="projectpers" class="div-container">
+				<div class="intro-inner">
+					<div class="intro-inner-header">
+						<div class="intro-inner-header-title">
+							<div style="display: flex; align-items: center; gap:8px; position: relative;">
+								<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="projectPersLink"
+									style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer;">
+								<div>
+									<span data-lang="projectPersTitle"></span>
+									<div class="header-bar" style="animation-delay: 0.5s;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="project-item-container">
+						<div class="" data-pn="kolon">
+							<div style="display: flex; flex-direction : column; align-items : center;">
+								<div>
+									<h2 data-lang="cruisemateTitle"></h2>
+								</div>
+								<div>
+									<span data-lang="cruisemateSubtitle"></span>
+								</div>
+							</div>
+							<div class="project-description-container">
+								<!-- <img src="public/assets/img/companyLogo/kolonBenit.jpg" style="width: 200px;" alt=""> -->
+								<div class="project-description-content-container">
+									<div>
+										<!-- <ul>
+											<li data-lang="kolonDetail-001"></li>
+										</ul> -->
+										<div class="outsourcing-status-active">
+											<a href="http://4wheels.site" target="_blank" style="color:white;">
+												<span data-lang="inprogress"></span>
+											</a>
+										</div>
+									</div>
+									<div class="project-description-badge">
+										<!-- <span class="customLogo-sap">SAP</span>
+										<span class="customLogo-sapui5">SAP Cloud Application Studio</span>
+										<span class="customLogo-groovy">groovy</span>
+										<span class="customLogo-ruby">Ruby</span>
+										<span class="customLogo-sapui5">SAP CPI</span> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-			<div id="outsourcing" class="div-container">
+			<div id="outsourcing" class="div-container odd-section">
 				<div class="intro-inner ">
 					<div class="intro-inner-header">
 						<div class="intro-inner-header-title">
 							<div style="display: flex; align-items: center; gap:8px; position: relative;">
 								<img src="https://cdg-portfolio.com/images/black-link.png" alt="" id="outsourcingLink"
-									style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer;">
+									style="width: 30px; height: 30px; position: absolute;top: 12px; left: -42px; cursor: pointer; filter : invert(1);">
 								<div>
-									<span data-lang="outsourcingTitle"></span>
-									<div class="header-bar" style="animation-delay: 0.5s;"></div>
+									<span data-lang="outsourcingTitle" style="color:#fff;"></span>
+									<div class="header-bar" style="animation-delay: 0.5s; background: #fff;"></div>
 								</div>
 							</div>
 						</div>
@@ -888,7 +945,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="outsourcing-divider"></div>
 					<div class="outsourcing-item-container">
 						<div class="outsourcing-items">
 							<div class="outsourcing-description-container row-reverse">
@@ -929,7 +985,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="outsourcing-divider"></div>
 					<div class="outsourcing-item-container">
 						<div class="outsourcing-items">
 							<div class="outsourcing-description-container">
@@ -971,7 +1026,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="outsourcing-divider"></div>
 					<div class="outsourcing-item-container">
 						<div class="outsourcing-items">
 							<div class="outsourcing-description-container row-reverse">

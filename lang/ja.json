@@ -9,6 +9,8 @@ ja = {
     "certTitle" : "資格",
     "skillTitle" : "スキル",
     "projectTitle" : "プロジェクト",
+    "projectCompTitle" : "会社プロジェクト",
+    "projectPersTitle" : "個人プロジェクト",
     "outsourcingTitle" : "外注",
 
     // Button
@@ -116,6 +118,10 @@ ja = {
     "stellaDetail-004" : "SMSメール送信及び通知トークサービス開発",
     "stellaDetail-005" : "外部APIサービス統合(気象庁、証券、ニュース、Slackなど)",
     
+    // Personal Project
+    "cruisemateTitle" : "おすすめドライブコース :: Cruisemate クルーズメイト",
+    "cruisemateSubtitle" : "毎回ドライブ場所に悩むあなたに選択肢を提案します。",
+
     // OutSourcing
     "outsource-001-subtitle" : "あなたの安心帰宅をサポートします",
     "outsource-001-list-01" : "レスポンシブWeb開発",

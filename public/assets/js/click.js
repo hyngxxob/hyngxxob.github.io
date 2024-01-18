@@ -24,8 +24,13 @@ document.addEventListener('DOMContentLoaded', function() {
         section.scrollIntoView({ behavior: 'smooth' });
     });
 
-    document.getElementById('projectLink').addEventListener('click', function () {
-        const section = document.getElementById('project');
+    document.getElementById('projectCompLink').addEventListener('click', function () {
+        const section = document.getElementById('projectcomp');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('projectPersLink').addEventListener('click', function () {
+        const section = document.getElementById('projectpers');
         section.scrollIntoView({ behavior: 'smooth' });
     });
 
@@ -54,8 +59,13 @@ document.addEventListener('DOMContentLoaded', function() {
         section.scrollIntoView({ behavior: 'smooth' });
     });
 
-    document.getElementById('projectNavLink').addEventListener('click', function () {
-        const section = document.getElementById('project');
+    document.getElementById('projectCompNavLink').addEventListener('click', function () {
+        const section = document.getElementById('projectcomp');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('projectPersNavLink').addEventListener('click', function () {
+        const section = document.getElementById('projectpers');
         section.scrollIntoView({ behavior: 'smooth' });
     });
 
@@ -92,10 +102,17 @@ document.addEventListener('DOMContentLoaded', function() {
         section.scrollIntoView({ behavior: 'smooth' });
     });
 
-    document.getElementById('projectMobNavLink').addEventListener('click', function () {
+    document.getElementById('projectCompMobNavLink').addEventListener('click', function () {
         document.getElementById('mobileMenu').style.display = 'none';
         document.body.classList.remove('no-scroll');
-        const section = document.getElementById('project');
+        const section = document.getElementById('projectcomp');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+
+    document.getElementById('projectPersMobNavLink').addEventListener('click', function () {
+        document.getElementById('mobileMenu').style.display = 'none';
+        document.body.classList.remove('no-scroll');
+        const section = document.getElementById('projectpers');
         section.scrollIntoView({ behavior: 'smooth' });
     });
 

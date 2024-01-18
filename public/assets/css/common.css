@@ -335,6 +335,7 @@ nav.fixed.desk {
 
 .outsourcing-item-container {
     animation-delay: .5s;
+    margin-bottom: 64px;
 }
 
 @keyframes fadeInUp {
@@ -668,7 +669,10 @@ html {
 
 .outsourcing-items {
     color: black;
-    border : 0px;
+    background: white;
+    border: 0px;
+    border-radius: 16px;
+    padding: 16px;
 }
 
 .project-item-container {
