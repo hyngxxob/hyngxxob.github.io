@@ -10,8 +10,8 @@ en = {
     "historyTitle" : "History",
     "certTitle" : "Certification",
     "skillTitle" : "Skills",
-    "projectCompTitle" : "Company Projects",
-    "projectPersTitle" : "Personal Projects",
+    "projectCompTitle" : "Corporate Projects",
+    "projectPersTitle" : "Self-Initiated Projects",
     "outsourcingTitle" : "Outsourcing",
 
     // Button
@@ -22,6 +22,7 @@ en = {
     "nationaltech" : "Nat'l Tech. Qual.",
     "nationalrecog" : "Nat'l Recog. Creds.",
     "driverLicense" : "Driver's License",
+    "sapCerti" : "SAP Certification",
 
     // Label
     "name" : "Name",
@@ -72,6 +73,10 @@ en = {
     "certSix" : "Applied Information Technology Engineer",
     "certSixLicenseNo" : "212*****965F",
     "certSixLicenseDate" : "2021.06",
+
+    "certSeven" : "SAP Certified Associate - Implementation Consultant - SAP Sales Cloud",
+    "certSevenLicenseNo" : "Demonstrate My Credentials",
+    "certSevenLicenseDate" : "2024.11",
     
     // Project
     "kolonTitle" : "Implementing and developing processes for each of KOLON BENIT's ordering industries",
@@ -118,6 +123,30 @@ en = {
     "stellaDetail-003" : "MVC pattern design and overall Create, Read, Update, Delete (CRUD) API implementation",
     "stellaDetail-004" : "Developed SMS texting and alert talk services",
     "stellaDetail-005" : "Integrated external API services (weather, stocks, news, Slack, etc.)",
+
+    "secTitle" : "Building a B2B Integrated Customer System",
+    "secSubtitle" : "Building a B2B integrated customer system based on SAP Customer Data Cloud (CDC, formerly Gigya)",
+    "secDetail-001" : "Apply Consent Management features to build a data consent collection and management system that complies with global data protection regulations (GDPR, CCPA, etc.)",
+    "secDetail-002" : "Develop an enterprise application integrated with SAP CDC solution utilizing PHP Laravel framework",
+    "secDetail-003" : "Implement reliable integration with PostgreSQL database and write migration scripts (php files) for data modeling and DB manipulation",
+    "secDetail-004" : "Developed mailing interface utilizing MailGun API to support processing of large number of user requests",
+    "secDetail-005" : "Developed inbound request validation logic utilizing Laravel middleware to enhance data integrity and security of API requests",
+
+    "jypeTitle" : "Building the next generation of SAP Public Cloud ERP",
+    "jypeSubtitle" : "Expansion building and advancement work",
+    "jypeDetail-001" : "Leading the development of reportable apps using SmartTable, and implementing user-friendly and data-centric interfaces",
+    "jypeDetail-002" : "Read and visualize data from SAP system using CDS View developed by Eclipse ADT as a data source (UI5 app development)",
+    "jypeDetail-003" : "Activate and deploy API by creating Service Binding and Service Definition",
+    "jypeDetail-004" : "Handle OData communication with external systems through SAP Cloud Platform Integration (CPI) and implement CRUD operations with Integration Flow",
+    "jypeDetail-005" : "Design and develop customized output format templates (PDF) utilizing Adobe LiveCycle Designer",
+
+    "wdxTitle" : "Building the next generation of SAP Public Cloud ERP",
+    "wdxSubtitle" : "Building an integrated ERP system based on global standard processes, data",
+    "wdxDetail-001" : "Develop user interface through SAP UI5 (ABAP environment deployment)",
+    "wdxDetail-002" : "Developed data processing (CRUD) utilizing Standard API",
+    "wdxDetail-003" : "Develop APIs based on SAP Integration Suite for data linkage between external systems",
+    "wdxDetail-004" : "Implement CRUD (Create, Read, Update, Delete) operations utilizing OData services",
+    "wdxDetail-005" : "Design and develop customized output format templates (PDF) utilizing Adobe LiveCycle Designer",
     
     // Personal Project
     "cruisemateTitle" : "Driving Course Recommendations :: Cruisemate Cruisemate",

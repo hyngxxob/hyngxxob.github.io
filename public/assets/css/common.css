@@ -959,6 +959,16 @@ footer {
     text-align: center;
 }
 
+.sapCerti-badge {
+    background: linear-gradient(to bottom, #008FD3, #005CBF);
+    padding: 4px;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    color: white;
+    width: 100px;
+    text-align: center;
+}
+
 .history-year-badge {
     background: #7B68EE;
     padding: 4px;

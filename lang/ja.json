@@ -9,8 +9,8 @@ ja = {
     "certTitle" : "資格",
     "skillTitle" : "スキル",
     "projectTitle" : "プロジェクト",
-    "projectCompTitle" : "会社プロジェクト",
-    "projectPersTitle" : "個人プロジェクト",
+    "projectCompTitle" : "企業プロジェクト",
+    "projectPersTitle" : "個人イニシアティブ:",
     "outsourcingTitle" : "外注",
 
     // Button
@@ -21,6 +21,7 @@ ja = {
     "nationaltech" : "國家技術資格",
     "nationalrecog" : "国家公認資格",
     "driverLicense" : "自動車運轉免許證",
+    "sapCerti" : "SAP認定資格",
 
     // Label
     "name" : "名前",
@@ -50,27 +51,31 @@ ja = {
     // Certification
     "certOne" : "グラフィック技術資格 (GTQ)",
     "certOneLicenseNo" : "GA01********8024",
-    "certOneLicenseDate" : "2013.11",
+    "certOneLicenseDate" : "2013.11(平成25年11月)",
 
     "certTwo" : "ワードプロセッサ",
     "certTwoLicenseNo" : "1*****7463",
-    "certTwoLicenseDate" : "2014.05",
+    "certTwoLicenseDate" : "2014.05(平成26年5月)",
 
     "certThree" : "情報技術資格 (ITQ)",
     "certThreeLicenseNo" : "A0012********4278",
-    "certThreeLicenseDate" : "2014.08",    
+    "certThreeLicenseDate" : "2014.08(平成26年8月)",    
 
     "certFour" : "電算会計運用士3級",
     "certFourLicenseNo" : "1*****0139",
-    "certFourLicenseDate" : "2015.07",
+    "certFourLicenseDate" : "2015.07(平成27年7月)",
 
     "certFive" : "自動車運転免許1種普通",
     "certFiveLicenseNo" : "**1661****00",
-    "certFiveLicenseDate" : "2016.05",
+    "certFiveLicenseDate" : "2016.05(平成28年5月)",
 
     "certSix" : "情報處理技士",
     "certSixLicenseNo" : "212*****965F",
-    "certSixLicenseDate" : "2021.06",
+    "certSixLicenseDate" : "2021.06(令和3年6月)",
+
+    "certSeven" : "SAP認定アソシエイト - 実装コンサルタント - SAP Sales Cloud",
+    "certSevenLicenseNo" : "資格証明を行う",
+    "certSevenLicenseDate" : "2024.11(令和6年11月)",
 
     // Project
     "kolonTitle" : "KOLON BENITの受注産業特化プロセスの実装及び開発",
@@ -117,6 +122,30 @@ ja = {
     "stellaDetail-003" : "MVCパターン設計と全体的なCRUD(Create, Read, Update, Delete) APIの実装",
     "stellaDetail-004" : "SMSメール送信及び通知トークサービス開発",
     "stellaDetail-005" : "外部APIサービス統合(気象庁、証券、ニュース、Slackなど)",
+
+    "secTitle" : "B2B統合顧客システムの構築",
+    "secSubtitle" : "SAP Customer Data Cloud（CDC、旧Gigya）に基づくB2B統合顧客システムの構築",
+    "secDetail-001" : "グローバルなデータ保護規制（GDPR、CCPAなど）に準拠したデータ同意収集・管理システムを構築するために、同意管理機能を適用する",
+    "secDetail-002" : "PHP Laravelフレームワークを利用したSAP CDCソリューションと統合されたエンタープライズアプリケーションの開発",
+    "secDetail-003" : "PostgreSQLデータベースとの信頼性の高い統合を実装し、データモデリングとDB操作のためのマイグレーションスクリプト（phpファイル）を記述する「, 」secDetail-004「 : 」PostgreSQLデータベースとの信頼性の高い統合を実装し、データモデリングとDB操作のためのマイグレーションスクリプト（phpファイル）を記述す",
+    "secDetail-004" : "MailGun API を利用したメーリングインターフェースの開発",
+    "secDetail-005" : "Laravel ミドルウェアを利用したインバウンドリクエスト検証ロジックを開発し、API リクエストのデータ整合性とセキュリティを強化した",
+
+    "jypeTitle" : "次世代のSAPパブリッククラウドERPの構築",
+    "jypeSubtitle" : "エクスパンション構築・推進業務",
+    "jypeDetail-001" : "SmartTableを使用したレポートアプリの開発をリードし、ユーザーフレンドリーでデータ中心のインターフェースを実装",
+    "jypeDetail-002" : "Eclipse ADTで開発されたCDS Viewをデータソースとして使用し、SAPシステムからデータを読み取り、視覚化する（UI5アプリ開発）",
+    "jypeDetail-003" : "サービス・バインディングとサービス定義を作成し、API をアクティブ化してデプロイする",
+    "jypeDetail-004" : "SAP Cloud Platform Integration (CPI) を使用して外部システムとの OData 通信を処理し、Integration Flow を使用して CRUD 操作を実装する",
+    "jypeDetail-005" : "Adobe LiveCycle Designer を活用し、カスタマイズされた出力フォーマットテンプレート(PDF)の設計と開発を行う",
+
+    "wdxTitle" : "次世代のSAPパブリッククラウドERPの構築",
+    "wdxSubtitle" : "グローバル標準プロセス、データに基づく統合ERPシステムの構築",
+    "wdxDetail-001" : "SAP UI5によるユーザーインターフェースの開発（ABAP環境の導入）",
+    "wdxDetail-002" : "標準APIを利用したデータ処理（CRUD）の開発",
+    "wdxDetail-003" : "SAP Integration Suite をベースとした、外部システム間のデータ連携のための API の開発",
+    "wdxDetail-004" : "ODataサービスを利用したCRUD(Create, Read, Update, Delete)操作の実装",
+    "wdxDetail-005" : "Adobe LiveCycle Designerを利用したカスタマイズされた出力フォーマットテンプレート（PDF）の設計と開発",
     
     // Personal Project
     "cruisemateTitle" : "おすすめドライブコース :: Cruisemate クルーズメイト",

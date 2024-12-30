@@ -20,6 +20,7 @@ ko = {
     "nationaltech" : "국가기술자격",
     "nationalrecog" : "국가공인자격",
     "driverLicense" : "자동차운전면허증",
+    "sapCerti" : "SAP 자격증",
 
     // Label
     "name" : "이름",
@@ -45,6 +46,8 @@ ko = {
     "his-004" : "㈜윈스 보안관제 인턴",
     "his-005" : "호서대학교 컴퓨터소프트웨어학과 졸업",
     "his-006" : "JMC Corporation APJ Korea. SAP CRM Cloud 개발팀",
+    "his-007" : "JMC Consulting. D&A(Development&AMS)팀",
+    "his-008" : "GS ITM. SAP BTP 개발팀",
 
     // Certification
     "certOne" : "GTQ(그래픽기술자격)",
@@ -70,6 +73,10 @@ ko = {
     "certSix" : "정보처리기사",
     "certSixLicenseNo" : "212*****965F",
     "certSixLicenseDate" : "2021.06",
+
+    "certSeven" : "SAP Certified Associate - Implementation Consultant - SAP Sales Cloud",
+    "certSevenLicenseNo" : "자격 확인",
+    "certSevenLicenseDate" : "2024.11",
 
     // Project
     "kolonTitle" : "코오롱 베니트 수주 산업 특화 프로세스 구현 및 개발",
@@ -116,6 +123,30 @@ ko = {
     "stellaDetail-003" : "MVC 패턴 설계 및 전반적인 CRUD(Create, Read, Update, Delete) API 구현",
     "stellaDetail-004" : "SMS 문자 발송 및 알림톡 서비스 개발",
     "stellaDetail-005" : "외부 API 서비스 통합(기상청, 증권, 뉴스, Slack 등)",
+    
+    "secTitle" : "B2B 통합 고객 시스템 구축",
+    "secSubtitle" : "SAP Customer Data Cloud(CDC, 前.Gigya) 기반 B2B 통합 고객 시스템 구축",
+    "secDetail-001" : "Consent Management 기능을 적용하여 글로벌 데이터 보호 규정(GDPR, CCPA 등)에 준수하는 데이터 동의 수집 및 관리 체계 구축",
+    "secDetail-002" : "PHP Laravel 프레임워크를 활용하여 SAP CDC 솔루션과 통합된 엔터프라이즈 애플리케이션 개발",
+    "secDetail-003" : "PostgreSQL 데이터베이스와의 안정적인 연동을 구현하며, 데이터 모델링과 DB 조작을 위한 Migration 스크립트(php파일) 작성",
+    "secDetail-004" : "MailGun API를 활용한 메일 발송 인터페이스 개발로 대량의 사용자 요청 처리 지원",
+    "secDetail-005" : "Laravel 미들웨어를 활용하여 인바운드 요청 검증 로직 개발, 데이터 무결성과 API 요청의 보안성 강화",
+
+    "jypeTitle" : "차세대 SAP Public Cloud ERP 구축",
+    "jypeSubtitle" : "확장 구축 및 고도화 작업 진행",
+    "jypeDetail-001" : "SmartTable을 활용한 리포트형 앱 개발을 주도하며, 사용자 친화적이고 데이터 중심의 인터페이스 구현",
+    "jypeDetail-002" : "Eclipse ADT에서 개발한 CDS View를 데이터 소스로 활용하여 SAP 시스템의 데이터를 읽고 시각화(UI5 앱 개발)",
+    "jypeDetail-003" : "Service Binding과 Service Definition을 생성하여 API 활성화 및 배포",
+    "jypeDetail-004" : "SAP Cloud Platform Integration(CPI)를 통해 외부 시스템과의 OData 통신을 처리하며, Integration Flow로 CRUD 작업 구현",
+    "jypeDetail-005" : "Adobe LiveCycle Designer를 활용하여 고객 맞춤형 출력 서식 템플릿(PDF) 설계 및 개발",
+
+    "wdxTitle" : "차세대 SAP Public Cloud ERP 구축",
+    "wdxSubtitle" : "글로벌 표준 프로세스, Data 기반의 통합 ERP 체계 구축",
+    "wdxDetail-001" : "SAP UI5를 통해 사용자 인터페이스 개발(ABAP 환경 배포)",
+    "wdxDetail-002" : "Standard API를 활용하여 데이터 처리(CRUD) 개발",
+    "wdxDetail-003" : "외부 시스템 간의 데이터 연계를 위해 SAP Integration Suite 기반 API 개발",
+    "wdxDetail-004" : "OData 서비스를 활용한 CRUD(Create, Read, Update, Delete) 작업 구현",
+    "wdxDetail-005" : "Adobe LiveCycle Designer를 활용하여 고객 맞춤형 출력 서식 템플릿(PDF) 설계 및 개발",
 
     // Personal Project
     "cruisemateTitle" : "드라이브 코스 추천 :: Cruisemate 크루즈 메이트",
